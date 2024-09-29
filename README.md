@@ -40,11 +40,18 @@ Support: Thanyawut Krittikanon </p>
 
 `video` This folder contains YouTube links that show how the robot operates to complete both missions.
 
-# **Part 1: ROBOT DESIGN**
+# **Part 1: MECHANICAL DEESIGN**
 
 Last year, our design was based entirely on Lego. This year we decided to up our game and 3d print the whole thing with ABS and PLA plastic filament reinforced with metal parts and some Lego. Using 3d printed parts allows more flexibility to be implemented and makes it easy to acquire spare parts for an emergency.
 Even with all of that, we will still use Lego parts to connect in a very precise area.
 
+
+## Robot's Chassis
+
+The chassis of our robot, primarily constructed from 3D-printed components, forms a robust foundation for all hardware and electronics. Each part is custom-designed to meet our specific requirements and interlocks seamlessly to create a lightweight yet resilient structure. The modular design of the 3D-printed chassis allows for straightforward customization and scalability. It is engineered to accommodate motors, electronics, and the battery, ensuring proper heat dissipation and balanced weight distribution for optimal performance. This approach not only enables rapid prototyping and iterative design but also simplifies part replacement and upgrades as the robot evolves. [All the 3D printable models and instructions can be found here]
+
+
+## Electrical design of our robot.
 
 
 ## **Parts of our ROBOT**
