@@ -22,6 +22,8 @@ typedef struct {
 }
 MotorContrl;
 ```
+We define a structure called MotorControl to organize motor control information. It contains two variables: enPin, which represents the enable pin for the motor, and directionPin, which specifies the pin that controls the motor's direction. This makes it easier to manage multiple motors by grouping related data together
+
 ```c
 const int M1 = 0;
 const int M2 = 1;
@@ -32,10 +34,11 @@ const MotorContrl MotorPin[] = { { E1Pin, M1Pin } };
 const int Forward = LOW;
 const int Backward = HIGH;
 ```
+We define several constants: M1 and M2 represent motor indices, while MotorNum indicates the number of motors, set to 1. We also create an array called MotorPin to store the configuration of the motors, using the MotorControl structure to specify the enable and direction pins. Lastly, Forward and Backward are defined to represent the LOW and HIGH signals for controlling motor direction.
+
 ```c
 //Button
 int BUTTON = A8;
-// ultra_servo(pvYaw, 'R');
 
 //Ultra
 int const ULTRA_PIN = A9;
@@ -52,6 +55,7 @@ int const BLUE_SEN = A7;
 int const STEER_SRV = 16;
 int const ULTRA_SRV = 23;
 ```
+We define various input and output pins for the robot. The BUTTON is connected to pin A8, and the ultrasonic sensor is connected to ULTRA_PIN on A9. We also declare variables for the INEX Gyro to hold yaw, roll, and pitch data, along with a byte array for receiving data. For light sensors, RED_SEN is connected to A6 and BLUE_SEN to A7. Finally, we set up servo motors with STEER_SRV on pin 16 and ULTRA_SRV on pin 23.
 
 //OpenMV
 static String receivedString = "";  // Buffer to store incoming data
