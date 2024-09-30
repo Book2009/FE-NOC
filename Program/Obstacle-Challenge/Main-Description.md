@@ -1,23 +1,28 @@
-```
+```c
 #include <Servo.h>
 #include "Mapf.h"
 #include <PID_v2.h>
 ```
 We’re using three key libraries in this project: Servo.h, Mapf.h, and PID_v2.h. The Servo.h library controls the robot’s servo motors, allowing us to move parts like steering or our ultrasonic. Mapf.h helps the robot navigate by calculating the best path while avoiding obstacles. Lastly, PID_v2.h uses a PID controller to ensure smooth and accurate movement, preventing overshooting or jerky motions.
 
-```
+```c
 Servo myservo;
 Servo myservo2;
 ```
 We’re using two servo motors in the project: myservo and myservo2. These will control two different parts of the robot, steering part and ultrasonic. Each servo is controlled separately, allowing for more complex movements.
 
-//Motor
+```c
 const int E1Pin = 10;
 const int M1Pin = 12;
+```
+```c
 typedef struct {
   byte enPin;
   byte directionPin;
-} MotorContrl;
+}
+MotorContrl;
+```
+```c
 const int M1 = 0;
 const int M2 = 1;
 const int MotorNum = 1;
@@ -26,13 +31,11 @@ const MotorContrl MotorPin[] = { { E1Pin, M1Pin } };
 
 const int Forward = LOW;
 const int Backward = HIGH;
-
+```
+```c
 //Button
 int BUTTON = A8;
 // ultra_servo(pvYaw, 'R');
-
-//PID
-PID_v2 compassPID(0.65, 0.0001, 0.035, PID::Direct);
 
 //Ultra
 int const ULTRA_PIN = A9;
@@ -48,6 +51,7 @@ int const BLUE_SEN = A7;
 // Servo
 int const STEER_SRV = 16;
 int const ULTRA_SRV = 23;
+```
 
 //OpenMV
 static String receivedString = "";  // Buffer to store incoming data
@@ -82,6 +86,9 @@ int blockDetectionCounter = 0;
 const int detectionThreshold = 5;  // Number of consecutive detections needed
 float pidOutput;
 float baseDesiredDistance = 28.5;
+
+//PID
+PID_v2 compassPID(0.65, 0.0001, 0.035, PID::Direct);
 
 void setup() {
   // put your setup code here, to run once:
