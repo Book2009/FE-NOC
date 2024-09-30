@@ -1,11 +1,15 @@
-'''
+```
 #include <Servo.h>
 #include "Mapf.h"
 #include <PID_v2.h>
-'''
+```
+We’re using three key libraries in this project: Servo.h, Mapf.h, and PID_v2.h. The Servo.h library controls the robot’s servo motors, allowing us to move parts like steering or our ultrasonic. Mapf.h helps the robot navigate by calculating the best path while avoiding obstacles. Lastly, PID_v2.h uses a PID controller to ensure smooth and accurate movement, preventing overshooting or jerky motions.
 
+```
 Servo myservo;
 Servo myservo2;
+```
+We’re using two servo motors in the project: myservo and myservo2. These will control two different parts of the robot, steering part and ultrasonic. Each servo is controlled separately, allowing for more complex movements.
 
 //Motor
 const int E1Pin = 10;
