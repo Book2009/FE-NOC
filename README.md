@@ -30,15 +30,17 @@ Support: Thanyawut Krittikanon </p>
 # Content
 `3DModels` This folder includes the 3D design of the vehicle and the rendered model of the vehicle.
 
+`FlowChart`
+
+`Program` This folder includes all programming used to participate in the WRO 2024 Future Engineers Category and all the programming flowcharts.
+
+`Robot-Photos` This folder contains photos of the vehicle from all perspectives, including side and bottom views.
+
 `Schemes` This folder contains one or more schematic diagrams in JPEG, PNG, or PDF format that depict the electromechanical components of the vehicle. These diagrams illustrate all the elements, including electronic components and motors, and show how they are interconnected.
 
-`Source Codes` This folder includes all programming used to participate in the WRO 2024 Future Engineers Category and all the programming flowcharts.
+`Team-Photos` This folder includes photos of the team participating in the WRO 2024 Future Engineers Category.
 
-`Team Photos` This folder includes photos of the team participating in the WRO 2024 Future Engineers Category.
-
-`Vehicle Photos` This folder contains photos of the vehicle from all perspectives, including side and bottom views.
-
-`video` This folder contains YouTube links that show how the robot operates to complete both missions.
+`Videos` This folder contains YouTube links that show how the robot operates to complete both missions.
 
 # **Part 1: MECHANICAL DEESIGN**
 
