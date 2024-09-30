@@ -48,7 +48,7 @@ Even with all of that, we will still use Lego parts to connect in a very precise
 
 ## Robot's Chassis
 
-The chassis of our robot, primarily constructed from 3D-printed components, forms a robust foundation for all hardware and electronics. Each part is custom-designed to meet our specific requirements and interlocks seamlessly to create a lightweight yet resilient structure. The modular design of the 3D-printed chassis allows for straightforward customization and scalability. It is engineered to accommodate motors, electronics, and the battery, ensuring proper heat dissipation and balanced weight distribution for optimal performance. This approach not only enables rapid prototyping and iterative design but also simplifies part replacement and upgrades as the robot evolves. [All the 3D printable models and instructions can be found here]().
+The chassis of our robot, primarily constructed from 3D-printed components, forms a robust foundation for all hardware and electronics. Each part is custom-designed to meet our specific requirements and interlocks seamlessly to create a lightweight yet resilient structure. The modular design of the 3D-printed chassis allows for straightforward customization and scalability. It is engineered to accommodate motors, electronics, and the battery, ensuring proper heat dissipation and balanced weight distribution for optimal performance. This approach not only enables rapid prototyping and iterative design but also simplifies part replacement and upgrades as the robot evolves. [All the 3D printable models and ihttps://github.com/Book2009/Nocturnalist-Future-Engineers/tree/main/3D_Modelsnstructions can be found here]().
 
 
 
