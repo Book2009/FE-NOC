@@ -20,8 +20,8 @@
 </p>
 
 Programmer: Pawit Nateenantasawasd </p>
-Mechanic: Pongpapat Putongkam </p>
-Support: Thanyawut Krittikanon </p>
+Designer: Pongpapat Putongkam </p>
+Supporter: Thanyawut Krittikanon </p>
 
 </p>
 
