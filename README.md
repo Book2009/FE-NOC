@@ -66,7 +66,7 @@ Supporter: Thanyawut Krittikanon </p>
 
 </p>
 
-Our goal is to win the trophy back to our high school and place first in the international competition.
+Our goal is to develop a robot that work like a self-driving car with the dream of adjusting it with real-life car. In the future, we want to invent new thing and help our country and this is the first step. And by being here in the international stage we learned and develop a lot of things such as teamwork, creativity, and vision. We also wanted to make new friends from another country. And we will use the experinced we gained from this competition to improve ourself and teach our junior.
 
 # **Part 2: MECHANICAL DESIGN**
 
