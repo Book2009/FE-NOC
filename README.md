@@ -41,7 +41,14 @@
 
 
 
-  We are **Nocturnalist**. We are a team from Bangkok, Thailand. The word **Nocturnalist** is from our behavior. It refers to a person who thrives or operates during the night. It consists of the word "Nocturnal", which means animals or people active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. Our team consists of three members: Pongpapat Putongkam, Pawit Nateenantasawasd, and Thanyawut Krittikanon. Designer, Programmer, and Supporter respectively. We have been good friends for 4 years, so we know how to work together very well. In our first attempt at this WRO category last year, we earned the opportunity to compete in the international round. But we are not careful enough, our rookie mistake gets us only in 8th place. This year, we’re returning to correct the mistakes we made last year, confident that we’ll perform even better.
+ We are **Nocturnalist**. We are a team from Bangkok, Thailand. The word **Nocturnalist** is from our behavior. It refers to a person who works or operates during the night. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. We are the third generation to use this name. The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage. This is our first generation to use this name.
+
+  <p align="center">
+    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/The%20Nocturnalists.JPG" width="700"/>
+</p>
+  
+  
+   Our team consists of three members: Pongpapat Putongkam, Pawit Nateenantasawasd, and Thanyawut Krittikanon. Designer, Programmer, and Supporter respectively. We have been good friends for 4 years, so we know how to work together very well. In our first attempt at this WRO category last year, we earned the opportunity to compete in the international round. But we are not careful enough, our rookie mistake gets us only in 8th place. This year, we’re returning to correct the mistakes we made last year, confident that we’ll perform even better.
 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/edefede8-d51c-414d-831b-b960e72755fa" width="700"/>
