@@ -44,8 +44,9 @@
   We are **Nocturnalist**. We are a team from Bangkok, Thailand. The word **Nocturnalist** is from our behavior. It refers to a person who thrives or operates during the night. It consists of the word "Nocturnal", which means animals or people active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. Our team consists of three members: Pongpapat Putongkam, Pawit Nateenantasawasd, and Thanyawut Krittikanon. Designer, Programmer, and Supporter respectively. We have been good friends for 4 years, so we know how to work together very well. In our first attempt at this WRO category last year, we earned the opportunity to compete in the international round. But we are not careful enough, our rookie mistake gets us only in 8th place. This year, we’re returning to correct the mistakes we made last year, confident that we’ll perform even better.
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/0cc32271-a7d0-4db4-8669-6ef6ca3a210b"/>
+    <img src="https://github.com/user-attachments/assets/edefede8-d51c-414d-831b-b960e72755fa" width="700"/>
 </p>
+
 
 Designer: Pongpapat Putongkam </p>
 Programmer: Pawit Nateenantasawasd </p>
