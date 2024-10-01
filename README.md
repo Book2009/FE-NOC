@@ -31,7 +31,7 @@
 `Readme` This Readme contain 3 parts.
 
   - [About Us](#about-us)
-  - [Mechanical Design](#mechanical-design)
+  - [Mechanical Design](#part-2:-mechanical-design)
 
 </p>
 
@@ -56,7 +56,7 @@ Supporter: Thanyawut Krittikanon </p>
   Our team has 3 major positions. Firstly, Pawit Nateenantasawasd (the middle person). He is the programmer of our team. He is quite introverted so he can focus for a very long time. On the other hand, Pongpapat Putongkam (the left person). He has a very short attention span, so he could come up with new ideas easily. He is the designer and builder of our robot. Lastly, Thanyawut Krittikanon (the right person). He is at the best of both worlds. He can program and design, so he is a supporter of the team. Our team name is YBR-BOK. 'YBR' stands for 'Yothinburana Robot Club', and 'BOK' comes from our nickname 'Book, O'ly, Kaopun'.
 
 
-# **Part 1: MECHANICAL DESIGN**
+# **Part 2: MECHANICAL DESIGN**
 
 Last year, our design was based entirely on Lego. This year we decided to up our game and 3d print the whole thing with ABS and PLA plastic filament reinforced with metal parts and some Lego. Using 3d printed parts allows more flexibility to be implemented and makes it easy to acquire spare parts for an emergency.
 Even with all of that, we will still use Lego parts to connect in a very precise area.
