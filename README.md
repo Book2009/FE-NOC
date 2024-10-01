@@ -29,7 +29,14 @@
 `Videos` This folder contains YouTube links that show how the robot operates to complete both missions.
 
 `Readme` This Readme contain 3 parts.
--
+-About Us
+-Robot Design
+ -Robot Overall
+ -Movement
+ -Controller 
+ -Power Management And Inspection
+-Electric Circuit And Flowchart
+-Program Explanation
 
 </p>
 
