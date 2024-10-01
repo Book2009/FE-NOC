@@ -34,14 +34,6 @@
 
 -Robot Design
 
- </p> -Robot Overall
-
- </p> -Movement
-
- </p> -Controller 
-
- </p>-Power Management And Inspection
-
 -Electric Circuit And Flowchart
 
 -Program Explanation
