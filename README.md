@@ -66,7 +66,7 @@ Supporter: Thanyawut Krittikanon </p>
 
 </p>
 
-Our goal is to develop a robot that work like a self-driving car with the dream of adjusting it with real-life car. In the future, we want to invent new thing and help our country and this is the first step. And by being here in the international stage we learned and develop a lot of things such as teamwork, creativity, and vision. We also wanted to make new friends from another country. And we will use the experinced we gained from this competition to improve ourself and teach our junior.
+Our goal is to create a robot that can operate similarly to a self-driving car, with the hope of integrating it with an actual automobile. This is the first step toward our future goal of helping our country and inventing new things. Additionally, via participating in this competition, we have developed and learned numerous skills like collaboration, imagination, and foresight. We also desired to meet new friends from other nations. Furthermore, we intend to utilize the experience we have obtained from this tournament to better ourselves and mentor our junior.
 
 # **Part 2: MECHANICAL DESIGN**
 
