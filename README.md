@@ -30,12 +30,12 @@
 
 `Readme` This Readme contain 3 parts.
 
-  - [About Us](#about-us)
+  - [About Us](#part-1-about-us)
   - [Mechanical Design](#part-2-mechanical-design)
 
 </p>
 
-# **About Us.**
+# **Part 1: About Us.**
 
 ### **This is our team.**
 
