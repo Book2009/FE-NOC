@@ -46,7 +46,8 @@
   <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/The%20Nocturnalists.JPG" width="700"/>
 </p>
-  
+  </p>
+  </p>
   
    Our team consists of three members: Pongpapat Putongkam, Pawit Nateenantasawasd, and Thanyawut Krittikanon. Designer, Programmer, and Supporter respectively. We have been good friends for 4 years, so we know how to work together very well. In our first attempt at this WRO category last year, we earned the opportunity to compete in the international round. But we are not careful enough, our rookie mistake gets us only in 8th place. This year, we’re returning to correct the mistakes we made last year, confident that we’ll perform even better.
 
