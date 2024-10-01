@@ -31,7 +31,7 @@
 `Readme` This Readme contain 3 parts.
 
   - [About Us](#about-us)
-  - [Mechanical Design](#part-2:-mechanical-design)
+  - [Mechanical Design](#part-2-mechanical-design)
 
 </p>
 
