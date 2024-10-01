@@ -64,6 +64,9 @@ Supporter: Thanyawut Krittikanon </p>
 
   Our team has 3 major positions. Firstly, Pawit Nateenantasawasd (the middle person). He is the programmer of our team. He is quite introverted so he can focus for a very long time. On the other hand, Pongpapat Putongkam (the left person). He has a very short attention span, so he could come up with new ideas easily. He is the designer and builder of our robot. Lastly, Thanyawut Krittikanon (the right person). He is at the best of both worlds. He can program and design, so he is a supporter of the team. Our team name is YBR-BOK. 'YBR' stands for 'Yothinburana Robot Club', and 'BOK' comes from our nickname 'Book, O'ly, Kaopun'.
 
+</p>
+
+Our goal is to win the trophy back to our high school and place first in the international competition.
 
 # **Part 2: MECHANICAL DESIGN**
 
