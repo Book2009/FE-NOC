@@ -30,13 +30,8 @@
 
 `Readme` This Readme contain 3 parts.
 
--[About Us](#about-us)
-
--Robot Design
-
--Electric Circuit And Flowchart
-
--Program Explanation
+  - [About Us](#about-us)
+  - [Mechanical Design](#mechanical-design)
 
 </p>
 
