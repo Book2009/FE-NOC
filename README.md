@@ -41,7 +41,9 @@
 
 
 
- We are **Nocturnalist**. We are a team from Bangkok, Thailand. The word **Nocturnalist** is from our behavior. It refers to a person who works or operates during the night. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. We are the third generation to use this name. The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
+ We are **Nocturnalist**. We are a team from Bangkok, Thailand. The word **Nocturnalist** is from our behavior. It refers to a person who works or operates during the night. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. 
+ 
+ We are the third generation to use this name. The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
  This is our first generation to use this name.
 
   <p align="center">
@@ -63,14 +65,14 @@
 
 There are three members in our team, all extremely focused and dedicated to their positions, performing functions as follows: 
  
-Pongpapat Putongkam – The Designer 
-We have Pongpapat, our resident robotic designer who is stereotypically imaginative. He was selected for this role due to his ability to form ideas quite literally out of nothing, which is often facilitated by short period of meditation. Because he can picture the idea of the design in his mind, it is easy to take the ideas and put it into a design that is eye catching and unique. 
- 
+ Thanyawut Krittikanon – The Documentarian 
+Standing on the left is Thanyawut who is the in charge of documentation. He possesses both robotics and programming skills which helps him assist us in ensuring we are in order. Thanyawut brings with him not only skills in the mechanical aspects of things but also in programming, which ensures recordings of our procedures. This will not only enable us to move forward to the next stage but to also improve on the stages we have gone through.
+
 Pawit Nateenantasawasd – The Programmer 
 In the middle is Pawit, our talented coder. He may seem quiet at first, but his personality contributes to his work on coding “puzzles” in a very accurate and neat manner. It is his ability to focus which allows him to take up the challenge of programming very complicated systems like ours. It is this concentration that in the end enables us to have robots that work perfectly well. Pawit is always busy, it seems, and his engagement is what makes this group effective. 
- 
-Thanyawut Krittikanon – The Documentarian 
-Standing on the left is Thanyawut who is the in charge of documentation. He possesses both robotics and programming skills which helps him assist us in ensuring we are in order. Thanyawut brings with him not only skills in the mechanical aspects of things but also in programming, which ensures recordings of our procedures. This will not only enable us to move forward to the next stage but to also improve on the stages we have gone through.
+
+Pongpapat Putongkam – The Designer 
+We have Pongpapat, our resident robotic designer who is stereotypically imaginative. He was selected for this role due to his ability to form ideas quite literally out of nothing, which is often facilitated by short period of meditation. Because he can picture the idea of the design in his mind, it is easy to take the ideas and put it into a design that is eye catching and unique.  
 
 </p>
 
