@@ -37,7 +37,9 @@
 
 # **Part 1: About Us.**
 
-### **This is our team.**
+## **This is our team.**
+
+### **Team history**
 
  We are **The Nocturnalist**, team from Bangkok, Thailand. Our team name "Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. 
  
@@ -49,7 +51,8 @@
 </p>
   </p>
   </p>
-  
+
+### **Our team**
    The team consists of three intimate friends Pawit Nateenantasawasd, Pongpapat Putongkam, and Thanyawut Krittikanon. We have been together for four years, forming a strong bond that enhances our collaborative efforts. We first met in high school, sharing the same class, and after some conversation, we discovered our similarities. For instance, we both share a passion for robotics and competition, which led us to join the YB-Robot club together. Much of what we know today has been learned from the experiences of our seniors, who have taught us valuable lessons and helped shape who we are now. This journey has brought us to this international stage.
 
    Last year, with great enthusiasm and spirits, we joined the WRO. Reaching the international round was already a great honor, but we were soon to realize that in order to win, one needs more than only enthusiasm. Our mistakes made us take the 8th position, a respectable position indeed. 
@@ -75,9 +78,13 @@ We have Pongpapat, our resident robotic designer who is stereotypically imaginat
 
 </p>
 
+### **Our Goal And Passion**
+
 Our goal is to create a robot that can operate similarly to a self-driving car, with the hope of integrating it with an actual automobile. This is the first step toward our future goal of helping our country and inventing new things. Additionally, via participating in this competition, we have developed and learned numerous skills like collaboration, imagination, and foresight. We also desired to meet new friends from other nations in order to exchange cultures. Furthermore, we intend to utilize the experience we have obtained from this tournament to better ourselves and mentor our junior at school.
 
-Additionaly, we made a detailed working plan showing our devotion, cooperation, and planning capabilities. Such a plan will enable us to coordinate our time and resources effectively and efficiently in achieving our lofty pursuits. 
+### **Work Schedule**
+
+We made a detailed working plan showing our devotion, cooperation, and planning capabilities. Such a plan will enable us to coordinate our time and resources effectively and efficiently in achieving our lofty pursuits. 
 
 <p align="center">
     <img src="https://github.com/ThanyawutII/Test/blob/main/Screenshot%202024-10-02%20154054.png" />
