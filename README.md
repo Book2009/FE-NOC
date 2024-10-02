@@ -41,7 +41,8 @@
 
 
 
- We are **Nocturnalist**. We are a team from Bangkok, Thailand. The word **Nocturnalist** is from our behavior. It refers to a person who works or operates during the night. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. We are the third generation to use this name. The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage. This is our first generation to use this name.
+ We are **Nocturnalist**. We are a team from Bangkok, Thailand. The word **Nocturnalist** is from our behavior. It refers to a person who works or operates during the night. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. We are the third generation to use this name. The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
+ This is our first generation to use this name.
 
   <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/The%20Nocturnalists.JPG" width="700"/>
@@ -49,20 +50,27 @@
   </p>
   </p>
   
-   Our team consists of three members: Pongpapat Putongkam, Pawit Nateenantasawasd, and Thanyawut Krittikanon. Designer, Programmer, and Supporter respectively. We have been good friends for 4 years, so we know how to work together very well. In our first attempt at this WRO category last year, we earned the opportunity to compete in the international round. But we are not careful enough, our rookie mistake gets us only in 8th place. This year, we’re returning to correct the mistakes we made last year, confident that we’ll perform even better.
+   The team consists of three intimate friends Pawit Nateenantasawasd, Pongpapat Putongkam, and Thanyawut Krittikanon, our . We have been together for four years, developing a close attachment that positively affects our collaboration of working. 
+
+   Last year, with great enthusiasm and spirits, we joined the WRO. Reaching the international round was already a great honor, but we were soon to realize that in order to win, one needs more than only enthusiasm. Our mistakes made us take the 8th position, a respectable position indeed 
+   This year we will come back with more confident, and wiser from past experiences. We honed our strategies and prepared extensively.  
+
 
 <p align="center">
     <img src="https://github.com/user-attachments/assets/edefede8-d51c-414d-831b-b960e72755fa" width="700"/>
 </p>
 
 
-Designer: Pongpapat Putongkam </p>
-Programmer: Pawit Nateenantasawasd </p>
-Supporter: Thanyawut Krittikanon </p>
-
-</p>
-
-  Our team has 3 major positions. Firstly, Pawit Nateenantasawasd (the middle person). He is the programmer of our team. He is quite introverted so he can focus for a very long time. On the other hand, Pongpapat Putongkam (the left person). He has a very short attention span, so he could come up with new ideas easily. He is the designer and builder of our robot. Lastly, Thanyawut Krittikanon (the right person). He is at the best of both worlds. He can program and design, so he is a supporter of the team. Our team name is YBR-BOK. 'YBR' stands for 'Yothinburana Robot Club', and 'BOK' comes from our nickname 'Book, O'ly, Kaopun'.
+There are three members in our team, all extremely focused and dedicated to their positions, performing functions as follows: 
+ 
+Pongpapat Putongkam – The Designer 
+We have Pongpapat, our resident robotic designer who is stereotypically imaginative. He was selected for this role due to his ability to form ideas quite literally out of nothing, which is often facilitated by short period of meditation. Because he can picture the idea of the design in his mind, it is easy to take the ideas and put it into a design that is eye catching and unique. 
+ 
+Pawit Nateenantasawasd – The Programmer 
+In the middle is Pawit, our talented coder. He may seem quiet at first, but his personality contributes to his work on coding “puzzles” in a very accurate and neat manner. It is his ability to focus which allows him to take up the challenge of programming very complicated systems like ours. It is this concentration that in the end enables us to have robots that work perfectly well. Pawit is always busy, it seems, and his engagement is what makes this group effective. 
+ 
+Thanyawut Krittikanon – The Documentarian 
+Standing on the left is Thanyawut who is the in charge of documentation. He possesses both robotics and programming skills which helps him assist us in ensuring we are in order. Thanyawut brings with him not only skills in the mechanical aspects of things but also in programming, which ensures recordings of our procedures. This will not only enable us to move forward to the next stage but to also improve on the stages we have gone through.
 
 </p>
 
