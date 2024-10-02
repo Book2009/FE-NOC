@@ -45,7 +45,7 @@
  This is our first generation to use this name.
 
   <p align="center">
-    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/The%20Nocturnalists.JPG" width="300"/>
+    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/The%20Nocturnalists.JPG" width="500"/>
 </p>
   </p>
   </p>
