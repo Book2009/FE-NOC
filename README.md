@@ -39,7 +39,7 @@
 
 ## **This is our team.**
 
-### **Team history**
+### **Team History**
 
  We are **The Nocturnalist**, team from Bangkok, Thailand. Our team name "Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. 
  
@@ -52,7 +52,7 @@
   </p>
   </p>
 
-### **Our team**
+### **Our Team**
    The team consists of three intimate friends Pawit Nateenantasawasd, Pongpapat Putongkam, and Thanyawut Krittikanon. We have been together for four years, forming a strong bond that enhances our collaborative efforts. We first met in high school, sharing the same class, and after some conversation, we discovered our similarities. For instance, we both share a passion for robotics and competition, which led us to join the YB-Robot club together. Much of what we know today has been learned from the experiences of our seniors, who have taught us valuable lessons and helped shape who we are now. This journey has brought us to this international stage.
 
    Last year, with great enthusiasm and spirits, we joined the WRO. Reaching the international round was already a great honor, but we were soon to realize that in order to win, one needs more than only enthusiasm. Our mistakes made us take the 8th position, a respectable position indeed. 
