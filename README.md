@@ -39,9 +39,7 @@
 
 ### **This is our team.**
 
-
-
- We are **Nocturnalist**. We are a team from Bangkok, Thailand. The word **Nocturnalist** is from our behavior. It refers to a person who works or operates during the night. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. 
+ We are **Nocturnalist**. We are a team from Bangkok, Thailand. We Nocturnalists are what is called “night owls”. We work mainly at night because somehow our brains are active when the sky becomes pitch black. Our mascot, the owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. 
  
  We are the third generation to use this name. The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
  This is our first generation to use this name.
@@ -83,6 +81,11 @@ Additionaly, we made a detailed working plan showing our devotion, cooperation, 
 <p align="center">
     <img src="https://github.com/ThanyawutII/Test/blob/main/Screenshot%202024-10-02%20121425.png" />
 </p>
+<p align="center">
+  " <em>We’re a team; we work as a whole, think as though we have a hundred heads, and know each other as if we’ve been together for years. We’ve come together, gathered the hands of each member, and moved forward with one, united mind.</em> "
+</p>
+
+
 
 # **Part 2: MECHANICAL DESIGN**
 
