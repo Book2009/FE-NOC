@@ -83,6 +83,9 @@ Additionaly, we made a detailed working plan showing our devotion, cooperation, 
 </p>
 <p align="center">
   " <em>We’re a team; we work as a whole, think as though we have a hundred heads, and know each other as if we’ve been together for years. We’ve come together, gathered the hands of each member, and moved forward with one, united mind.</em> "
+
+  <p align="center">
+  -The Nocturnalists
 </p>
 
 
