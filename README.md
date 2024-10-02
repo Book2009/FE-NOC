@@ -79,7 +79,7 @@ Our goal is to create a robot that can operate similarly to a self-driving car, 
 Additionaly, we made a detailed working plan showing our devotion, cooperation, and planning capabilities. Such a plan will enable us to coordinate our time and resources effectively and efficiently in achieving our lofty pursuits. 
 
 <p align="center">
-    <img src="https://github.com/ThanyawutII/Test/blob/main/Screenshot%202024-10-02%20121425.png" />
+    <img src="https://github.com/ThanyawutII/Test/blob/main/Screenshot%202024-10-02%20154054.png" />
 </p>
 <p align="center">
   " <em>We’re a team; we work as a whole, think as though we have a hundred heads, and know each other as if we’ve been together for years. We’ve come together, gathered the hands of each member, and moved forward with one, united mind.</em> "
