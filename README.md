@@ -92,8 +92,15 @@ Additionaly, we made a detailed working plan showing our devotion, cooperation, 
 
 # **Part 2: MECHANICAL DESIGN**
 
-Last year, our design was based entirely on Lego. This year we decided to up our game and 3D print the whole thing with ABS and PLA plastic filament reinforced with metal parts and some Lego. Using 3d printed parts allows more flexibility to be implemented and makes it easy to acquire spare parts for an emergency.
-Even with all of that, we will still use Lego parts to connect in a very precise area.
+### The Robot
+
+Designing a robot for this competition can be a challenging task. It has to be compact, lightweight, durable, and equipped with all the necessary functions for this Future Engineers competition. The robot must have four wheels with steering on either front or rear wheels, making component selection important to build our robot. After we've chosen the required components, then we focus on how to put the part together effectively. We chose a 3D-printed part and spent significant time ensuring it fits within the size regulations. 
+
+When designing our robot, we use a 3D modeling application called Blender. Getting the scale right is important since even a small mistake can cause parts not to interlock seamlessly. We also had to do some research to figure out the best filament to use. We discovered that ABS(Acrylonitrile Butadiene Styrene) worked best for our robot. Once the design was complete, we printed the parts and assembled them with the other components to see the result. Green and red should not be use with the robot since it can confuse the camera in the process of performing its task as it the same color as obstacle. 
+
+For the design, we placed the gyro around the middle-top of the robot to get the most accurate output, while the camera was positioned at the front of the gyro to detect objects quickly.
+
+Our robot has two servos, one on the bottom front and one on the top front. The bottom front servo is used to steer the wheel. Then, we added a top servo that rotates our ultrasonic. We use an ultrasonic to keep our robot out of the wall. Finally, we place our motor at the bottom back of the robot, and to ensure that it drives both wheels at the back, we use a gear differential from Lego.
 
 
 ## Robot's Chassis
