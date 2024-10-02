@@ -39,7 +39,7 @@
 
 ### **This is our team.**
 
- We are **Nocturnalist**. We are a team from Bangkok, Thailand. We Nocturnalists are what is called “night owls”. We work mainly at night because somehow our brains are active when the sky becomes pitch black. Our mascot, the owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. 
+ We are **Nocturnalist**, a team from Bangkok, Thailand. Our team name "Nocturnalists" are what is called “night owls”. When the sky becomes pitch black is when we are active the most. Our mascot, the owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime. 
  
  We are the third generation to use this name. The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
  This is our first generation to use this name.
