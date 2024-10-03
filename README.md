@@ -100,7 +100,7 @@ This is Pawit, our talented coder. He specialize in multiple coding language suc
 <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Members/Pongpapat%20Putongkam.png" width="400"/>
 </p>
-We have Pongpapat, our resident robotic designer who is stereotypically imaginative. He is responsible for our robot by designing it with both 3D and Lego. He uses Blender to design our 3D robot model. Sometimes, he built a Lego robot chassis to test if the new components work before he starts to design it in 3D parts. He was selected for this role due to his ability to form ideas quite literally out of nothing, which is often facilitated by short period of meditation. Because he can picture the idea of the design in his mind, it is easy to take the ideas and put it into a design that is eye catching and unique.  
+We have Pongpapat, our resident robotic designer who is stereotypically imaginative. He is responsible for our robot by designing it with both 3D and Lego parts. He uses Blender to design our 3D robot model. Sometimes, he built a Lego robot chassis to test if the new components work before he starts to design it in 3D parts. He also has an ability to form ideas quite literally out of nothing. He can picture the idea of the design in his mind, it is easy to take the ideas and put it into a design that is eye catching and unique.  
 
 </p>
 <hr>
