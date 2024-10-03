@@ -46,14 +46,19 @@
  Our team name "Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime.
 
 The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
- This is our first generation to use this name.
-
+ This is our first generation.
   <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/The%20Nocturnalists.JPG" width="500"/>
 </p>
   </p>
   </p>
-Next generation to use this name was 
+This is the second generation to use this name. They compete in FLL competion national stage. They perform well and place first in the competition. The project used a lot of resource which take numerous people from our club. </p>
+This is our second generation.
+ <p align="center">
+    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Nocturnalists%20gen2.jpg" width="500"/>
+</p>
+  </p>
+  </p>
 
 
 ### **Our Team**
