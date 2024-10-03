@@ -79,10 +79,10 @@ This is the third generation
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Formal.png" width="500"/>
 </p>
 
-
+<hr>
 There are three members in our team, all extremely focused and dedicated to their positions, performing functions as follows: 
  
-#### 1. Thanyawut Krittikanon – The Documentarian 
+#### 1. Thanyawut Krittikanon – Team coordinator
 <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Members/Thanyawut%20Krittikanon.png" width="400"/>
 </p>
