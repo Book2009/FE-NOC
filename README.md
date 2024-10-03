@@ -44,9 +44,9 @@
 
 ### **Team History** 
  
- Our team name "Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime.
+ Our team name "The Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime.
 
-The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in national and got the Innovation Solution Award in international stage.</p>
+The name The Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in national and got the Innovation Solution Award in international stage.</p>
  This is the first generation.
   <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/The%20Nocturnalists.JPG" width="500"/>
@@ -84,7 +84,7 @@ This is the third generation
 <hr>
 There are three members in our team, all extremely focused and dedicated to their positions, performing functions as follows: 
  
-#### 1. Thanyawut Krittikanon – Team coordinator
+#### 1. Thanyawut Krittikanon – Team Coordinator And Document Designer
 <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Members/Thanyawut%20Krittikanon.png" width="400"/>
 </p>
@@ -94,18 +94,18 @@ Thanyawut is in charge of documentation. He possesses both robotics and programm
 <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Members/Pawit%20Nateenantasawasd.png" width="400"/>
 </p>
-This is Pawit, our talented coder. He may seem quiet at first, but his personality contributes to his work on coding “puzzles” in a very accurate and neat manner. It is his ability to focus which allows him to take up the challenge of programming very complicated systems like ours. It is this concentration that in the end enables us to have robots that work perfectly well. Pawit is always busy, it seems, and his engagement is what makes this group effective. 
+This is Pawit, our talented coder. He specialize in multiple coding language such as C++, C, Python, Micropython, HTML, etc. He may seem quiet at first, but his personality contributes to his work on coding “puzzles” in a very accurate and neat manner. It is his ability to focus which allows him to take up the challenge of programming very complicated systems like ours. It is this concentration that in the end enables us to have robots that work perfectly well. Pawit is always busy, it seems, and his engagement is what makes this group effective. 
 
-#### 3. Pongpapat Putongkam – The Designer 
+#### 3. Pongpapat Putongkam – The Mechanic And Constructor
 <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Members/Pongpapat%20Putongkam.png" width="400"/>
 </p>
-We have Pongpapat, our resident robotic designer who is stereotypically imaginative. He was selected for this role due to his ability to form ideas quite literally out of nothing, which is often facilitated by short period of meditation. Because he can picture the idea of the design in his mind, it is easy to take the ideas and put it into a design that is eye catching and unique.  
+We have Pongpapat, our resident robotic designer who is stereotypically imaginative. He is responsible for our robot by designing it with both 3D and Lego. He uses Blender to design our 3D robot model. Sometimes, he built a Lego robot chassis to test if the new components work before he starts to design it in 3D parts. He was selected for this role due to his ability to form ideas quite literally out of nothing, which is often facilitated by short period of meditation. Because he can picture the idea of the design in his mind, it is easy to take the ideas and put it into a design that is eye catching and unique.  
 
 </p>
 <hr>
 
-### **Our Goal And Passion**
+### **Our Vision And Goal**
 
 Our goal is to create a robot that can operate similarly to a self-driving car, with the hope of integrating it with an actual automobile. This is the first step toward our future goal of helping our country and inventing new things. Additionally, via participating in this competition, we have developed and learned numerous skills like collaboration, imagination, and foresight. We also desired to meet new friends from other nations in order to exchange cultures. Furthermore, we intend to utilize the experience we have obtained from this tournament to better ourselves and mentor our junior at school.
 
