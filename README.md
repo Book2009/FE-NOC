@@ -84,7 +84,7 @@ There are three members in our team, all extremely focused and dedicated to thei
  
 #### 1. Thanyawut Krittikanon – The Documentarian 
 <p align="center">
-    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Thanyawut%20Krittikanon.png" width="400"/>
+    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Members/Thanyawut%20Krittikanon.png" width="400"/>
 </p>
 Standing on the right is Thanyawut who is the in charge of documentation. He possesses both robotics and programming skills which helps him assist us in keeping our processes organized. He also ensures that every procedure and system we work on is accurately done correctly, helping us maintain a clear workflow. This will not only enable us to move forward to the next stage but to also improve on the stages we have gone through.
 
