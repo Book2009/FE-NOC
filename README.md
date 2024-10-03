@@ -57,9 +57,9 @@ This is the second generation.
  <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Nocturnalists%20gen2.jpg" width="500"/>
 </p>
+  </p> 
   </p>
-  </p>
-Currently in 2024, we are the third generation. This name has been used in a few competition before by our senior. So we decided to use it again. And by using it, there is a responsibility since our senior perform excellently. We are hoping to keep this name on the winning streak and make them proud. </p>
+Currently in 2024, we are a part of the third generation. This name has been used before by our senior, and because of its meaning. So, we decided to use it again. And by using it, there is a responsibility since our senior perform excellently. We are hoping to keep this name on the winning streak and make them proud. </p>
 This is the third generation  
  <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Nocturnalists%20gen3.jpg" width="500"/>
