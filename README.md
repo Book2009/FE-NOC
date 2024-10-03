@@ -76,7 +76,7 @@ This is the third generation.
 
 
 <p align="center">
-    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Formal.png" width="700"/>
+    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Formal.png" width="500"/>
 </p>
 
 
