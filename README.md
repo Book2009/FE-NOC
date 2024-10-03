@@ -39,13 +39,13 @@
 
 ## **This is our team.**
 
- We are **The Nocturnalist**, team from Bangkok, Thailand. We are a part of YB-Robot club from Yothinburana School with our mentor, Punnapon Tanasnitikul. This is our club website https://ybrobot.club/. The club was established in 2009 with the first name being “YB Dream Team”. 
+ We are **The Nocturnalist**, team from Bangkok, Thailand. We are a part of YB-Robot club from Yothinburana School with our mentor, Punnapon Tanasnitikul. This is our club website https://ybrobot.club/. The club was established in 2009 with the first name being “YB Dream Team”. Last year we were the team called "Zenith" in this comepetition, and we secured 8th place.
 
 ### **Team History** 
  
  Our team name "Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime.
 
- We are the third generation to use this name. The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
+The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
  This is our first generation to use this name.
 
   <p align="center">
@@ -53,6 +53,8 @@
 </p>
   </p>
   </p>
+Next generation to use this name was 
+
 
 ### **Our Team**
    The team consists of three intimate friends Pawit Nateenantasawasd, Pongpapat Putongkam, and Thanyawut Krittikanon. We have been together for four years, forming a strong bond that enhances our collaborative efforts. We first met in high school, sharing the same class, and after some conversation, we discovered our similarities. For instance, we both share a passion for robotics and competition, which led us to join the YB-Robot club together. Much of what we know today has been learned from the experiences of our seniors, who have taught us valuable lessons and helped shape who we are now. This journey has brought us to this international stage.
