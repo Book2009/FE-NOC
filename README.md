@@ -76,19 +76,22 @@ This is the third generation.
 
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/edefede8-d51c-414d-831b-b960e72755fa" width="700"/>
+    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Formal.png" width="700"/>
 </p>
 
 
 There are three members in our team, all extremely focused and dedicated to their positions, performing functions as follows: 
  
-1. Thanyawut Krittikanon – The Documentarian 
+#### 1. Thanyawut Krittikanon – The Documentarian 
+<p align="center">
+    <img src="" width="700"/>
+</p>
 Standing on the left is Thanyawut who is the in charge of documentation. He possesses both robotics and programming skills which helps him assist us in keeping our processes organized. He also ensures that every procedure and system we work on is accurately done correctly, helping us maintain a clear workflow. This will not only enable us to move forward to the next stage but to also improve on the stages we have gone through.
 
-2. Pawit Nateenantasawasd – The Programmer 
+#### 2. Pawit Nateenantasawasd – The Programmer 
 In the middle is Pawit, our talented coder. He may seem quiet at first, but his personality contributes to his work on coding “puzzles” in a very accurate and neat manner. It is his ability to focus which allows him to take up the challenge of programming very complicated systems like ours. It is this concentration that in the end enables us to have robots that work perfectly well. Pawit is always busy, it seems, and his engagement is what makes this group effective. 
 
-3. Pongpapat Putongkam – The Designer 
+#### 3. Pongpapat Putongkam – The Designer 
 We have Pongpapat, our resident robotic designer who is stereotypically imaginative. He was selected for this role due to his ability to form ideas quite literally out of nothing, which is often facilitated by short period of meditation. Because he can picture the idea of the design in his mind, it is easy to take the ideas and put it into a design that is eye catching and unique.  
 
 </p>
