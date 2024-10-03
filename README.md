@@ -39,13 +39,13 @@
 
 ## **This is our team.**
 
- We are **The Nocturnalist**, team from Bangkok, Thailand. We are a part of YB-Robot club from Yothinburana School with our mentor, Punnapon Tanasnitikul. This is our club website https://ybrobot.club/. The club was established in 2009 with the first name being “YB Dream Team”. Last year we were the team called "Zenith" in this comepetition, and we secured 8th place.
+ We are **The Nocturnalist**, team from Bangkok, Thailand. We are a part of YB-Robot club from Yothinburana School with our mentor, Punnapon Tanasnitikul. This is our club website https://ybrobot.club/. The club was established in 2009 with the first name being “YB Dream Team”. Last year, we also attend in WRO 2023 that took place in Panama.
 
 ### **Team History** 
  
  Our team name "Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime.
 
-The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
+The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in national and got the Innovation Solution Award in international stage.</p>
  This is the first generation.
   <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/The%20Nocturnalists.JPG" width="500"/>
@@ -59,8 +59,8 @@ This is the second generation.
 </p>
   </p>
   </p>
-Currently, we are the third generation. Using this name has a responsibility since our senior perform excellently. We are hoping to keep this name on the winning streak and make them proud. </p>
-This is the third generation. 
+Currently in 2024, we are the third generation. This name has been used in a few competition before by our senior. So we decided to use it again. And by using it, there is a responsibility since our senior perform excellently. We are hoping to keep this name on the winning streak and make them proud. </p>
+This is the third generation  
  <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Nocturnalists%20gen3.jpg" width="500"/>
 </p>
