@@ -46,20 +46,26 @@
  Our team name "Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime.
 
 The name Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in both national and international stage.</p>
- This is our first generation.
+ This is the first generation.
   <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/The%20Nocturnalists.JPG" width="500"/>
 </p>
   </p>
   </p>
-This is the second generation to use this name. They compete in FLL competion national stage. They perform well and place first in the competition. The project used a lot of resource which take numerous people from our club. </p>
-This is our second generation.
+This is the second generation that use this name. They compete in FLL competion national stage 2021. Due to the well known disease "COVID-19" making the competition online. They perform well and place first. The project used a lot of resource which take numerous people from our club. </p>
+This is the second generation.
  <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Nocturnalists%20gen2.jpg" width="500"/>
 </p>
   </p>
   </p>
-
+Currently, we are the third generation. Using this name has a responsibility since our senior perform excellently. We are hoping to keep this name on the winning streak and make them proud. </p>
+This is the third generation. 
+ <p align="center">
+    <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Nocturnalists%20gen3.jpg" width="500"/>
+</p>
+  </p>
+  </p>
 
 ### **Our Team**
    The team consists of three intimate friends Pawit Nateenantasawasd, Pongpapat Putongkam, and Thanyawut Krittikanon. We have been together for four years, forming a strong bond that enhances our collaborative efforts. We first met in high school, sharing the same class, and after some conversation, we discovered our similarities. For instance, we both share a passion for robotics and competition, which led us to join the YB-Robot club together. Much of what we know today has been learned from the experiences of our seniors, who have taught us valuable lessons and helped shape who we are now. This journey has brought us to this international stage.
