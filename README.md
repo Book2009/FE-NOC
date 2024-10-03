@@ -40,6 +40,7 @@
 ## **This is our team.**
 
  We are **The Nocturnalist**, team from Bangkok, Thailand. We are a part of YB-Robot club from Yothinburana School with our mentor, Punnapon Tanasnitikul. This is our club website https://ybrobot.club/. The club was established in 2009 with the first name being “YB Dream Team”. Last year, we also attend in WRO 2023 that took place in Panama.
+ <hr>
 
 ### **Team History** 
  
@@ -66,6 +67,7 @@ This is the third generation
 </p>
   </p>
   </p>
+  <hr>
 
 ### **Our Team**
    The team consists of three intimate friends Pawit Nateenantasawasd, Pongpapat Putongkam, and Thanyawut Krittikanon. We have been together for four years, forming a strong bond that enhances our collaborative efforts. We first met in high school, sharing the same class, and after some conversation, we discovered our similarities. For instance, we both share a passion for robotics and competition, which led us to join the YB-Robot club together. Much of what we know today has been learned from the experiences of our seniors, who have taught us valuable lessons and helped shape who we are now. This journey has brought us to this international stage.
@@ -101,10 +103,13 @@ This is Pawit, our talented coder. He may seem quiet at first, but his personali
 We have Pongpapat, our resident robotic designer who is stereotypically imaginative. He was selected for this role due to his ability to form ideas quite literally out of nothing, which is often facilitated by short period of meditation. Because he can picture the idea of the design in his mind, it is easy to take the ideas and put it into a design that is eye catching and unique.  
 
 </p>
+<hr>
 
 ### **Our Goal And Passion**
 
 Our goal is to create a robot that can operate similarly to a self-driving car, with the hope of integrating it with an actual automobile. This is the first step toward our future goal of helping our country and inventing new things. Additionally, via participating in this competition, we have developed and learned numerous skills like collaboration, imagination, and foresight. We also desired to meet new friends from other nations in order to exchange cultures. Furthermore, we intend to utilize the experience we have obtained from this tournament to better ourselves and mentor our junior at school.
+
+<hr>
 
 ### **Work Schedule**
 
@@ -123,6 +128,7 @@ We made a detailed working plan showing our devotion, cooperation, and planning 
   <p align="center">
   -The Nocturnalists
 </p>
+<hr>
 
 
 
