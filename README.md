@@ -112,7 +112,7 @@ We want to create a robot that can operate similarly to a self-driving car, with
 
 ### **Work Schedule**
 
-We made a detailed working plan showing our devotion, cooperation, and strategic planning abilities. This detailed plan outlines clear timelines and task delegation ensuring that every team member is fully aware of their responsibilities and deadlines. By prioritizing tasks and setting milestones, we can effectively manage our time, monitor progress, and adapt to any unforeseen challenges. This approach not only boosts productivity but also enhances collaboration, allowing us to stay focused and unified in achieving our ambitious goals. Our plan serves as a roadmap, driving us towards success with precision and efficiency.
+We created a thorough work plan demonstrating our devotion and cooperation and strategic planning skills. these are the well-defined people as well as deadlines that make sure that every individual in the team understands what is expected of them and by when. Setting priorities and milestones also help in effective time management, progress tracking and coping up with any unplanned activities. This approach boosts productivity in addition to teamwork as one can focus on the task at hand without risking wandering away. The plan we created is a guiding document that speeds us up and provides us with accuracy in achieving success.
 
 <p align="center">
     <img src="https://github.com/ThanyawutII/Test/blob/main/Screenshot%202024-10-03%20133713.png" />
