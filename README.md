@@ -115,11 +115,11 @@ We want to create a robot that can operate similarly to a self-driving car, with
 We created a thorough work plan demonstrating our devotion and cooperation and strategic planning skills. these are the well-defined people as well as deadlines that make sure that every individual in the team understands what is expected of them and by when. Setting priorities and milestones also help in effective time management, progress tracking and coping up with any unplanned activities. This approach boosts productivity in addition to teamwork as one can focus on the task at hand without risking wandering away. The plan we created is a guiding document that speeds us up and provides us with accuracy in achieving success.
 
 <p align="center">
-    <img src="https://github.com/ThanyawutII/Test/blob/main/Screenshot%202024-10-03%20133713.png" />
+    <img src="https://github.com/ThanyawutII/Test/blob/main/Screenshot%202024-10-04%20124056.png" />
 </p>
 
 <p align="center">
-    <img src="https://github.com/ThanyawutII/Test/blob/main/Screenshot%202024-10-03%20143954.png" />
+    <img src="https://github.com/ThanyawutII/Test/blob/main/Screenshot%202024-10-04%20124152.png" />
 </p>
 <p align="center">
   " <em>We’re a team; we work as a whole, think as though we have a hundred heads, and know each other as if we’ve been together for years. We’ve come together, gathered the hands of each member, and moved forward with one, united mind.</em> "
