@@ -210,7 +210,7 @@ The reasons that we use Bambu Lab X1-Carbon 3D printer because this printer is a
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/3D/ABS%20Filament.png" width = "400">
 ABS (acrylonitrile butadiene styrene) is probably the most common filament used in 3D printing. It is especially valuable in strong plastic parts that must remain resilient in the face of temperature swings. It is mainly used in FDM (fused deposition modeling) 3D printers. ABS is a thermoplastic polymer composed of three monomers: acrylonitrile, butadiene, and styrene. The material was first patented in the 1940s and very quickly gained popularity.
 
-<hr>
+<hr><br>
 
 ### Movement Parts
 
@@ -233,7 +233,7 @@ It's a simple motor, and we chose this motor because of its easy connection to o
 
 <hr>
 
-- ## **Servo** : GEEKSERVO 2kg 360 Degrees Servo.
+- #### **Servo** : GEEKSERVO 2kg 360 Degrees Servo.
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/servo.png" width = "400">
 We use this servo for steering the robot and employ an ultrasonic sensor for rotation. This servo is compatible with LEGO, making it easy and convenient to build the robot by just putting studs in the hole on the side. We like how you can connect two axles to the dual outputs on this servo so you can power two wheels or gears, or mount the servo securely inside articulated limbs and other contraptions. Additionally, the gears inside these servos will 'slip' when the blocking load is too high instead of jamming, helping avoid damage to your servos and boards.
 
@@ -243,7 +243,7 @@ The wires are a standard servo pinout -
 -	Yellow - data
 
 
-### Electrical Specifications
+##### Electrical Specifications
 
 | Specification     | Value    |
 |-------------------|----------|
@@ -255,17 +255,87 @@ The wires are a standard servo pinout -
 
 <hr>
 
-- ## **Differential** : Technic, Gear Differential With Inner Tabs and Closed Center, 28 Bevel Teeth
+- #### **Differential** : Technic, Gear Differential With Inner Tabs and Closed Center, 28 Bevel Teeth
 <image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/differential%20gear.png" width = "400">
 This part ensure that both wheels have the power from the motor, which makes the robot drive forward. This part has gear teeth on the side, which are connected to the gear we put on the motor earlier, and then we put 3 small gears inside the differential. The differential is attached to the ma>in body using an axle from the wheel.
 
 <hr>
 
-- ## **Wheel** : Lego 49.5 × 20 tire and 30 × 20 rim
+- #### **Wheel** : Lego 49.5 × 20 tire and 30 × 20 rim
 <image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/Wheels.png" width = "400">
 There are a lot of wheels to select. We chose this one because of it's size. If the wheels are too small, it reduces the speed due to the lack of rotation. But if the wheels are too big, it makes the robot slower and harder to control. With the combination of the motor and the wheels, the robot can maintain the speed we can control.
 
+<hr><br>
+
+### Controller
+
+- #### **Microcontroller Board** : Arduino Mega 2560 R3
+<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Mega.png" width = "400">
+This part is like a brain of our body. It's job is to store all the program of our robot from the computer, every components in the robot comes through here. We chose this board because of it's connection port, it contains tons of ports that we want such as 3 UART port. We used Arduino Uno last year, but the problem is there's not enough port for OpenMV and GY-25. But there's some disadvantage in this board. Because this board has a lot of connection port, it comes with weight and size. It's almost 2 times longer than the UNO. And that makes the robot long and heavy.
+
+| Specification           | Value                                  |
+|-------------------------|----------------------------------------|
+| Microcontroller         | ATmega2560                             |
+| Operating Voltage       | 5V                                     |
+| Input Voltage (recommended) | 7-12V                               |
+| Input Voltage (limit)   | 6-20V                                  |
+| Digital I/O Pins        | 54 (15 provide PWM output)             |
+| Analog Input Pins       | 16                                     |
+| DC Current per I/O Pin  | 20 mA                                   |
+| DC Current for 3.3V Pin | 50 mA                                   |
+| Flash Memory            | 256 KB (8 KB used by bootloader)       |
+| SRAM                    | 8 KB                                    |
+| EEPROM                  | 4 KB                                    |
+| Clock Speed             | 16 MHz                                  |
+| LED_BUILTIN             | 13                                      |
+| Length                  | 101.52 mm                               |
+| Width                   | 53.3 mm                                 |
+| Weight                  | 37 g                                    |
+
+Additional information about UART:
+UART operates by transmitting data as a series of bits, including a start bit, data bits, an optional parity bit, and stop bit(s). Unlike parallel communication, where multiple bits are transmitted simultaneously, UART sends data serially, one bit at a time. As the name reveals the protocol operates asynchronous which means that it doesn't rely on a shared clock signal. Instead, it uses predefined baud rates to determine the timing of data bits.
+
+<img src = "https://github.com/Snackels/AGO/blob/main/Diagram_and_Electric_Circuit/UART.png" width = "400">
+
+Our robot has serial1 and serial3, serial1 is connected to compass while serial3 is connected to OpenMV camera. They are connected to the UART port on the Arduino mega.
+
 <hr>
+
+- #### **Sensor Shield** : Gravity IO Sensor Shield For Arduino Mega Due
+<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Sensor%20shield.png" width = "400">
+This part is an extension of the board. It is where ultrasonic, light sensors, button sensors, camera, compass, and servos go. It has alot of connection pin which can be used for each components. But with that it also come with a very long design. Make it hard to design where to place it on robot.
+
+| Specification                               | Value                                         |
+|---------------------------------------------|-----------------------------------------------|
+| Compatibility                               | Most Arduino shields                         |
+| Compatible Boards                           | Arduino Mega boards, DFRobot megaADK, Arduino megaADK |
+| Extended TTL Connection Pins                | Four Serial ports                            |
+| Prototyping Area                            | DIP prototyping area for additional modules or components |
+| Xbee Slots                                  | 3                                             |
+| microSD Slot                                | 1                                             |
+| Power Switch                                | Between Arduino Mega or external power       |
+| Size                                        | 125 x 57 mm (4.92 x 2.24")                   |
+
+<hr>
+
+- #### **Motor Shield** : Gravity 2x2A Motor Shield for Arduino Twin
+<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Motorshield.png" width = "400">
+This part is also an extension of the board. It makes the connection between the board and motor easier. We connect the pin with the top of sensor shield.
+
+| Specification            | Value                                  |
+|--------------------------|----------------------------------------|
+| Motor Driven Voltage    | 4.8V to 35V                            |
+| Output Current          | Up to 2A/channel                       |
+| Total Power Dissipation | 25W (T=75℃)                            |
+| Driven Structure        | Dual full-bridge driver                |
+| Driven Power Port       | External power terminal, or VIN from Arduino |
+| Driven Output Port      | 2 channel screw terminals, or male PIN headers |
+| Control Port            | 4 TTL compatible digital signals (Digital 10-13) |
+| Operation Temperature   | -25℃ to 130℃                           |
+| Shield Size             | 56x57mm (2.20x2.24")                   |
+
+<hr><br>
+
 
 
 
