@@ -155,12 +155,64 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
 
 ### 3D Parts
 
-#### **3D Printer** : Bambu Lab X1 Carbon by Bambu Lab
-<image src="" width = "400">
+- #### **3D Printer** : Bambu Lab X1 Carbon by Bambu Lab
+<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/3D/3D%20Printer.png" width = "400">
+The reasons that we use Bambu Lab X1-Carbon 3D printer because this printer is a high-performance 3D printer designed for precision and efficiency. It is equipped with advanced technology and features, making it suitable for professional use as well as hobbyist projects that require high-quality prints.
 
+##### General Specifications
+
+| Specification         | Value                             |
+|-----------------------|-----------------------------------|
+| Build Volume          | 256 × 256 × 256 mm³*              |
+| Nozzle                | 0.4 mm Hardened Steel Included     |
+| Hotend                | All-Metal                          |
+| Max Hot End Temperature | 300 ℃                           |
+| Filament Diameter     | 1.75 mm                            |
+| Supported Filament    | PLA, PETG, TPU, ABS, ASA, PVA, PET |
+| Ideal for             | PA, PC, Carbon/Glass Fiber Reinforced Polymer |
+
+##### Build Plate Specifications
+
+| Specification               | Value                           |
+|-----------------------------|---------------------------------|
+| Build Plate Surface         | Bambu Textured PEI Plate or Bambu Cool Plate (Pre-installed, Random, Both compatible with Micro Lidar) |
+| Max Build Plate Temperature | 110℃@220V, 120℃@110V            |
+
+##### Tool Head Specifications
+
+| Specification               | Value      |
+|-----------------------------|------------|
+| Max Speed                   | 500 mm/s    |
+| Max Acceleration            | 20 m/s²     |
+
+##### Physical Dimensions
+
+| Specification               | Value            |
+|-----------------------------|------------------|
+| X1C Dimensions              | 389 × 389 × 457 mm³ |
+| Package Size (X1C)          | 480 × 480 × 535 mm³ |
+| Net Weight (X1C)            | 14.13 kg         |
+| Gross Weight (X1C)          | 18 kg            |
+| Package Size (X1C Combo)    | 480 × 480 × 590 mm³ |
+| Gross Weight (X1C Combo, AMS included) | 22.3 kg |
+
+##### Electrical Requirements
+
+| Specification   | Value             |
+|-----------------|-------------------|
+| Voltage         | 100-240 VAC       |
+| Frequency       | 50/60 Hz          |
+| Power Consumption | 1000W@220V, 350W@110V |
+
+<hr>
 <br><br>
 
+- #### **Filament** : Acrylonitrile Butadiene Styrene or simply known as ***ABS**
+<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/3D/ABS%20Filament.png" width = "400">
+ABS (acrylonitrile butadiene styrene) is probably the most common filament used in 3D printing. It is especially valuable in strong plastic parts that must remain resilient in the face of temperature swings. It is mainly used in FDM (fused deposition modeling) 3D printers. ABS is a thermoplastic polymer composed of three monomers: acrylonitrile, butadiene, and styrene. The material was first patented in the 1940s and very quickly gained popularity.
 
+<hr>
+<br><br>
 
 ### Movement Parts
 
@@ -168,13 +220,13 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
 <image src="https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Motor.png" width = "400">
 It's a simple motor, and we chose this motor because of its easy connection to our robot and its cost-effectiveness. This motor is small yet powerful. and it is the perfect size for our robot. The motor comes with a dedicated port for Lego. So, we modified it to make it able to connect to the board. 
 
-### Electrical Specifications
+##### Electrical Specifications
 
 | Specification     | Value    |
 |-------------------|----------|
 | Voltage           | 9 V      |
 
-### Mechanical Specifications
+##### Mechanical Specifications
 
 | Specification     | Value    |
 |-------------------|----------|
