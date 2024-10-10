@@ -270,7 +270,7 @@ There are a lot of wheels to select. We chose this one because of it's size. If 
 ### Controller
 
 - #### **Microcontroller Board** : Arduino Mega 2560 R3
-<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Mega.png" width = "400">
+<img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Controller/Arduino%20Mega.png" width = "400">
 This part is like a brain of our body. It's job is to store all the program of our robot from the computer, every components in the robot comes through here. We chose this board because of it's connection port, it contains tons of ports that we want such as 3 UART port. We used Arduino Uno last year, but the problem is there's not enough port for OpenMV and GY-25. But there's some disadvantage in this board. Because this board has a lot of connection port, it comes with weight and size. It's almost 2 times longer than the UNO. And that makes the robot long and heavy.
 
 | Specification           | Value                                  |
@@ -295,14 +295,14 @@ This part is like a brain of our body. It's job is to store all the program of o
 Additional information about UART:
 UART operates by transmitting data as a series of bits, including a start bit, data bits, an optional parity bit, and stop bit(s). Unlike parallel communication, where multiple bits are transmitted simultaneously, UART sends data serially, one bit at a time. As the name reveals the protocol operates asynchronous which means that it doesn't rely on a shared clock signal. Instead, it uses predefined baud rates to determine the timing of data bits.
 
-<img src = "https://github.com/Snackels/AGO/blob/main/Diagram_and_Electric_Circuit/UART.png" width = "400">
+<img src = "" width = "400">
 
 Our robot has serial1 and serial3, serial1 is connected to compass while serial3 is connected to OpenMV camera. They are connected to the UART port on the Arduino mega.
 
 <hr>
 
 - #### **Sensor Shield** : Gravity IO Sensor Shield For Arduino Mega Due
-<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Sensor%20shield.png" width = "400">
+<img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Controller/Sensor%20shield.png" width = "400">
 This part is an extension of the board. It is where ultrasonic, light sensors, button sensors, camera, compass, and servos go. It has alot of connection pin which can be used for each components. But with that it also come with a very long design. Make it hard to design where to place it on robot.
 
 | Specification                               | Value                                         |
@@ -319,7 +319,7 @@ This part is an extension of the board. It is where ultrasonic, light sensors, b
 <hr>
 
 - #### **Motor Shield** : Gravity 2x2A Motor Shield for Arduino Twin
-<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Motorshield.png" width = "400">
+<img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Controller/Motorshield.png" width = "400">
 This part is also an extension of the board. It makes the connection between the board and motor easier. We connect the pin with the top of sensor shield.
 
 | Specification            | Value                                  |
