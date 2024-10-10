@@ -336,7 +336,202 @@ This part is also an extension of the board. It makes the connection between the
 
 <hr><br>
 
+### Power Management And Inspection
+- #### **Camera** : OpenMV H7 R1
+<image src="https://github.com/Snackels/AGO/blob/main/Robot/Parts/OpenMV%20cam.png" width = "400">
+This component is very important for avoiding obstacle. It can detect red and green obstacle from distance to avoid crashing into it. The OpenMV also comes with it's own microcontroller. Making the robot locate and think faster when see the obstacle. The OpenMV also comes with GLCD screen at the back of it to display what the camera see. This camera can be coded with MicroPython. Additionally, this camera wires are connected with the sensor shield.
 
+##### STM32H743VI Specifications
+
+| Specification             | Value                                           |
+|---------------------------|-------------------------------------------------|
+| **Processor**             | STM32H743VI ARM Cortex M7                       |
+| **Clock Speed**           | 480 MHz                                         |
+| **SRAM**                  | 1 MB                                             |
+| **Flash Memory**          | 2 MB                                             |
+| **I/O Voltage**           | 3.3V (5V tolerant)                              |
+| **Number of I/O Pins**    | 10                                              |
+
+##### Interfaces
+
+| Specification             | Value                                           |
+|---------------------------|-------------------------------------------------|
+| **USB**                   | Full-speed USB (12 Mbps) interface             |
+| **μSD Card Socket**       | Capable of 100 Mbps read/write                  |
+| **SPI Bus**               | Up to 80 Mbps                                  |
+| **I2C Bus**               | Up to 1 Mbps                                   |
+| **CAN Bus**               | Up to 1 Mbps                                   |
+| **Asynchronous Serial Bus** | Up to 7.5 Mbps                                |
+
+##### Analog
+
+| Specification             | Value                                           |
+|---------------------------|-------------------------------------------------|
+| **ADC**                   | 12-bit                                          |
+| **DAC**                   | 12-bit                                          |
+
+##### Control
+
+| Specification             | Value                                           |
+|---------------------------|-------------------------------------------------|
+| **Servo Control Pins**    | 3 I/O pins                                      |
+| **Interrupts and PWM**    | Available on all I/O pins                      |
+
+##### LEDs
+
+| Specification             | Value                                           |
+|---------------------------|-------------------------------------------------|
+| **RGB LED**               | Yes                                             |
+| **High Power IR LEDs**    | Two 850nm                                      |
+
+##### Camera Module
+
+| Specification             | Value                                           |
+|---------------------------|-------------------------------------------------|
+| **Default Sensor**        | OV7725                                          |
+| **Resolution**            | 640x480                                         |
+| **Modes**                 | 8-bit Grayscale at 75 FPS, 16-bit RGB565 (75 FPS above 320x240, 150 FPS below 320x240) |
+| **Lens**                  | 2.8mm, M12 mount                                |
+| **Additional Modules**    | Global Shutter Camera, FLIR Lepton Adapter     |
+
+##### Power
+
+| Specification             | Value                                           |
+|---------------------------|-------------------------------------------------|
+| **Battery Connector**     | Compatible with 3.7V LiPo batteries             |
+
+
+  <hr>
+
+- #### **Ultrasonic sensor** : Gravity URM 09 ultrasonic distance sensor.
+<image src="https://github.com/Snackels/AGO/blob/main/Robot/Parts/Ultrasonic.png" width = "400">
+The ultrasonic sensor plays a vital role in guiding the robot's navigation by accurately detecting distances between the robot and potential obstacles. Its precision in measuring distances ensures that the robot can maneuver and make informed decisions to navigate its path safely and effectively, avoiding collisions and maintaining its course.
+
+##### Electrical Specifications
+
+| Specification                   | Value                  |
+|---------------------------------|------------------------|
+| Supply Voltage                  | 3.3~5.5V DC            |
+| Operating Current               | 20mA                   |
+
+##### Performance Specifications
+
+| Specification                   | Value                  |
+|---------------------------------|------------------------|
+| Operating Temperature Range      | -10°C to +70°C          |
+| Measurement Range                | 2cm to 500cm (can be set) |
+| Resolution                       | 1cm                    |
+| Accuracy                         | 1%                     |
+| Frequency                        | 50Hz Max               |
+
+<hr>
+
+- #### **7.4 voltage Lipo-Battery** : 7.4 voltage 2 cell Lipo-Battery.
+<image src="https://github.com/Snackels/AGO/blob/main/Robot/Parts/Battery.png" width = "400">
+The battery provides the power for our robot. This battery is very lightweight and compact to fit into the robot since the robot is very small. And it is also able to connect to our controller board. We calculated the amount of mAh that is enough to power our robot for 1-2 hours before recharged.
+
+##### Specification
+
+| Specification                   | Value                                        |
+|---------------------------------|----------------------------------------------|
+| 2 cells Voltage                  | 7.4V                                         |
+| Capacity                         | 1100mAh 30C                                  |
+| Charging Current                 | Up to 5 times the capacity (5C)             |
+| Connectors                       | JST type, easily disconnectable              |
+
+<hr>
+
+- #### **Light Sensor** : Virus III by Design By Sopon and ZX-03 By INEX
+<image src = "https://github.com/Snackels/AGO/blob/main/Robot/Parts/Red%20sensor.png" width = "300">
+Virus III
+<image src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Blue%20sensor.png" width = "300">
+ZX-03
+
+<br><br>
+
+The color sensors play an important role in both rounds, as we use them for line detection. There are 2 lines with different colors in the corner of the race field, which is why we use 2 different colors of the color sensor, blue and red. The blue color sensor is used for detecting both colors, while the red color sensor is only used for the blue line.
+
+<hr>
+
+- #### **GyroCompass** :GY-25
+A gyro is a component that enables a robot to determine its orientation and turn in the appropriate direction. We chose this gyro sensor specifically because of how effective it is. It also comes in a very small
+size to attach to our robot.
+
+<image src = "https://github.com/Snackels/AGO/blob/main/Robot/Parts/GyroCompass.png" width = "400">
+
+##### Power and Communication
+
+| Specification             | Value                                           |
+|---------------------------|-------------------------------------------------|
+| Power supply              | 3-5V (internal low dropout regulator)          |
+| Used Chip                 | MCU+MPU6050                                     |
+| Communication mode        | Serial communication (baud 9600, 115200), IIC communication |
+| Operating Current         | 15 mA                                          |
+
+##### Angular Measurement
+
+| Specification             | Value                                           |
+|---------------------------|-------------------------------------------------|
+| Angular Resolution        | 0.01°                                           |
+| Direct Data               | YAW ROLL PITCH                                 |
+| Measuring range of axes   | -180 to +180 degrees                           |
+| Resolution                | 0.01 degrees                                  |
+| Frequency Response        | 100Hz (115200bps)                              |
+| Operating Temperature     | -20 to 85°C                                    |
+
+<hr>
+
+- #### **Touch Sensor** : ZX-Switch01 by INEX
+This button gives us an easier way to start the robot. Since the controller board doesn't come with switches. So we found this button that could be attached to the frame outside the board using bolt. 
+
+<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/ZX%20switch.png" width = "400">
+
+<hr>
+
+- #### **On/Off Switch** : SPST ON/OFF Switch 2 Pin Rocker Switch DC 125/250V
+This switch is for cutting the power from the battery to the robot. The regulation states that before starting the robot, the power must be cut off. That's when this switch came in. To use this switch we solder red wire(Positive pole) to the switch on 1 side for input. Then another solder red wire for output on the opposite side. You can put the black wire(Negative pole) straight into the step down. When the switch is turned on, the power from the battery will direct into the stepdown and then the robot. 
+
+<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/On-off%20Switch.png" width = "400">
+
+<hr>
+
+- #### **Step-down** : HW-360 V6.0
+This is a step-down DC-DC module. It comes with a status indicator light, a display screen that shows the voltage meter, and self-calibration of the voltage meter. The electrical voltage has an error of 0.05 V, with a measuring range of 0–40 V. We need this step down to show us how long until we need to recharge the battery.
+
+<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Stepdown%20(1).png" width = "400">
+
+<hr>
+
+##### Input
+
+| Specification           | Value                                  |
+|-------------------------|----------------------------------------|
+| Input voltage           | DC 4.0 ~ 38V                           |
+
+##### Output
+
+| Specification           | Value                                  |
+|-------------------------|----------------------------------------|
+| Output voltage          | DC 1.25V ~ 36V continuously adjustable |
+| Output current          | Max 5A                                 |
+| Output power            | Up to 75W                              |
+
+##### Measurements
+
+| Specification           | Value                                  |
+|-------------------------|----------------------------------------|
+| Voltmeter error         | ± 0.05V                               |
+| Measure range           | 0 ~ 40V                               |
+
+##### Performance
+
+| Specification           | Value                                  |
+|-------------------------|----------------------------------------|
+| Conversion efficiency   | Up to 96%                              |
+| Load regulation         | S (I) ≤ 0.8%                           |
+| Voltage Regulation      | S (u) ≤ 0.8%                           |
+
+<hr><br>
 
 
 
