@@ -205,18 +205,18 @@ The reasons that we use Bambu Lab X1-Carbon 3D printer because this printer is a
 | Power Consumption | 1000W@220V, 350W@110V |
 
 <hr>
-<br><br>
+<br>
 
 - #### **Filament** : Acrylonitrile Butadiene Styrene or simply known as ***ABS**
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/3D/ABS%20Filament.png" width = "400">
 ABS (acrylonitrile butadiene styrene) is probably the most common filament used in 3D printing. It is especially valuable in strong plastic parts that must remain resilient in the face of temperature swings. It is mainly used in FDM (fused deposition modeling) 3D printers. ABS is a thermoplastic polymer composed of three monomers: acrylonitrile, butadiene, and styrene. The material was first patented in the 1940s and very quickly gained popularity.
 
 <hr>
-<br><br>
+<br>
 
 ### Movement Parts
 
-#### **Driving motor** : Power functions Large-motor made by LEGO™.
+#### **Driving motor** : Power Functions Large-Motor made by LEGO™.
 <image src="https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Motor.png" width = "400">
 It's a simple motor, and we chose this motor because of its easy connection to our robot and its cost-effectiveness. This motor is small yet powerful. and it is the perfect size for our robot. The motor comes with a dedicated port for Lego. So, we modified it to make it able to connect to the board. 
 
@@ -233,8 +233,45 @@ It's a simple motor, and we chose this motor because of its easy connection to o
 | Speed             | 390 rpm  |
 | Maximum torque    | 40 Ncm   |
 
-<br><br>
+<hr>
+<br>
 
+- ## **Servo** : GEEKSERVO 2kg 360 Degrees Servo.
+<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/servo.png" width = "400">
+We use this servo for steering the robot and employ an ultrasonic sensor for rotation. This servo is compatible with LEGO, making it easy and convenient to build the robot by just putting studs in the hole on the side. We like how you can connect two axles to the dual outputs on this servo so you can power two wheels or gears, or mount the servo securely inside articulated limbs and other contraptions. Additionally, the gears inside these servos will 'slip' when the blocking load is too high instead of jamming, helping avoid damage to your servos and boards.
+
+The wires are a standard servo pinout - 
+-	Red - positive
+-	Brown - negative
+-	Yellow - data
+
+
+### Electrical Specifications
+
+| Specification     | Value    |
+|-------------------|----------|
+| Working voltage   | 3.3V~6V  |
+| Rated voltage     | 4.8V     |
+| Rated current     | 200mA    |
+| Stall current     | 700mA    |
+| Sliding current   | 450mA    |
+
+<hr>
+<br>
+
+- ## **Differential** : Technic, Gear Differential With Inner Tabs and Closed Center, 28 Bevel Teeth
+<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/differential.png" width = "400">
+This part ensure that both wheels have the power from the motor, which makes the robot drive forward. This part has gear teeth on the side, which are connected to the gear we put on the motor earlier, and then we put 3 small gears inside the differential. The differential is attached to the ma>in body using an axle from the wheel.
+
+<hr>
+<br>
+
+- ## **Wheel** : Lego 49.5 × 20 tire and 30 × 20 rim
+<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/Wheels.png" width = "400">
+There are a lot of wheels to select. We chose this one because of it's size. If the wheels are too small, it reduces the speed due to the lack of rotation. But if the wheels are too big, it makes the robot slower and harder to control. With the combination of the motor and the wheels, the robot can maintain the speed we can control.
+
+<hr>
+<br>
 
 
 
