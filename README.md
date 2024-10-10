@@ -133,7 +133,7 @@ We created a thorough work plan demonstrating our devotion and cooperation and s
 
 # **Part 2: MECHANICAL DESIGN**
 
-### The Robot
+## The Robot
 
 Designing a robot for this competition can be a challenging task. It has to be compact, lightweight, durable, and equipped with all the necessary functions for this Future Engineers competition. The robot must have four wheels with steering on either front or rear wheels, making component selection important to build our robot. After we've chosen the required components, then we focus on how to put the part together effectively. We chose a 3D-printed part and spent significant time ensuring it fits within the size regulations. 
 
@@ -142,11 +142,50 @@ When designing our robot, we use a 3D modeling application called Blender. Getti
 For the design, we placed the gyro around the middle-top of the robot to get the most accurate output, while the camera was positioned at the front of the gyro to detect objects quickly.
 
 Our robot has two servos, one on the bottom front and one on the top front. The bottom front servo is used to steer the wheel. Then, we added a top servo that rotates our ultrasonic. We use an ultrasonic to keep our robot out of the wall. Finally, we place our motor at the bottom back of the robot, and to ensure that it drives both wheels at the back, we use a gear differential from Lego.
-
+<hr>
 
 ## Robot's Chassis
 
 The robot chassis design consists mainly of the 3D printed parts, which provide a strong support for all the hardware and electronics devices. Each element is custom-designed to meet our specific requirements and interlocks seamlessly to create a lightweight yet resilient structure. Modification and extension of the orthotics and bambulab 3D-printed chassis is made easily due to its modular construction. It is designed to house the motors, electronic circuitry, and battery while enhancing thermal management and balanced weight distribution for efficient operation. This strategy not only allows for fast modeling and changes in design, but it also makes it easy if an operational change requires that some parts should be removed or replaced with better ones as the robot matures. All the 3D printable models can be found here. [All the 3D printable models can be found here](https://github.com/Book2009/Nocturnalist-Future-Engineers/tree/main/3D_Models).
+<br><br>
+
+<hr>
+
+## Components
+
+### 3D Parts
+
+#### **3D Printer** : Bambu Lab X1 Carbon by Bambu Lab
+<image src="" width = "400">
+
+<br><br>
+
+
+
+### Movement Parts
+
+#### **Driving motor** : Power functions Large-motor made by LEGO™.
+<image src="https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Motor.png" width = "400">
+It's a simple motor, and we chose this motor because of its easy connection to our robot and its cost-effectiveness. This motor is small yet powerful. and it is the perfect size for our robot. The motor comes with a dedicated port for Lego. So, we modified it to make it able to connect to the board. 
+
+### Electrical Specifications
+
+| Specification     | Value    |
+|-------------------|----------|
+| Voltage           | 9 V      |
+
+### Mechanical Specifications
+
+| Specification     | Value    |
+|-------------------|----------|
+| Speed             | 390 rpm  |
+| Maximum torque    | 40 Ncm   |
+
+<br><br>
+
+
+
+
 
 
 
