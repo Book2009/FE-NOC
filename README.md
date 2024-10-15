@@ -215,7 +215,7 @@ ABS (acrylonitrile butadiene styrene) is probably the most common filament used 
 ### Movement Parts
 
 #### **Driving motor** : Power Functions Large-Motor made by LEGO™.
-<image src="https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Motor.png" width = "400">
+<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/Motor.png" width = "400">
 It's a simple motor, and we chose this motor because of its easy connection to our robot and its cost-effectiveness. This motor is small yet powerful. and it is the perfect size for our robot. The motor comes with a dedicated port for Lego. So, we modified it to make it able to connect to the board. 
 
 ##### Electrical Specifications
@@ -338,7 +338,7 @@ This part is also an extension of the board. It makes the connection between the
 
 ### Power Management And Inspection
 - #### **Camera** : OpenMV H7 R1
-<image src="https://github.com/Snackels/AGO/blob/main/Robot/Parts/OpenMV%20cam.png" width = "400">
+<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/OpenMV%20Camera.png" width = "400">
 This component is very important for avoiding obstacle. It can detect red and green obstacle from distance to avoid crashing into it. The OpenMV also comes with it's own microcontroller. Making the robot locate and think faster when see the obstacle. The OpenMV also comes with GLCD screen at the back of it to display what the camera see. This camera can be coded with MicroPython. Additionally, this camera wires are connected with the sensor shield.
 
 ##### STM32H743VI Specifications
@@ -404,7 +404,7 @@ This component is very important for avoiding obstacle. It can detect red and gr
   <hr>
 
 - #### **Ultrasonic sensor** : Gravity URM 09 ultrasonic distance sensor.
-<image src="https://github.com/Snackels/AGO/blob/main/Robot/Parts/Ultrasonic.png" width = "400">
+<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Ultrasonic.png" width = "400">
 The ultrasonic sensor plays a vital role in guiding the robot's navigation by accurately detecting distances between the robot and potential obstacles. Its precision in measuring distances ensures that the robot can maneuver and make informed decisions to navigate its path safely and effectively, avoiding collisions and maintaining its course.
 
 ##### Electrical Specifications
@@ -427,7 +427,7 @@ The ultrasonic sensor plays a vital role in guiding the robot's navigation by ac
 <hr>
 
 - #### **7.4 voltage Lipo-Battery** : 7.4 voltage 2 cell Lipo-Battery.
-<image src="https://github.com/Snackels/AGO/blob/main/Robot/Parts/Battery.png" width = "400">
+<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Battery.png" width = "400">
 The battery provides the power for our robot. This battery is very lightweight and compact to fit into the robot since the robot is very small. And it is also able to connect to our controller board. We calculated the amount of mAh that is enough to power our robot for 1-2 hours before recharged.
 
 ##### Specification
@@ -442,9 +442,9 @@ The battery provides the power for our robot. This battery is very lightweight a
 <hr>
 
 - #### **Light Sensor** : Virus III by Design By Sopon and ZX-03 By INEX
-<image src = "https://github.com/Snackels/AGO/blob/main/Robot/Parts/Red%20sensor.png" width = "300">
+<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Red%20sensor.png" width = "300">
 Virus III
-<image src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Blue%20sensor.png" width = "300">
+<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Blue%20sensor.png" width = "300">
 ZX-03
 
 <br><br>
@@ -457,7 +457,7 @@ The color sensors play an important role in both rounds, as we use them for line
 A gyro is a component that enables a robot to determine its orientation and turn in the appropriate direction. We chose this gyro sensor specifically because of how effective it is. It also comes in a very small
 size to attach to our robot.
 
-<image src = "https://github.com/Snackels/AGO/blob/main/Robot/Parts/GyroCompass.png" width = "400">
+<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Compass.png" width = "400">
 
 ##### Power and Communication
 
@@ -484,21 +484,21 @@ size to attach to our robot.
 - #### **Touch Sensor** : ZX-Switch01 by INEX
 This button gives us an easier way to start the robot. Since the controller board doesn't come with switches. So we found this button that could be attached to the frame outside the board using bolt. 
 
-<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/ZX%20switch.png" width = "400">
+<img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Touch%20Sensor.png" width = "400">
 
 <hr>
 
 - #### **On/Off Switch** : SPST ON/OFF Switch 2 Pin Rocker Switch DC 125/250V
 This switch is for cutting the power from the battery to the robot. The regulation states that before starting the robot, the power must be cut off. That's when this switch came in. To use this switch we solder red wire(Positive pole) to the switch on 1 side for input. Then another solder red wire for output on the opposite side. You can put the black wire(Negative pole) straight into the step down. When the switch is turned on, the power from the battery will direct into the stepdown and then the robot. 
 
-<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/On-off%20Switch.png" width = "400">
+<img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/OnOff%20Switch.png" width = "400">
 
 <hr>
 
 - #### **Step-down** : HW-360 V6.0
 This is a step-down DC-DC module. It comes with a status indicator light, a display screen that shows the voltage meter, and self-calibration of the voltage meter. The electrical voltage has an error of 0.05 V, with a measuring range of 0–40 V. We need this step down to show us how long until we need to recharge the battery.
 
-<img src = "https://github.com/Snackels/FutureEngineer2024_YBR_AGO/blob/main/Robot/Parts/Stepdown%20(1).png" width = "400">
+<img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Step%20Down.png" width = "400">
 
 <hr>
 
