@@ -426,28 +426,13 @@ The ultrasonic sensor plays a vital role in guiding the robot's navigation by ac
 
 <hr>
 
-- #### **7.4 voltage Lipo-Battery** : 7.4 voltage 2 cell Lipo-Battery.
-<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Battery.png" width = "400">
-The battery provides the power for our robot. This battery is very lightweight and compact to fit into the robot since the robot is very small. And it is also able to connect to our controller board. We calculated the amount of mAh that is enough to power our robot for 1-2 hours before recharged.
-
-##### Specification
-
-| Specification                   | Value                                        |
-|---------------------------------|----------------------------------------------|
-| 2 cells Voltage                  | 7.4V                                         |
-| Capacity                         | 1100mAh 30C                                  |
-| Charging Current                 | Up to 5 times the capacity (5C)             |
-| Connectors                       | JST type, easily disconnectable              |
-
-<hr>
-
 - #### **Light Sensor** : Virus III by Design By Sopon and ZX-03 By INEX
 <image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Red%20sensor.png" width = "300">
 Virus III
 <image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Blue%20sensor.png" width = "300">
 ZX-03
 
-<br><br>
+<hr>
 
 The color sensors play an important role in both rounds, as we use them for line detection. There are 2 lines with different colors in the corner of the race field, which is why we use 2 different colors of the color sensor, blue and red. The blue color sensor is used for detecting both colors, while the red color sensor is only used for the blue line.
 
@@ -530,6 +515,21 @@ This is a step-down DC-DC module. It comes with a status indicator light, a disp
 | Conversion efficiency   | Up to 96%                              |
 | Load regulation         | S (I) ≤ 0.8%                           |
 | Voltage Regulation      | S (u) ≤ 0.8%                           |
+
+<hr>
+
+- #### **7.4 voltage Lipo-Battery** : 7.4 voltage 2 cell Lipo-Battery.
+<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Battery.png" width = "400">
+The battery provides the power for our robot. This battery is very lightweight and compact to fit into the robot since the robot is very small. And it is also able to connect to our controller board. We calculated the amount of mAh that is enough to power our robot for 1-2 hours before recharged.
+
+##### Specification
+
+| Specification                   | Value                                        |
+|---------------------------------|----------------------------------------------|
+| 2 cells Voltage                  | 7.4V                                         |
+| Capacity                         | 1100mAh 30C                                  |
+| Charging Current                 | Up to 5 times the capacity (5C)             |
+| Connectors                       | JST type, easily disconnectable              |
 
 <hr><br>
 
