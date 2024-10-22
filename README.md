@@ -518,9 +518,9 @@ This is a step-down DC-DC module. It comes with a status indicator light, a disp
 
 <hr>
 
-- #### **7.4 voltage Lipo-Battery** : 7.4 voltage 2 cell Lipo-Battery.
+- #### **Battery** : 11.1 voltage 3 cell Lipo-Battery.
 <image src="https://github.com/ThanyawutII/Test/blob/main/Screenshot_2024-10-22_112329-removebg-preview.png" width = "400">
-The battery provides the power for our robot. This battery is very lightweight and compact to fit into the robot since the robot is very small. And it is also able to connect to our controller board. We calculated the amount of mAh that is enough to power our robot for 1-2 hours before recharged.
+The battery provides the power for our robot. This battery enhances the operation of the robot since a higher voltage is attained thereby reducing the current draw and consequently power loss during operation of the battery. It also makes for consistency and continuous customer service without experiencing low voltage slight especially at high current loads. This makes the team feel confident during practice and competition.
 
 ##### Specification
 
