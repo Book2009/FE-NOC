@@ -519,15 +519,15 @@ This is a step-down DC-DC module. It comes with a status indicator light, a disp
 <hr>
 
 - #### **7.4 voltage Lipo-Battery** : 7.4 voltage 2 cell Lipo-Battery.
-<image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Battery.png" width = "400">
+<image src="https://github.com/ThanyawutII/Test/blob/main/Screenshot_2024-10-22_112329-removebg-preview.png" width = "400">
 The battery provides the power for our robot. This battery is very lightweight and compact to fit into the robot since the robot is very small. And it is also able to connect to our controller board. We calculated the amount of mAh that is enough to power our robot for 1-2 hours before recharged.
 
 ##### Specification
 
 | Specification                   | Value                                        |
 |---------------------------------|----------------------------------------------|
-| 2 cells Voltage                  | 7.4V                                         |
-| Capacity                         | 1100mAh 30C                                  |
+| 3 cells Voltage                  | 11.1V                                         |
+| Capacity                         | 1300mAh 20C                                  |
 | Charging Current                 | Up to 5 times the capacity (5C)             |
 | Connectors                       | JST type, easily disconnectable              |
 
