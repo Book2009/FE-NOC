@@ -529,7 +529,7 @@ The battery provides the power for our robot. This battery is very lightweight a
 | 3 cells Voltage                  | 11.1V                                         |
 | Capacity                         | 1300mAh 20C                                  |
 | Charging Current                 | Up to 5 times the capacity (5C)             |
-| Connectors                       | JST type, easily disconnectable              |
+| Connectors                       | Dean type, easily disconnectable              |
 
 <hr><br>
 
