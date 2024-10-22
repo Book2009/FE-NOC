@@ -72,9 +72,9 @@ This is the third generation
 ### **Our Team**
    The team consists of three intimate friends Pawit Nateenantasawasd, Pongpapat Putongkam, and Thanyawut Krittikanon. We have been together for four years, forming a strong bond that enhances our collaborative efforts. We first met in high school, sharing the same class, and after some conversation, we discovered our similarities. For instance, we both share a passion for robotics and competition, which led us to join the YB-Robot club together. Much of what we know today has been learned from the experiences of our seniors, who have taught us valuable lessons and helped shape who we are now. This journey has brought us to this international stage.
 
-   Last year, with great enthusiasm and spirits, we joined the WRO. Reaching the international round was already a great honor, but we were soon to realize that in order to win, one needs more than only enthusiasm. Our mistakes made us take the 8th position, a respectable position indeed. 
+   Last year, with great enthusiasm and high spirits, we joined the WRO. Reaching the international round was already a great honor, but we were soon to realize that in order to win, one needs more than just enthusiasm. Our mistakes led us take the 8th position, a respectable position indeed. 
 
-   This year we are back with more confident, and wiser from past experiences. We honed our strategies and prepared extensively. We fixed every mistake we have done last year and more. Being back at the international stage is one of our dream. And we are here to make everyone proud.  
+   This year, we are back with greater confidence, and wiser from past experiences. We honed our strategies and prepared extensively. We fixed every mistake we have done last year and more. Being back at the international stage is one of our dreams. And we are here to make everyone proud.  
 
 
 <p align="center">
