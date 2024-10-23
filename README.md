@@ -33,7 +33,7 @@
   - [About Us](#part-1-about-us)
   - [Mechanical Design](#part-2-mechanical-design)
   - [Electric Circuit And Flowchart](#part-3-electric-circuit-and-flowchart)
-  - [Mechanical Design](#part-4-mechanical-Design)
+  - [Program Explanation](#part-4-program-explanation)
 
 
 </p>
