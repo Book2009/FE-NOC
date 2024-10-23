@@ -28,10 +28,13 @@
 
 `Videos` This folder contains YouTube links that show how the robot operates to complete both missions.
 
-`Readme` This Readme contain 3 parts.
+`Readme` This Readme contain 4 parts.
 
   - [About Us](#part-1-about-us)
   - [Mechanical Design](#part-2-mechanical-design)
+  - [Electric Circuit And Flowchart](#part-3-electric-circuit-and-flowchart)
+  - [Mechanical Design](#part-4-mechanical-Design)
+
 
 </p>
 
@@ -537,7 +540,7 @@ The battery provides the power for our robot. This battery enhances the operatio
 
 <br><hr>
 
-# **Electric Circuit And Flowchart**
+# **Part 3: Electric Circuit And Flowchart**
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
 Open challenge flowchart. In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
@@ -555,7 +558,7 @@ The last traffic sign in the second round indicates the next move: a green sign 
 
 <br><hr>
 
-# **Program Explanation**
+# **Part 4: Program Explanation**
 
 
 
