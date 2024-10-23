@@ -535,7 +535,15 @@ The battery provides the power for our robot. This battery enhances the operatio
 | Charging Current                 | Up to 5 times the capacity (5C)             |
 | Connectors                       | Dean type, easily disconnectable              |
 
-<hr><br>
+<br><hr>
+
+# **Electric Circuit And Flowchart**
+
+Our robot open challenge flowchart. In this round, our robot must complete 3 laps around the track within 3 minutes.
+
+<br><hr>
+
+# **Program Explanation**
 
 
 
