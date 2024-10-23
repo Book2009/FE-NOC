@@ -491,8 +491,6 @@ This is a step-down DC-DC module. It comes with a status indicator light, a disp
 
 <img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Step%20Down.png" width = "400">
 
-<hr>
-
 ##### Input
 
 | Specification           | Value                                  |
