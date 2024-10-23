@@ -256,13 +256,17 @@ The wires are a standard servo pinout -
 <hr>
 
 - #### **Differential** : Technic, Gear Differential With Inner Tabs and Closed Center, 28 Bevel Teeth
-<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/differential%20gear.png" width = "400">
+<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/differential%20gear.png" width = "300">
 This part ensure that both wheels have the power from the motor, which makes the robot drive forward. This part has gear teeth on the side, which are connected to the gear we put on the motor earlier, and then we put 3 small gears inside the differential. The differential is attached to the ma>in body using an axle from the wheel.
 
 <hr>
 
-- #### **Wheel** : Lego 49.5 × 20 tire and 30 × 20 rim
-<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/Wheels.png" width = "400">
+- #### **Front Wheel** : Lego Tire 43.2 x 22 ZR and Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim
+<image src = "https://github.com/ThanyawutII/Test/blob/main/Screenshot_2024-10-23_143240-removebg-preview.png" width = "200"> <image src = "https://github.com/ThanyawutII/Test/blob/main/56145-removebg-preview%20(1).png" width = "200">
+  
+  - #### **Rear Wheel** : Lego Tire 49.6 x 28 VR and Wheel 36.8mm D. x 26mm VR with Axle Hole
+<image src = "https://github.com/ThanyawutII/Test/blob/main/6594-removebg-preview.png" width = "200"> <image src = "https://github.com/ThanyawutII/Test/blob/main/6595-removebg-preview.png" width = "200">
+
 There are a lot of wheels to select. We chose this one because of it's size. If the wheels are too small, it reduces the speed due to the lack of rotation. But if the wheels are too big, it makes the robot slower and harder to control. With the combination of the motor and the wheels, the robot can maintain the speed we can control.
 
 <hr><br>
