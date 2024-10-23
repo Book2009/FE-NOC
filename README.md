@@ -539,7 +539,19 @@ The battery provides the power for our robot. This battery enhances the operatio
 
 # **Electric Circuit And Flowchart**
 
-Our robot open challenge flowchart. In this round, our robot must complete 3 laps around the track within 3 minutes.
+<image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
+Open challenge flowchart. In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
+
+<br><br>
+
+<image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
+In this round, our robot must complete three laps on a track marked with randomly placed green and red traffic signs.
+<br>
+● Red Pillar: Keep to the right side of the lane.
+<br>
+● Green Pillar: Keep to the left side of the lane.
+<br>
+The last traffic sign in the second round indicates the next move: a green sign means continue in the same direction for the third round, while a red sign requires turning around to complete the round in the opposite direction. The robot must not move any traffic signs. After finishing the three laps, the robot must find a parking lot and perform parallel parking.
 
 <br><hr>
 
