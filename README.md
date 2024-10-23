@@ -430,11 +430,15 @@ The ultrasonic sensor plays a vital role in guiding the robot's navigation by ac
 
 <hr>
 
-- #### **Light Sensor** : Virus III by Design By Sopon and ZX-03 By INEX
-<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Red%20sensor.png" width = "300">
-Virus III
-<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Blue%20sensor.png" width = "300">
-ZX-03
+- #### **Light Sensor** : ZX-03B and ZX-03R By INEX
+
+ZX-03B
+
+<image src = "https://github.com/ThanyawutII/Test/blob/main/fc679f07ebcded1ab267a5d197fac817-removebg-preview.png" width = "300">
+
+ZX-03R
+
+<image src = "https://github.com/ThanyawutII/Test/blob/main/Screenshot_2024-10-23_151229-removebg-preview.png" width = "300">
 
 <hr>
 
