@@ -138,20 +138,15 @@ We created a thorough work plan demonstrating our devotion and cooperation and s
 
 ## The Robot
 
-Designing a robot for this competition can be a challenging task. It has to be compact, lightweight, durable, and equipped with all the necessary functions for this Future Engineers competition. The robot must have four wheels with steering on either front or rear wheels, making component selection important to build our robot. After we've chosen the required components, then we focus on how to put the part together effectively. We chose a 3D-printed part and spent significant time ensuring it fits within the size regulations. 
-
-When designing our robot, we use a 3D modeling application called Blender. Getting the scale right is important since even a small mistake can cause parts not to interlock seamlessly. We also had to do some research to figure out the best filament to use. We discovered that ABS(Acrylonitrile Butadiene Styrene) worked best for our robot. Once the design was complete, we printed the parts and assembled them with the other components to see the result. Green and red should not be use with the robot since it can confuse the camera in the process of performing its task as it the same color as obstacle. 
-
-For the design, we placed the gyro around the middle-top of the robot to get the most accurate output, while the camera was positioned at the front of the gyro to detect objects quickly.
-
-Our robot has two servos, one on the bottom front and one on the top front. The bottom front servo is used to steer the wheel. Then, we added a top servo that rotates our ultrasonic. We use an ultrasonic to keep our robot out of the wall. Finally, we place our motor at the bottom back of the robot, and to ensure that it drives both wheels at the back, we use a gear differential from Lego.
-<hr>
-
-## Robot's Chassis
-
 The robot chassis design consists mainly of the 3D printed parts, which provide a strong support for all the hardware and electronics devices. Each element is custom-designed to meet our specific requirements and interlocks seamlessly to create a lightweight yet resilient structure. Modification and extension of the orthotics and bambulab 3D-printed chassis is made easily due to its modular construction. It is designed to house the motors, electronic circuitry, and battery while enhancing thermal management and balanced weight distribution for efficient operation. This strategy not only allows for fast modeling and changes in design, but it also makes it easy if an operational change requires that some parts should be removed or replaced with better ones as the robot matures. All the 3D printable models can be found here. [All the 3D printable models can be found here](https://github.com/Book2009/Nocturnalist-Future-Engineers/tree/main/3D_Models).
-<br><br>
 
+The task of creating a robot for this competition is difficult. It has to be small, lightweight, strong and should incorporate all the required functions. The robot requires four wheels with the option of having the steering component on either the front or the rear, therefore component choice is of great importance. After deciding on the required components, we moved on to the effective assembly. We devoted time in making sure that the 3d printed parts were of the correct size limits.
+
+For design purposes, an application known as blender was used for 3d modelling. If the scale is wrong, even a minor mistake can mean hardware components do not click into each other. The most suitable filament was investigated and ABS (Acrylonitrile Butadiene Styrene) was the most suitable for our robot. After the design phase was complete, the components reproduce the designs and fitted them with the other components.
+
+The colors green and red were avoided when designing the robot as these colors could interfere with camera vision during the operation because they are the colors of the artificial barriers.
+
+The gyro is located at the middle-top of the robot in order to enhance the efficiency of the readings while the camera has been placed behind the gyro in order to allow for proper object detection.
 <hr>
 
 ## Components
