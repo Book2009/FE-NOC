@@ -136,17 +136,10 @@ We created a thorough work plan demonstrating our devotion and cooperation and s
 
 # **Part 2: MECHANICAL DESIGN**
 
-## The Robot
+## Robot's Chassis
 
 The robot chassis design consists mainly of the 3D printed parts, which provide a strong support for all the hardware and electronics devices. Each element is custom-designed to meet our specific requirements and interlocks seamlessly to create a lightweight yet resilient structure. Modification and extension of the orthotics and bambulab 3D-printed chassis is made easily due to its modular construction. It is designed to house the motors, electronic circuitry, and battery while enhancing thermal management and balanced weight distribution for efficient operation. This strategy not only allows for fast modeling and changes in design, but it also makes it easy if an operational change requires that some parts should be removed or replaced with better ones as the robot matures. All the 3D printable models can be found here. [All the 3D printable models can be found here](https://github.com/Book2009/Nocturnalist-Future-Engineers/tree/main/3D_Models).
 
-The task of creating a robot for this competition is difficult. It has to be small, lightweight, strong and should incorporate all the required functions. The robot requires four wheels with the option of having the steering component on either the front or the rear, therefore component choice is of great importance. After deciding on the required components, we moved on to the effective assembly. We devoted time in making sure that the 3d printed parts were of the correct size limits.
-
-For design purposes, an application known as blender was used for 3d modelling. If the scale is wrong, even a minor mistake can mean hardware components do not click into each other. The most suitable filament was investigated and ABS (Acrylonitrile Butadiene Styrene) was the most suitable for our robot. After the design phase was complete, the components reproduce the designs and fitted them with the other components.
-
-The colors green and red were avoided when designing the robot as these colors could interfere with camera vision during the operation because they are the colors of the artificial barriers.
-
-The gyro is located at the middle-top of the robot in order to enhance the efficiency of the readings while the camera has been placed behind the gyro in order to allow for proper object detection.
 <hr>
 
 ## Components
