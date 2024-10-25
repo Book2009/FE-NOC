@@ -156,7 +156,16 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/lockser.png" width = "400">
 
+<image src="[https://github.com/ThanyawutII/Test/blob/main/lockser.png](https://github.com/ThanyawutII/Test/blob/main/cam.png
+)" width = "400">
 
+<image src="https://github.com/ThanyawutII/Test/blob/main/camhold.png" width = "400">
+
+<image src="https://github.com/ThanyawutII/Test/blob/main/first.png" width = "400">
+
+<image src="https://github.com/ThanyawutII/Test/blob/main/bat.png" width = "400">
+
+<image src="https://github.com/ThanyawutII/Test/blob/main/second.png" width = "400">
 
 
 <hr>
