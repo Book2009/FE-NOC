@@ -154,6 +154,27 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
   </tr>
 </table>
 
+### Support Base
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20180757.png" width="400" >
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Support%20Plate.stl" target="_blank">Click here to view 3D model.</a></p>
+  </tr>
+</table>
+
+### C Clip
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20110026.png" width="400" >
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/C%20Clip%20x4.stl" target="_blank">Click here to view 3D model.</a></p>
+  </tr>
+</table>
 
 ### Differential Gear Mount
 
@@ -202,7 +223,7 @@ From this connection, we developed cylindrical formings which work more like bol
 Made for added security, precision grooves feature with special C-clips that serve as a replacement for nuts, designed to fit seamlessly. These C-clips are held firmly in place within specially designed grooves that prevent any movement. The groove area has a smaller diameter than the other sections, which ensures a tight fit, preventing any up-and-down motion. The only way to release the C-clip would be to pull it sideways, making the design stable and secure.
 
 <p align="center">
-<img width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20105604.png">  <img width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20110026.png"> 
+<img width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20105604.png">
 
 <hr>
 
