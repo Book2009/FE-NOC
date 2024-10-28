@@ -149,16 +149,26 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
 <img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20104249.png">
 </p>
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20113421.png" width="300" alt="Left">
+      <p><details>
+  <summary>Left Differential Gear Mount</summary>
 
-<details>
- <summary>Left Differential Gear Mount</summary>
-555
-</details>
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Left%20Differential%20Gear%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
 
-<details>
+</details></p>
+    </td>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20113506.png" width="300" alt="Right">
+      <p><details>
  <summary>Right Differential Gear Mount</summary>
 555
-</details>
+</details></p>
+    </td>
+  </tr>
+</table>
 
 
 <hr>
