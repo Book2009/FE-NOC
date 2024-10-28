@@ -177,7 +177,7 @@ This component is very important for supporting the differential gear firmly and
 <p align="center">
 <img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/a0c387ff-fb17-4383-9e34-803489d1c718.png">
 
-A lighter robot just provides enhanced mobility and more efficiency, which is a crucial factor given the requirements of competitively in the competition. In order to attain a most stringent connection to the base plate an interlocking joint was implemented. This design helps in assembling by minimizing the use of conventional fasteners during the construction process. 
+A lighter robot just provides enhanced mobility and more efficiency, which is a crucial factor given the requirements of competitively in the competition. In order to attain a most stringent connection to the main base an interlocking joint was implemented. This design helps in assembling by minimizing the use of conventional fasteners during the construction process. 
 
 <p align="center">
 <img width="350" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20163905.png">  <img width="390" src="https://github.com/ThanyawutII/Test-2/blob/main/Wood-Joints-fdf0ae5b6e2c40438e6800fe91fe2733.png"> 
