@@ -271,35 +271,35 @@ Made for added security, precision grooves feature with special C-clips that ser
 
 ### Holder
 <p align="center">
-<img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20104249.png">
+<img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20192510.png">
 </p>
 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20113421.png" width="300" alt="Left">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20192831.png" width="300" alt="Left">
       <p><details>
-  <summary>Left Differential Gear Mount</summary>
+  <summary>Left Side Handle Support</summary>
 
-  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Left%20Differential%20Gear%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Left%20Side%20Handle%20Support.stl" target="_blank">Click here to view 3D model.</a></p>
 
 </details></p>
     </td>
     <td align="center">
-      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20113506.png" width="300" alt="Right">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20193200.png" width="300" alt="Center">
       <p><details>
-  <summary>Left Differential Gear Mount</summary>
+  <summary>Upper Handle Bracket</summary>
 
-  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Right%20Differential%20Gear%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Upper%20Handle%20Bracket.stl" target="_blank">Click here to view 3D model.</a></p>
 
 </details></p>
     </td>
  <td align="center">
-      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20113506.png" width="300" alt="Right">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20192950.png" width="300" alt="Right">
       <p><details>
-  <summary>Left Differential Gear Mount</summary>
+  <summary>Right Side Handle Support</summary>
 
-  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Right%20Differential%20Gear%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Right%20Side%20Handle%20Support.stl" target="_blank">Click here to view 3D model.</a></p>
 
 </details></p>
     </td>
