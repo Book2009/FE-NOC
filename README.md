@@ -143,6 +143,18 @@ We created a thorough work plan demonstrating our devotion and cooperation and s
 
 The robot chassis design consists mainly of the 3D printed parts, which provide a strong support for all the hardware and electronics devices. Each element is custom-designed to meet our specific requirements and interlocks seamlessly to create a lightweight yet resilient structure. Modification and extension of the orthotics and bambulab 3D-printed chassis is made easily due to its modular construction. It is designed to house the motors, electronic circuitry, and battery while enhancing thermal management and balanced weight distribution for efficient operation. This strategy not only allows for fast modeling and changes in design, but it also makes it easy if an operational change requires that some parts should be removed or replaced with better ones as the robot matures. [All the 3D printable models can be found here](https://github.com/Book2009/Nocturnalist-Future-Engineers/tree/main/3D_Models).
 
+### Main Base
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20172356.png" width="400" >
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Main%20Base.stl" target="_blank">Click here to view 3D model.</a></p>
+  </tr>
+</table>
+
+
 ### Differential Gear Mount
 
 <p align="center">
@@ -300,7 +312,7 @@ The wires are a standard servo pinout -
 
 - #### **Differential** : Technic, Gear Differential With Inner Tabs and Closed Center, 28 Bevel Teeth
 <image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/differential%20gear.png" width = "300">
-This part ensure that both wheels have the power from the motor, which makes the robot drive forward. This part has gear teeth on the side, which are connected to the gear we put on the motor earlier, and then we put 3 small gears inside the differential. The differential is attached to the ma>in body using an axle from the wheel.
+This part ensure that both wheels have the power from the motor, which makes the robot drive forward. This part has gear teeth on the side, which are connected to the gear we put on the motor earlier, and then we put 3 small gears inside the differential. The differential is attached to the main body using an axle from the wheel.
 
 <hr>
 
