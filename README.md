@@ -225,6 +225,87 @@ Made for added security, precision grooves feature with special C-clips that ser
 <p align="center">
 <img width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20105604.png">
 
+### Power Tray
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20182952.png" width="400" >
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Power%20Tray.stl" target="_blank">Click here to view 3D model.</a></p>
+  </tr>
+</table>
+
+### Servo Bracket
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20184342.png" width="400" >
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Servo%20Bracket.stl" target="_blank">Click here to view 3D model.</a></p>
+  </tr>
+</table>
+
+### Camera Plate
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20185401.png" width="400" >
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Camara%20Plate.stl" target="_blank">Click here to view 3D model.</a></p>
+  </tr>
+</table>
+
+### Gyro-Camara Mount
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20191723.png" width="400" >
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Gyro-Camara%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
+  </tr>
+</table>
+
+### Holder
+<p align="center">
+<img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20104249.png">
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20113421.png" width="300" alt="Left">
+      <p><details>
+  <summary>Left Differential Gear Mount</summary>
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Left%20Differential%20Gear%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
+
+</details></p>
+    </td>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20113506.png" width="300" alt="Right">
+      <p><details>
+  <summary>Left Differential Gear Mount</summary>
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Right%20Differential%20Gear%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
+
+</details></p>
+    </td>
+ <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20113506.png" width="300" alt="Right">
+      <p><details>
+  <summary>Left Differential Gear Mount</summary>
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Right%20Differential%20Gear%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
+
+</details></p>
+    </td>
+  </tr>
+</table>
+
 <hr>
 
 ## Components
