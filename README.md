@@ -172,12 +172,17 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
   </tr>
 </table>
 
-This component is very important for supporting the differential gear firmly and creating solidity to the drivetrain of our robot. Among the basic choices that we made during the work on the robot design, one of the key decisions was not to use bolts and nuts. Thus making the robot lighter and requiring less additional elements and connections during assembly.This reduction in weight is achieved by using ABS plastic from filament instead of steel, which is much lighter.
+This component is very important for supporting the differential gear firmly and creating solidity to the drivetrain of our robot. Among the basic choices that we made during the work on the robot design, one of the key decisions was not to use bolts and nuts. This reduction in weight is achieved by using ABS plastic filament instead of steel, which is significantly lighter. This choice not only decreases the overall weight but also simplifies the assembly by requiring fewer additional elements and connections.
 
 <p align="center">
 <img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/a0c387ff-fb17-4383-9e34-803489d1c718.png">
 
-A lighter robot just provides enhanced mobility and more efficiency, which is a crucial factor given the requirements of competitively in the competition. To replace conventional fasteners we came up with cylindrical forms that rise out of the part.These cylindrical structures act as bolts helping align components and fasten them securely. 
+A lighter robot just provides enhanced mobility and more efficiency, which is a crucial factor given the requirements of competitively in the competition. In order to attain a most stringent connection to the base plate an interlocking joint was implemented. This design helps in assembling by minimizing the use of conventional fasteners during the construction process. 
+
+<p align="center">
+<img width="350" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20163905.png">  <img width="390" src="https://github.com/ThanyawutII/Test-2/blob/main/Wood-Joints-fdf0ae5b6e2c40438e6800fe91fe2733.png"> 
+  
+From this connection, we developed cylindrical formings which work more like bolts, used to place the parts in right position as well as fix them in place.
 
 <p align="center">
 <img width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20105711.png">
