@@ -145,6 +145,21 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
 
 ### Differential Gear Mount
 
+<p align="center">
+<img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20104249.png">
+</p>
+
+
+<details>
+ <summary>Left Differential Gear Mount</summary>
+555
+</details>
+
+<details>
+ <summary>Right Differential Gear Mount</summary>
+555
+</details>
+
 
 <hr>
 
