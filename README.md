@@ -163,13 +163,29 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
     <td align="center">
       <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20113506.png" width="300" alt="Right">
       <p><details>
- <summary>Right Differential Gear Mount</summary>
-555
+  <summary>Left Differential Gear Mount</summary>
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Right%20Differential%20Gear%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
+
 </details></p>
     </td>
   </tr>
 </table>
 
+This component is very important for supporting the differential gear firmly and creating solidity to the drivetrain of our robot. Among the basic choices that we made during the work on the robot design, one of the key decisions was not to use bolts and nuts. Thus making the robot lighter and requiring less additional elements and connections during assembly.This reduction in weight is achieved by using ABS plastic from filament instead of steel, which is much lighter.
+
+<p align="center">
+<img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/a0c387ff-fb17-4383-9e34-803489d1c718.png">
+
+A lighter robot just provides enhanced mobility and more efficiency, which is a crucial factor given the requirements of competitively in the competition. To replace conventional fasteners we came up with cylindrical forms that rise out of the part.These cylindrical structures act as bolts helping align components and fasten them securely. 
+
+<p align="center">
+<img width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20105711.png">
+
+Made for added security, precision grooves feature with special C-clips that serve as a replacement for nuts, designed to fit seamlessly. These C-clips are held firmly in place within specially designed grooves that prevent any movement. The groove area has a smaller diameter than the other sections, which ensures a tight fit, preventing any up-and-down motion. The only way to release the C-clip would be to pull it sideways, making the design stable and secure.
+
+<p align="center">
+<img width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20105604.png">  <img width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20110026.png"> 
 
 <hr>
 
