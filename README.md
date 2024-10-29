@@ -336,27 +336,27 @@ Made for added security, precision grooves feature with special C-clips that ser
     <td align="center">
       <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-29%20111605.png" width="300" alt="Left">
       <p><details>
-  <summary>Left Side Handle Support</summary>
+  <summary>Bottom Steering Mount</summary>
 
-  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Left%20Side%20Handle%20Support.stl" target="_blank">Click here to view 3D model.</a></p>
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Bottom%20Steering%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
 
 </details></p>
     </td>
     <td align="center">
       <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-29%20112227.png" width="300" alt="Center">
       <p><details>
-  <summary>Upper Handle Bracket</summary>
+  <summary>Steering Linkage Arm</summary>
 
-  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Upper%20Handle%20Bracket.stl" target="_blank">Click here to view 3D model.</a></p>
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Steering%20Linkage%20Arm.stl" target="_blank">Click here to view 3D model.</a></p>
 
 </details></p>
     </td>
  <td align="center">
       <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-29%20111522.png" width="300" alt="Right">
       <p><details>
-  <summary>Right Side Handle Support</summary>
+  <summary>Top Steering Mount</summary>
 
-  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Right%20Side%20Handle%20Support.stl" target="_blank">Click here to view 3D model.</a></p>
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Top%20Steering%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
 
 </details></p>
     </td>
@@ -368,18 +368,18 @@ Made for added security, precision grooves feature with special C-clips that ser
     <td align="center">
       <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-29%20115511.png" width="300" alt="Left">
       <p><details>
-  <summary>Left Side Handle Support</summary>
+  <summary>Steering Arm</summary>
 
-  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Left%20Side%20Handle%20Support.stl" target="_blank">Click here to view 3D model.</a></p>
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Steering%20Arm.stl" target="_blank">Click here to view 3D model.</a></p>
 
 </details></p>
     </td>
  <td align="center">
       <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-29%20112828.png" width="300" alt="Right">
       <p><details>
-  <summary>Right Side Handle Support</summary>
+  <summary>Steering Arm Support</summary>
 
-  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Right%20Side%20Handle%20Support.stl" target="_blank">Click here to view 3D model.</a></p>
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Steering%20Arm%20Support.stl" target="_blank">Click here to view 3D model.</a></p>
 
 </details></p>
     </td>
@@ -717,7 +717,7 @@ This button gives us an easier way to start the robot. Since the controller boar
 <hr>
 
 - #### **On/Off Switch** : SPST ON/OFF Switch 2 Pin Rocker Switch DC 125/250V
-This switch is for cutting the power from the battery to the robot. The regulation states that before starting the robot, the power must be cut off. That's when this switch came in. To use this switch we solder red wire(Positive pole) to the switch on 1 side for input. Then another solder red wire for output on the opposite side. You can put the black wire(Negative pole) straight into the step down. When the switch is turned on, the power from the battery will direct into the stepdown and then the robot. 
+This switch is for cutting the power from the battery to the robot. The regulation states that before starting the robot, the power must be cut off. That's when this switch came in. To use this switch we solder red wire(Positive pole) to the switch on 1 side for input. Then another solder red wire for output on the opposite side. You can put the black wire(Negative pole) straight into the step down. When the switch is turned on, the power from the battery will direct into the stepdown and then the robot. Additionally, we have designed a protective case for this switch to ensure safety and durability. [You can view the 3D model here](https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Switch%20Box.stl).
 
 <img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/OnOff%20Switch.png" width = "400">
 
