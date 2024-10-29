@@ -186,7 +186,7 @@ The purpose of this component is to reinforce the main base securing attachments
   </tr>
 </table>
 
-
+This component functions as a stabilizing element, similar to a nut, preventing objects from shifting or moving out of place. The open, C-shaped design allows it to be easily positioned around shafts or other components, ensuring they remain securely fixed while maintaining flexibility for adjustments when needed.
 
 <hr>
 
