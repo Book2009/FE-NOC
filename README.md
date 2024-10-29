@@ -156,6 +156,8 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
   </tr>
 </table>
 
+The main base provides the foundation for creating all other parts. It has cylindrical extensions meant to attach the servo and motor too — designed with LEGO connectors in mind, as opposed to clunky black pegs. medium Also detailed are the openings to accommodate both differential gear and regular gears so they do not hit the base when trying to rotate. One is a specially designed slot to work with this 3D-printed differential gear mount. The front part is cut out deeper so the servo fits inside and has no problems to spin freely. This design allows to move effectively and optics in the small space of the robot.
+
 <hr>
 
 ### Support Base
@@ -169,6 +171,8 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
   </tr>
 </table>
 
+The purpose of this component is to reinforce the main base securing attachments more firmly. It serves as an additional foundation to mount objects and 3D models, ensuring stability and strength in the overall structure.
+
 <hr>
 
 ### C Clip
@@ -181,6 +185,8 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
   <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/C%20Clip%20x4.stl" target="_blank">Click here to view 3D model.</a></p>
   </tr>
 </table>
+
+
 
 <hr>
 
@@ -246,6 +252,8 @@ Made for added security, precision grooves feature with special C-clips that ser
   </tr>
 </table>
 
+
+
 <hr>
 
 ### Servo Bracket
@@ -258,6 +266,8 @@ Made for added security, precision grooves feature with special C-clips that ser
   <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Servo%20Bracket.stl" target="_blank">Click here to view 3D model.</a></p>
   </tr>
 </table>
+
+
 
 <hr>
 
@@ -284,6 +294,8 @@ Made for added security, precision grooves feature with special C-clips that ser
   <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Gyro-Camara%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
   </tr>
 </table>
+
+
 
 <hr>
 
@@ -323,6 +335,8 @@ Made for added security, precision grooves feature with special C-clips that ser
     </td>
   </tr>
 </table>
+
+
 
 <hr>
 
@@ -385,6 +399,8 @@ Made for added security, precision grooves feature with special C-clips that ser
     </td>
   </tr>
 </table>
+
+
 
 <hr>
 
