@@ -267,7 +267,7 @@ This is the part that holds the 11.1V battery, which is easily removable for cha
   </tr>
 </table>
 
-
+This component is intended for firm attachment of a servo motor accompanied by an ultrasonic sensor that is to be used in rotation. The design incorporates cylindrical spigots so as to eliminate the use of black pins which are used to fasten the servo motor fabricated for Lego use. With this arrangement, the sensor movement is stable, well positioned and rigid within the system that improves the overall utility of the sensor.
 
 <hr>
 
