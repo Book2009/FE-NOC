@@ -282,24 +282,11 @@ This component is intended for firm attachment of a servo motor accompanied by a
   </tr>
 </table>
 
-<hr>
-
-### Gyro-Camara Mount
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20191723.png" width="400" >
-
-  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Gyro-Camara%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
-  </tr>
-</table>
-
-
+This component is designed to attach to the back of the camera, providing a mounting point that enables it to be securely connected to other components.
 
 <hr>
 
-### Holder
+### Handle
 <p align="center">
 <img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20192510.png">
 </p>
@@ -336,7 +323,22 @@ This component is intended for firm attachment of a servo motor accompanied by a
   </tr>
 </table>
 
+This handle is an important part as it allows the robot to be safely lifted, especially at times of high speeds. Should it happen that the robot malfunctions or does not act as intended, reaching down quickly to grasp it is practically impossible and could cause unintentional damage by tugging at sensitive pieces, including wires. With the handle, the robot can be raised safely and securely with minimal risk of mishandling.
 
+<hr>
+
+### Gyro-Camara Mount
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20191723.png" width="400" >
+
+  <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Gyro-Camara%20Mount.stl" target="_blank">Click here to view 3D model.</a></p>
+  </tr>
+</table>
+
+This component is mounted to the handle and it serves as the mounting area for the camera, which is secured through the camera plate. It allows the camera to tilt forward or backward, enabling flexible adjustments to capture the best angle for the robot's operations. Additionally, it offers a stable attachment point for the gyro sensor, ensuring accurate orientation and sensor alignment.
 
 <hr>
 
