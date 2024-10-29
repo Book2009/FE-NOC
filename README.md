@@ -156,7 +156,7 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
   </tr>
 </table>
 
-The main base provides the foundation for creating all other parts. It has cylindrical extensions meant to attach the servo and motor too — designed with LEGO connectors in mind, as opposed to clunky black pegs. medium Also detailed are the openings to accommodate both differential gear and regular gears so they do not hit the base when trying to rotate. One is a specially designed slot to work with this 3D-printed differential gear mount. The front part is cut out deeper so the servo fits inside and has no problems to spin freely. This design allows to move effectively and optics in the small space of the robot.
+The main base provides the foundation for creating all other parts. It has cylindrical extensions meant to attach the servo and motor too — designed with LEGO connectors in mind, as opposed to clunky black pegs. medium Also detailed are the openings to accommodate both differential gear and regular gears so they do not hit the base when trying to rotate. One is a specially designed slot to work with this 3D-printed differential gear mount. The front part is cut out deeper so the servo for steering fits inside and has no problems to spin freely. This design allows to move effectively and optics in the small space of the robot.
 
 <hr>
 
