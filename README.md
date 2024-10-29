@@ -252,7 +252,7 @@ Made for added security, precision grooves feature with special C-clips that ser
   </tr>
 </table>
 
-
+This is the part that holds the 11.1V battery, which is easily removable for charging. This also serves to securely mount the step-down module in place. The raised portion at the back forms a stable platform for mounting the microcontroller board. Hence, this design optimizes the layout by keeping the important electronics of the best organization in space and providing stability.
 
 <hr>
 
