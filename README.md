@@ -532,6 +532,7 @@ The wires are a standard servo pinout -
 
 - #### **Differential** : Technic, Gear Differential With Inner Tabs and Closed Center, 28 Bevel Teeth
 <image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/differential%20gear.png" width = "300"> <image src = "https://github.com/ThanyawutII/Test-2/blob/main/different.jpg" width = "400">
+
 This part ensure that both wheels have the power from the motor, which makes the robot drive forward. This part has gear teeth on the side, which are connected to the gear we put on the motor earlier, and then we put 3 small gears inside the differential. The differential is attached to the main body using an axle from the wheel.
 
 <hr>
