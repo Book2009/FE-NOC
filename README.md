@@ -404,21 +404,21 @@ This component is mounted to the handle and it serves as the mounting area for t
 
 - #### **Bottom Steering Mount**
 
-
+Its primary function is to ensure that both steering arms are aligned at the same angle during turns, providing precise and synchronized steering. It connects to the steering linkage arm, which is linked to the servo motor, allowing controlled movement and adjustments to the wheel angles. Additionally, we have designed a mounting point at the front of this component for a light sensor.
 
 - #### **Steering Linkage Arm**
 
-
+Its main function is to connect to the servo motor and control the steering direction of the robot.
 
 - #### **Top Steering Mount**
 
+Its primary function is to reinforce the bottom steering module, providing additional strength and stability to the steering structure. Additionally, we've designed a mount for an ultrasonic sensor
+
+- #### **Steering Arms**
 
 
-- #### **Steering Arm**
 
-
-
-- #### **Steering Arm Support**
+- #### **Steering Arm Supports**
 
 
 
