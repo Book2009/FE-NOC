@@ -422,7 +422,7 @@ Its main function is to keep the bottom and top steering mounts aligned with the
 
 - #### **Steering Arm Supports**
 
-
+Its primary function is to provide additional support for the PCB mounting posts, which are made of metal and are insufficiently long.
 
 <hr>
 
