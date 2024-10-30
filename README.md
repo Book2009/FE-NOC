@@ -813,6 +813,8 @@ The battery provides the power for our robot. This battery enhances the operatio
 
 <br><hr>
 
+### Robot
+- #### **It shows the inside of the robot, detailing where and how to place everything.**
 <p align="center">
     <img src="https://github.com/ThanyawutII/Test-2/blob/main/render%20with%20board-min.gif" width="600"/>
 
