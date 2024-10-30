@@ -417,9 +417,8 @@ Its primary function is to reinforce the bottom steering module, providing addit
 - #### **Steering Arms**
 
 Its main function is to keep the bottom and top steering mounts aligned with the front of the robot, ensuring stability and correct orientation. Additionally, it serves as the attachment point for the wheels. At the rear of this component, we've designed a large hole to fit a metal standoff or PCB support post, providing extra reinforcement to prevent breakage and enhance durability.
-
 <p align="center">
-<img width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/56827-removebg-preview.png">
+<img width="200" src="https://github.com/ThanyawutII/Test-2/blob/main/56827-removebg-preview.png">
 
 - #### **Steering Arm Supports**
 
