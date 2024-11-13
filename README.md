@@ -821,16 +821,29 @@ The battery provides the power for our robot. This battery enhances the operatio
 
 # **Part 3: Obstacle Management**
 
-## Flowchart
+## Open Challenge rounds
 
-- #### **Qualification challenge**
+In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
+
+- #### **The strategy**
+
+In this Open Challenge rounds, the robot will use the ultrasonic to measure the distance of the robot from the outer wall. The robot will use the color sensor to check the line color. If the first color is red, the robot will turn right, and if it’s blue, the robot will turn left(because if the robot has to turn right, it will detect the red line first, and if it has to turn left, it will detect the blue line first, using different color sensors for detecting each line color). Every time, the robot will check how many times it has crossed the first line. It will count 12 lines(1 round = 4 lines), and after that, it will walk with the timer that we set until the time we set runs out.
+
+<p align="center">
+If the first line is red
+</p>
+
+- #### **Flowchart**
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
-In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
 
 <br><hr>
 
-- #### **Obstacle challenge**
+- #### **Source Code**
+
+<br><hr>
+
+## Obstacle Challenge rounds
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
 In this round, our robot must complete three laps on a track marked with randomly placed green and red traffic signs.
@@ -842,8 +855,6 @@ In this round, our robot must complete three laps on a track marked with randoml
 The last traffic sign in the second round indicates the next move: a green sign means continue in the same direction for the third round, while a red sign requires turning around to complete the round in the opposite direction. The robot must not move any traffic signs. After finishing the three laps, the robot must find a parking lot and perform parallel parking.
 
 <br><hr>
-
-## Source Code
 
 
 
