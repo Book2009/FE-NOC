@@ -821,10 +821,16 @@ The battery provides the power for our robot. This battery enhances the operatio
 
 # **Part 3: Obstacle Management**
 
-<image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
-Open challenge flowchart. In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
+## Flowchart
 
-<br><br>
+- #### **Qualification challenge**
+
+<image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
+In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
+
+<br><hr>
+
+- #### **Obstacle challenge**
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
 In this round, our robot must complete three laps on a track marked with randomly placed green and red traffic signs.
@@ -836,6 +842,8 @@ In this round, our robot must complete three laps on a track marked with randoml
 The last traffic sign in the second round indicates the next move: a green sign means continue in the same direction for the third round, while a red sign requires turning around to complete the round in the opposite direction. The robot must not move any traffic signs. After finishing the three laps, the robot must find a parking lot and perform parallel parking.
 
 <br><hr>
+
+## Source Code
 
 
 
