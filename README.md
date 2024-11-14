@@ -218,7 +218,7 @@ This component functions as a stabilizing element, similar to a nut, preventing 
   </tr>
 </table>
 
-This component is very important for supporting the differential gear firmly and creating solidity to the drivetrain of our robot. Among the basic choices that we made during the work on the robot design, one of the key decisions was not to use bolts and nuts. This reduction in weight is achieved by using ABS plastic filament instead of steel, which is significantly lighter. This choice not only decreases the overall weight but also simplifies the assembly by requiring fewer additional elements and connections.
+This component is very important for supporting the differential gear firmly and creating solidity to the drivetrain of our robot. Among the basic choices that we made during the work on the robot design, one of the key decisions was to use as few bolts and nuts as possible. This reduction in weight is achieved by using ABS plastic filament instead of steel, which is significantly lighter. This choice not only decreases the overall weight but also simplifies the assembly by requiring fewer additional elements and connections.
 
 <p align="center">
 <img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/a0c387ff-fb17-4383-9e34-803489d1c718.png">
