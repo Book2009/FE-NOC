@@ -833,6 +833,10 @@ In this Open Challenge rounds, the robot will use the ultrasonic to measure the 
 If the first line is red
 </p>
 
+<p align="center">
+If the first line is blue
+</p>
+
 <br><hr>
 
 - #### **Flowchart**
