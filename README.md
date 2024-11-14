@@ -870,6 +870,10 @@ The last traffic sign in the second round indicates the next move: a green sign 
 
 <br><hr>
 
+### Function
+
+This is all the function of our program
+
 
 
 
