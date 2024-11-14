@@ -835,12 +835,12 @@ If the first line is red
 
 <p align="center">
   <span style="display: inline-block; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="left" width="300">
+    <img src="https://via.placeholder.com/150" alt="left" width="250">
     <br>ข้อความใต้รูปซ้าย
   </span>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <span style="display: inline-block; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="right" width="300">
+    <img src="https://via.placeholder.com/150" alt="right" width="250">
     <br>ข้อความใต้รูปขวา
   </span>
 </p>
