@@ -845,7 +845,6 @@ If the first line is red
 
 ## Obstacle Challenge rounds
 
-<image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
 In this round, our robot must complete three laps on a track marked with randomly placed green and red traffic signs.
 <br>
 ● Red Pillar: Keep to the right side of the lane.
@@ -853,6 +852,17 @@ In this round, our robot must complete three laps on a track marked with randoml
 ● Green Pillar: Keep to the left side of the lane.
 <br>
 The last traffic sign in the second round indicates the next move: a green sign means continue in the same direction for the third round, while a red sign requires turning around to complete the round in the opposite direction. The robot must not move any traffic signs. After finishing the three laps, the robot must find a parking lot and perform parallel parking.
+
+
+- #### **The strategy**
+
+- #### **Flowchart**
+
+<image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
+
+<br><hr>
+
+- #### **Source Code**
 
 <br><hr>
 
