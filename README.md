@@ -921,7 +921,7 @@ After completing the second round
 </p>
 
 <p align="center">
-If the color of the last pillar is red
+If the color of the last pillar is red(U-turn)
 </p>
 
 </p>
@@ -930,7 +930,7 @@ If the color of the last pillar is red
 </p>
 
 <p align="center">
-If the color of the last pillar is green
+If the color of the last pillar is green(continuing straight)
 </p>
 
 </p>
@@ -939,13 +939,15 @@ If the color of the last pillar is green
 </p>
 
 <p align="center">
-If the color of the last pillar is green
+Park in parking area
 </p>
 
 </p>
 <p align="center">
   <img src="https://via.placeholder.com/150" width="420"/>
 </p>
+
+The robot will drive to park in the purple parking area that was detected, using the stored position to accurately align itself.
 
 <br><hr>
 
