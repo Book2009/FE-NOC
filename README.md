@@ -833,6 +833,8 @@ In this Open Challenge rounds, the robot will use the ultrasonic to measure the 
 If the first line is red
 </p>
 
+<br><hr>
+
 - #### **Flowchart**
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
@@ -855,6 +857,8 @@ The last traffic sign in the second round indicates the next move: a green sign 
 
 
 - #### **The strategy**
+
+<br><hr>
 
 - #### **Flowchart**
 
