@@ -834,15 +834,12 @@ If the first line is red
 </p>
 
 <p align="center">
-  <span style="display: inline-block; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="left" width="250">
-    <br>ข้อความใต้รูปซ้าย
-  </span>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display: inline-block; text-align: center;">
-    <img src="https://via.placeholder.com/150" alt="right" width="250">
-    <br>ข้อความใต้รูปขวา
-  </span>
+  <img src="https://via.placeholder.com/150" alt="left" width="200">
+  <img src="https://via.placeholder.com/150" alt="right" width="200">
+</p>
+
+<p align="center">
+  ข้อความใต้รูปซ้าย &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ข้อความใต้รูปขวา
 </p>
 
 <p align="center">
