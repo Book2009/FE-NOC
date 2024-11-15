@@ -218,7 +218,7 @@ This component functions as a stabilizing element, similar to a nut, preventing 
   </tr>
 </table>
 
-This component is very important for supporting the differential gear firmly and creating solidity to the drivetrain of our robot. Among the basic choices that we made during the work on the robot design, one of the key decisions was to use as few bolts and nuts as possible. This reduction in weight is achieved by using ABS plastic filament instead of steel, which is significantly lighter. This choice not only decreases the overall weight but also simplifies the assembly by requiring fewer additional elements and connections.
+This component is very important for supporting the differential gear firmly and creating solidity to the drivetrain of our robot. Among the basic choices that we made during the work on the robot design, one of the key decisions was not to use bolts and nuts. This reduction in weight is achieved by using ABS plastic filament instead of steel, which is significantly lighter. This choice not only decreases the overall weight but also simplifies the assembly by requiring fewer additional elements and connections.
 
 <p align="center">
 <img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/a0c387ff-fb17-4383-9e34-803489d1c718.png">
@@ -846,24 +846,6 @@ If the first line is red
 If the first line is blue
 </p>
 
-
-<p align="center">
-  <img src="https://via.placeholder.com/150" alt="left" width="200">
-  <img src="https://via.placeholder.com/150" alt="right" width="200">
-</p>
-
-<p align="center">
-  Start &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When detect the first line 
-</p>
-
-The robot will use the distance of robot from the wall and gyro sensor degree to calculate into steering degree (turning degree) to maintain the distance between the wall with PID (Proportional Integral Derivative)
-
-<p>
-U(t) = k<sub>p</sub> e(t) + k<sub>i</sub> ∫ e(t) dt + k<sub>d</sub> (de/dt)
-</p>
-<p>(PID Formula)
-</p>
-
 <br><hr>
 
 - #### **Flowchart**
@@ -888,66 +870,6 @@ The last traffic sign in the second round indicates the next move: a green sign 
 
 
 - #### **The strategy**
-
-In the WRO 2024 Obstacle Challenge round, the robot uses a combination of ultrasonic sensors, a color sensor, a gyro, and an OpenMV Camera to navigate the course, detect and avoid obstacles, and maintain a safe distance from walls. The OpenMV Camera identifies obstacles and their colors—turning right for red obstacles and left for green ones—while the gyro ensures smooth and precise turns. After completing the second round, the robot uses the OpenMV Camera to search for the purple parking area, detecting its color directly and comparing its size to the red and green pillars to determine its position. Based on the color of the last pillar encountered, the robot either performs a U-turn (if the pillar is red) or continues straight (if the pillar is green), then proceeds to park in the identified purple parking area, using the stored location to accurately position itself.
-
-<p align="center">
-If the robot sees red obstacle.
-</p>
-
-</p>
-<p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
-</p>
-
-<p align="center">
-If the robot sees green obstacle
-</p>
-
-</p>
-<p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
-</p>
-
-The robot still use the PID to walk, but we added the avoidance degree to avoid the obstacles.
-
-<p align="center">
-After completing the second round
-</p>
-
-</p>
-<p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
-</p>
-
-<p align="center">
-If the color of the last pillar is red(U-turn)
-</p>
-
-</p>
-<p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
-</p>
-
-<p align="center">
-If the color of the last pillar is green(continuing straight)
-</p>
-
-</p>
-<p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
-</p>
-
-<p align="center">
-Park in parking area
-</p>
-
-</p>
-<p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
-</p>
-
-The robot will drive to park in the purple parking area that was detected, using the stored position to accurately align itself.
 
 <br><hr>
 
