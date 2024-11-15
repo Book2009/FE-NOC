@@ -492,7 +492,7 @@ ABS (acrylonitrile butadiene styrene) is probably the most common filament used 
 
 #### **Driving motor** : Power Functions Large-Motor made by LEGO™.
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/Motor.png" width = "400">
-It's a simple motor, and we chose this motor because of its easy connection to our robot and its cost-effectiveness. This motor is small yet powerful. and it is the perfect size for our robot. The motor comes with a dedicated port for Lego. So, we modified it to make it able to connect to the board. 
+It's a simple motor, and we chose this motor because of its easy connection to our robot and its cost-effectiveness. This motor is small yet powerful and small power consumption. It is the perfect size for our robot compairing to other motor in the market which typically round on all side and need specific mounting bracket for example ZGA32RI. The motor comes with a dedicated port for Lego. So, we modified it to make it able to connect to the board. 
 
 ##### Electrical Specifications
 
