@@ -824,7 +824,7 @@ The battery provides the power for our robot. This battery enhances the operatio
 ### Wiring diagram
 It shows you the connection of various components to the microcontroller.
 <p align="center">
-    <img src="https://via.placeholder.com/150" width="750"/>
+    <img src="https://github.com/Book2009/FE-NOC/blob/main/Schemes/Wiring_diagram.png" width="700"/>
 
 <br><hr>
 
