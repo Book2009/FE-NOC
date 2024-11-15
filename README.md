@@ -821,6 +821,13 @@ The battery provides the power for our robot. This battery enhances the operatio
 
 <br><hr>
 
+### Wiring diagram
+It shows you the connection of various components to the microcontroller.
+<p align="center">
+    <img src="https://via.placeholder.com/150" width="750"/>
+
+<br><hr>
+
 # **Part 3: Obstacle Management**
 
 ### **How the robot works**
