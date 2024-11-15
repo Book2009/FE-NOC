@@ -509,6 +509,44 @@ It's a simple motor, and we chose this motor because of its easy connection to o
 
 <hr>
 
+- #### **Differential** : Technic, Gear Differential With Inner Tabs and Closed Center, 28 Bevel Teeth
+<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/differential%20gear.png" width = "300"> <image src = "https://github.com/ThanyawutII/Test-2/blob/main/different.jpg" width = "400">
+
+This part ensure that both wheels have the power from the motor, which makes the robot drive forward. This part has gear teeth on the side, which are connected to the gear we put on the motor earlier, and then we put 3 small gears inside the differential. The differential is attached to the main body using an axle from the wheel.
+
+<hr>
+
+<h2>Step 1: Calculate the gear ratio</h2>
+<p>The gear ratio is determined by the ratio of the number of teeth on the input and output gears:</p>
+<div class="equation">
+    Gear Ratio = <sup>Number of teeth on input gear</sup> / <sub>Number of teeth on output gear</sub> = <sup>36</sup> / <sub>28</sub> = 1.2857
+</div>
+
+<h2>Step 2: Calculate output RPM</h2>
+<p>The output RPM increases due to the gear ratio. To find the output RPM:</p>
+<div class="equation">
+    Output RPM = Input RPM × Gear Ratio = 390 × 1.2857 = 501.4 RPM
+</div>
+
+<h2>Step 3: Calculate output torque</h2>
+<p>The torque decreases inversely proportional to the gear ratio. To find the output torque:</p>
+<div class="equation">
+    Output Torque = <sup>Input Torque</sup> / <sub>Gear Ratio</sub> = <sup>40</sup> / <sub>1.2857</sub> = 31.1 N·cm
+</div>
+
+<hr>
+
+<h2>Final Results:</h2>
+<ul>
+    <li><strong>Output RPM</strong>: ~501.4 RPM</li>
+    <li><strong>Output Torque</strong>: ~31.1 N·cm</li>
+</ul>
+
+</body>
+</html>
+
+<hr>
+
 - #### **Servo** : GEEKSERVO 2kg 360 Degrees Servo.
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/servo.png" width = "400">
 We use this servo for steering the robot and employ an ultrasonic sensor for rotation. This servo is compatible with LEGO, making it easy and convenient to build the robot by just putting studs in the hole on the side. We like how you can connect two axles to the dual outputs on this servo so you can power two wheels or gears, or mount the servo securely inside articulated limbs and other contraptions. Additionally, the gears inside these servos will 'slip' when the blocking load is too high instead of jamming, helping avoid damage to your servos and boards.
@@ -528,13 +566,6 @@ The wires are a standard servo pinout -
 | Rated current     | 200mA    |
 | Stall current     | 700mA    |
 | Sliding current   | 450mA    |
-
-<hr>
-
-- #### **Differential** : Technic, Gear Differential With Inner Tabs and Closed Center, 28 Bevel Teeth
-<image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/differential%20gear.png" width = "300"> <image src = "https://github.com/ThanyawutII/Test-2/blob/main/different.jpg" width = "400">
-
-This part ensure that both wheels have the power from the motor, which makes the robot drive forward. This part has gear teeth on the side, which are connected to the gear we put on the motor earlier, and then we put 3 small gears inside the differential. The differential is attached to the main body using an axle from the wheel.
 
 <hr>
 
