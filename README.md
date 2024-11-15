@@ -850,6 +850,22 @@ If the first line is red
 If the first line is blue
 </p>
 
+<p align="center">
+   <img src="https://via.placeholder.com_ 150" alt="left" width="200"> <img src="https://via.placeholder.com_ 150" alt="right" width="200"> 
+</p> 
+
+<p align="center"> 
+Start &nbsp;&nbsp;&nbsp;& bsp;&nbsp;&nbsp;&nbsp;&nbsp; When detect the first line 
+</p> 
+
+The robot will use the distance of robot rom the wall and gyro sensor degree са culate into steering degree (turning degr e) to maintain the distance between the w ll with PID (Proportional Integral Deriva ive) 
+
+<p> 
+U(t) = k<sub>p</sub> e(t) + k<sub>i</sub_ [ e(t) dt + k<sub>d</sub> (de/dt) 
+</p> 
+<p>(PID Formula) 
+</p>
+
 <br><hr>
 
 - #### **Flowchart**
