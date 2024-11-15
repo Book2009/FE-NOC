@@ -851,8 +851,8 @@ If the first line is blue
 </p>
 
 <p align="center">
-  <img src="https://via.placeholder.com_ 150" alt="left" width="200"> 
-  <img src="https://via.placeholder.com_ 150" alt="right" width="200"> 
+  <img src="https://via.placeholder.com/150" alt="left" width="200"> 
+  <img src="https://via.placeholder.com/150" alt="right" width="200"> 
 </p> 
 
 <p align="center"> 
@@ -891,6 +891,35 @@ The last traffic sign in the second round indicates the next move: a green sign 
 
 
 - #### **The strategy**
+
+In the WRO 2024 Obstacle Challenge round, the robot uses a combination of ultrasonic sensors, a color sensor, a gyro, and an OpenMV Camera to navigate the course, detect and avoid obstacles, and maintain a safe distance from walls. The OpenMV Camera identifies obstacles and their colors-turning right for red obstacles and left for green ones while the gyro ensures smooth and precise turns. After completing the second round, the robot uses the OpenMV Camera to search for the purple parking area, detecting its color directly and comparing its size to the red and green pillars to determine its position. Based on the color of the last pillar encountered, the robot either performs a U-turn (if the pillar is red) or continues straight (if the pillar is green), then proceeds to park in the identified purple parking area, using the stored location to accurately position itself.
+
+<p align="center">
+If the robot sees red obstacle.
+</p>
+
+</p>
+<p align="center">
+  <img src="https://via.placeholder.com /150" width="420"/>
+</p>
+
+<p align="center">
+If the robot sees green obstacle
+</p>
+
+</p>
+<p align="center">
+  <img src="https://via.placeholder.com /150" width="420"/>
+</p>
+
+The robot still use the PID to walk, but we added the avoidance degree to avoid the obstacles.
+
+<p align="center">
+After completing the second round
+</p>
+
+</p>
+<p align="center">
 
 <br><hr>
 
