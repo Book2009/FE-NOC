@@ -832,7 +832,10 @@ This is a step-down DC-DC module. It comes with a status indicator light, a disp
 
 - #### **Battery** : 11.1 voltage 3 cell Lipo-Battery.
 <image src="https://github.com/ThanyawutII/Test/blob/main/Screenshot_2024-10-22_112329-removebg-preview.png" width = "400">
-This battery enhances the performance of the robot by providing a higher voltage, which helps reduce the current draw and minimize power loss during operation. Additionally, it ensures stable and continuous operation without experiencing voltage drops, especially under high current loads. This reliability gives the team confidence during practice and competitions.
+We upgraded from a 7.4V battery to an 11.1V battery due to reliability concerns and the limited capacity of the 7.4V option. The 11.1V battery enhances the robot's performance by providing higher voltage, which reduces current draw and minimizes power losses during operation. This upgrade ensures stable and continuous functionality without significant voltage drops, even under high current loads, a critical factor during intense practice sessions and competitions.
+
+To ensure compatibility with our motor's maximum voltage rating of 9V, we incorporated a step-down voltage regulator. This module efficiently converts the 11.1V input to a stable 9V output, maintaining the motor's safety while maximizing the extended runtime afforded by the 11.1V battery. This solution not only improves reliability but also instills confidence in the system's durability and performance under demanding conditions.
+
 
 ##### Specification
 
