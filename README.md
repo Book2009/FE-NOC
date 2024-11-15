@@ -905,6 +905,8 @@ In the WRO 2024 Obstacle Challenge round, the robot uses a combination of ultras
 
 After completing the second round, the robot uses the OpenMV Camera to search for the purple parking area by detecting its color and comparing its size to the red and green pillars to determine its location. If the last pillar encountered before the end of the third round is red, the robot performs a U-turn; if it is green, the robot continues straight. Once the third round is complete, the robot proceeds to park in the identified purple parking area, accurately positioning itself based on the location recorded by the OpenMV Camera.
 
+<br>
+
 <p align="center">
 If the robot sees red obstacle.
 </p>
@@ -913,6 +915,8 @@ If the robot sees red obstacle.
 <p align="center">
   <img src="https://github.com/ThanyawutII/Test-2/blob/main/obr.jpg" width="700"/>
 </p>
+
+<br>
 
 <p align="center">
 If the robot sees green obstacle
@@ -925,6 +929,8 @@ If the robot sees green obstacle
 
 The robot still use the PID to walk, but we added the avoidance degree to avoid the obstacles.
 
+<br>
+
 <p align="center">
 After completing the second round
 </p>
@@ -936,6 +942,8 @@ After completing the second round
 
 The robot uses the OpenMV Camera to search for the purple parking area, detecting its color directly and comparing its size to the red and green pillars to determine its position.
 
+<br>
+
 <p align="center">
 If the color of the last pillar is green(continuing straight)
 </p>
@@ -944,6 +952,8 @@ If the color of the last pillar is green(continuing straight)
 <p align="center">
   <img src="https://github.com/ThanyawutII/Test-2/blob/main/con.jpg" width="700"/>
 </p>
+
+<br>
 
 <p align="center">
 If the color of the last pillar is red(U- turn)
@@ -954,11 +964,11 @@ If the color of the last pillar is red(U- turn)
   <img src="https://github.com/ThanyawutII/Test-2/blob/main/uturn.jpg" width="700"/>
 </p>
 
+<br>
+
 <p align="center">
 Park in parking area
 </p>
-
-The robot proceeds to park in the identified purple parking area, using the stored location to accurately position itself.
 
 </p>
 <p align="center">
