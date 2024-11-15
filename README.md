@@ -896,7 +896,9 @@ The last traffic sign in the second round indicates the next move: a green sign 
 
 - #### **The strategy**
 
-In the WRO 2024 Obstacle Challenge round, the robot uses a combination of ultrasonic sensors, a color sensor, a gyro, and an OpenMV Camera to navigate the course, detect and avoid obstacles, and maintain a safe distance from walls. The OpenMV Camera identifies obstacles and their colors-turning right for red obstacles and left for green ones while the gyro ensures smooth and precise turns. After completing the second round, the robot uses the OpenMV Camera to search for the purple parking area, detecting its color directly and comparing its size to the red and green pillars to determine its position. Based on the color of the last pillar encountered, the robot either performs a U-turn (if the pillar is red) or continues straight (if the pillar is green), then proceeds to park in the identified purple parking area, using the stored location to accurately position itself.
+In the WRO 2024 Obstacle Challenge round, the robot uses a combination of ultrasonic sensors, a color sensor, a gyro, and an OpenMV Camera to navigate the course, detect and avoid obstacles, and maintain a safe distance from walls. The OpenMV Camera identifies obstacles and their colors, turning right for red obstacles and left for green ones, while the gyro ensures smooth and precise turns.
+
+After completing the second round, the robot uses the OpenMV Camera to search for the purple parking area by detecting its color and comparing its size to the red and green pillars to determine its location. If the last pillar encountered before the end of the third round is red, the robot performs a U-turn; if it is green, the robot continues straight. Once the third round is complete, the robot proceeds to park in the identified purple parking area, accurately positioning itself based on the location recorded by the OpenMV Camera.
 
 <p align="center">
 If the robot sees red obstacle.
