@@ -927,8 +927,10 @@ After completing the second round
   <img src="https://via.placeholder.com/150" width="420"/>
 </p>
 
+The robot uses the OpenMV Camera to search for the purple parking area, detecting its color directly and comparing its size to the red and green pillars to determine its position.
+
 <p align="center">
-If the color of the last pillar is red(U- turn)
+If the color of the last pillar is green(continuing straight)
 </p>
 
 </p>
@@ -937,7 +939,7 @@ If the color of the last pillar is red(U- turn)
 </p>
 
 <p align="center">
-If the color of the last pillar is green( continuing straight)
+If the color of the last pillar is red(U- turn)
 </p>
 
 </p>
@@ -949,12 +951,14 @@ If the color of the last pillar is green( continuing straight)
 Park in parking area
 </p>
 
+The robot proceeds to park in the identified purple parking area, using the stored location to accurately position itself.
+
 </p>
 <p align="center">
   <img src="https://via.placeholder.com/150" width="420"/>
 </p>
 
-The robot will drive to park in the purpl e parking area that was detected, using th e stored position to accurately align itse lf.
+The robot will drive to park in the purple parking area that was detected, using the stored position to accurately align itself.
 
 <br><hr>
 
