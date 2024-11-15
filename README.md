@@ -825,6 +825,10 @@ The battery provides the power for our robot. This battery enhances the operatio
 
 # **Part 3: Obstacle Management**
 
+### **How the robot works**
+
+To help you better understand what I'm explaining, you can [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.
+
 ## Open Challenge rounds
 
 In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
