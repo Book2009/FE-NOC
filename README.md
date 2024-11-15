@@ -847,8 +847,8 @@ If the first line is red
 </p>
 
 <p align="center">
-  <img src="https://github.com/ThanyawutII/Test-2/blob/main/right.jpg" alt="left" width="500">
-  <img src="https://github.com/ThanyawutII/Test-2/blob/main/rightright.jpg" alt="right" width="500">
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/right.jpg" alt="left" width="450">
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/rightright.jpg" alt="right" width="450">
 </p>
 
 <p align="center">
@@ -860,8 +860,8 @@ If the first line is blue
 </p>
 
 <p align="center">
-  <img src="https://github.com/ThanyawutII/Test-2/blob/main/left.jpg" alt="left" width="500"> 
-  <img src="https://github.com/ThanyawutII/Test-2/blob/main/leftleft.jpg" alt="right" width="500"> 
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/left.jpg" alt="left" width="450"> 
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/leftleft.jpg" alt="right" width="450"> 
 </p> 
 
 <p align="center"> 
