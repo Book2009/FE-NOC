@@ -847,12 +847,12 @@ If the first line is red
 </p>
 
 <p align="center">
-  <img src="https://via.placeholder.com/150" alt="left" width="200">
-  <img src="https://via.placeholder.com/150" alt="right" width="200">
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/right.jpg" alt="left" width="500">
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/rightright.jpg" alt="right" width="500">
 </p>
 
 <p align="center">
-  Start &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When detect the first line 
+  Start  When detect the first line 
 </p>
 
 <p align="center">
@@ -860,12 +860,12 @@ If the first line is blue
 </p>
 
 <p align="center">
-  <img src="https://via.placeholder.com/150" alt="left" width="200"> 
-  <img src="https://via.placeholder.com/150" alt="right" width="200"> 
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/left.jpg" alt="left" width="500"> 
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/leftleft.jpg" alt="right" width="500"> 
 </p> 
 
 <p align="center"> 
-  Start &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When detect the first line 
+  Start  When detect the first line 
 </p> 
 
 The robot will use the distance of robot rom the wall and gyro sensor degree са culate into steering degree (turning degree) to maintain the distance between the w ll with PID (Proportional Integral Derivaive) 
@@ -911,7 +911,7 @@ If the robot sees red obstacle.
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/obr.jpg" width="700"/>
 </p>
 
 <p align="center">
@@ -920,7 +920,7 @@ If the robot sees green obstacle
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/obg.jpg" width="700"/>
 </p>
 
 The robot still use the PID to walk, but we added the avoidance degree to avoid the obstacles.
@@ -931,7 +931,7 @@ After completing the second round
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/pur.jpg" width="700"/>
 </p>
 
 The robot uses the OpenMV Camera to search for the purple parking area, detecting its color directly and comparing its size to the red and green pillars to determine its position.
@@ -942,7 +942,7 @@ If the color of the last pillar is green(continuing straight)
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/con.jpg" width="700"/>
 </p>
 
 <p align="center">
@@ -951,7 +951,7 @@ If the color of the last pillar is red(U- turn)
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/uturn.jpg" width="700"/>
 </p>
 
 <p align="center">
@@ -962,7 +962,7 @@ The robot proceeds to park in the identified purple parking area, using the stor
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com/150" width="420"/>
+  <img src="https://github.com/ThanyawutII/Test-2/blob/main/park.jpg" width="700"/>
 </p>
 
 The robot will drive to park in the purple parking area that was detected, using the stored position to accurately align itself.
