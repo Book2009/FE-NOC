@@ -135,6 +135,10 @@ We created a thorough work plan demonstrating our devotion and cooperation and s
 
 # **Part 2: MECHANICAL DESIGN**
 
+### **Overview of design and build**
+
+To help you better understand what I'm explaining, you can [click here](https://youtu.be/SQbjwI3JNeM) to view the video we created.
+
 ## Robot's Chassis
 
 
