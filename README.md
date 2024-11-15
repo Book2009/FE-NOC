@@ -904,7 +904,7 @@ If the robot sees red obstacle.
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com /150" width="420"/>
+  <img src="https://via.placeholder.com/150" width="420"/>
 </p>
 
 <p align="center">
@@ -913,7 +913,7 @@ If the robot sees green obstacle
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com /150" width="420"/>
+  <img src="https://via.placeholder.com/150" width="420"/>
 </p>
 
 The robot still use the PID to walk, but we added the avoidance degree to avoid the obstacles.
@@ -924,7 +924,7 @@ After completing the second round
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com /150" width="420"/>
+  <img src="https://via.placeholder.com/150" width="420"/>
 </p>
 
 <p align="center">
@@ -933,7 +933,7 @@ If the color of the last pillar is red(U- turn)
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com /150" width="420"/>
+  <img src="https://via.placeholder.com/150" width="420"/>
 </p>
 
 <p align="center">
@@ -942,7 +942,7 @@ If the color of the last pillar is green( continuing straight)
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder./150" width="420"/>
+  <img src="https://via.placeholder.com/150" width="420"/>
 </p>
 
 <p align="center">
@@ -951,7 +951,7 @@ Park in parking area
 
 </p>
 <p align="center">
-  <img src="https://via.placeholder.com /150" width="420"/>
+  <img src="https://via.placeholder.com/150" width="420"/>
 </p>
 
 The robot will drive to park in the purpl e parking area that was detected, using th e stored position to accurately align itse lf.
