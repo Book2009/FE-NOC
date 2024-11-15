@@ -341,7 +341,7 @@ This handle is an important part as it allows the robot to be safely lifted, esp
   </tr>
 </table>
 
-This component is mounted to the handle and it serves as the mounting area for the camera, which is secured through the camera plate. It allows the camera to tilt forward or backward, enabling flexible adjustments to capture the best angle for the robot's operations. Additionally, it offers a stable attachment point for the gyro sensor, ensuring accurate orientation and sensor alignment.
+This component is mounted to the handle and serves as the mounting area for the camera, which is secured through the camera plate. It allows the camera to tilt forward or backward, enabling flexible adjustments to capture the best angle for the robot's operations. Additionally, it offers a stable attachment point for the gyro sensor, ensuring accurate orientation and sensor alignment. The gyro mount is positioned around the middle top of the robot to achieve the most accurate output, while the camera mount is placed at the back to ensure precise object detection.
 
 <hr>
 
