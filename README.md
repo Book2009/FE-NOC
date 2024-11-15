@@ -431,8 +431,6 @@ Its primary function is to provide additional support for the PCB mounting posts
 
 ## Components
 
-### 3D Parts
-
 - #### **3D Printer** : Bambu Lab X1 Carbon by Bambu Lab
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/3D/3D%20Printer.png" width = "400">
 The reasons that we use Bambu Lab X1-Carbon 3D printer because this printer is a high-performance 3D printer designed for precision and efficiency. It is equipped with advanced technology and features, making it suitable for professional use as well as hobbyist projects that require high-quality prints.
