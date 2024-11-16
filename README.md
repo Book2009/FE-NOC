@@ -1330,9 +1330,13 @@ This code processes data from the camera to identify and sort detected blobs by 
   } else {
     avoidance_degree = calculate_avoidance(blob.signature, blob.width, blob.x, blob.y);
   }
+```
 
 In this code, avoidance_degree is set to 0 at the start. The code then checks if tempBlob has a signature of 3 (meaning it’s a purple blob) and if it’s wider than the main blob divided by 3.9. If both are true, it calculates an avoidance angle using tempBlob’s data and multiplies it by -2 to create a stronger reaction in the opposite direction. If the conditions aren’t met, it calculates a normal avoidance angle using red and green  blob's data instead.
 
+- #### **Section 11 [Obstacle Challenge round]**
+- 
+```c++
   int desiredDistance = parking_step == 0 ? (camera.isBlockFound() ? 20 : 40) : 15;
   float distanceError = getDistance() - desiredDistance;
   float frontDistance = getDistanceII();
@@ -1347,7 +1351,7 @@ In this code, avoidance_degree is set to 0 at the start. The code then checks if
 ```
 From code above, we declare variables called desireDistance to set the perfect distance between the robot and wall. If parking step is not equal to 0 (it exit the main loop and going to perform parking) and it sees a block, set the desireDistance to 20 if not set to 40, and if it is in the main loop set it to 15. distanceError is to make the robot know that is it too far from desireDistance. deadband is to neglect small error. If distanceError is less than 2 then ignore them. Because we make the ultrasonic move left and right due to the block nearest to the robot, we need to add directionFactor to let the robot keep distance from the wall normally. The adjustedYaw is calculated by adjusting pvYaw using the distanceError and directionFactor, clamped between -20 and 20. Finally, the pidOutput is calculated using the compassPID controller to adjust the robot's steering.
 
-- #### **Section 11 [Obstacle Challenge round]**
+- #### **Section 12 [Obstacle Challenge round]**
 
 ```c++
   // TEST PARKING
@@ -1362,7 +1366,7 @@ From code above, we declare variables called desireDistance to set the perfect d
 ```
 We tell the robot to find the parking lot while it's in the third lap. After it found the parking lot, divide the variable 'count_line' by 4 then you get the remainder. That's the section of the field that the robot's in at the time. Store it in 'parkingsection'. If 'parkingsection' equal to 0, change that to 4 to ensure that the robot park smoothly.
 
-- #### **Section 12 [Obstacle Challenge round]**
+- #### **Section 13 [Obstacle Challenge round]**
 
 ```c++
 if (parking_step == 1) {
@@ -1371,7 +1375,7 @@ if (parking_step == 1) {
 ```
 While the robot searching for parking lot, change side that ultrasonic heads to. So, the ultrasonic scan outside wall.
 
-- #### **Section 13 [Obstacle Challenge round]**
+- #### **Section 14 [Obstacle Challenge round]**
 
 ```c++
 int parking_degree = ((purple_blob1.x + purple_blob2.x) / 2 - 160) * -0.5;
@@ -1379,7 +1383,7 @@ int parking_degree = ((purple_blob1.x + purple_blob2.x) / 2 - 160) * -0.5;
 ```
 'parking_degree' is the variable that calculate degree of steering wheel for the robot to go into parking lot safely. 'final_degree' is the variable that calculate the degree of steering wheel throughout the round. If it sees a block, avoid them. If it doesn't see anything, just continue using distance from the wall and compass.
 
-- #### **Section 14 [Obstacle Challenge round]**
+- #### **Section 15 [Obstacle Challenge round]**
 
 ```c++
  getIMU();
@@ -1387,7 +1391,7 @@ int parking_degree = ((purple_blob1.x + purple_blob2.x) / 2 - 160) * -0.5;
 ```
 This is the beginning, first, get compass value. Then, start detecting the first color of the line on the field after the robot start.
 
-- #### **Section 15 [Obstacle Challenge round]**
+- #### **Section 16 [Obstacle Challenge round]**
 
 ```c++
  switch (parking_step) {
@@ -1487,7 +1491,7 @@ This 'switch' statement controls the robot's parking process based on the value 
   Case 5: The robot ensures it aligns properly in the parking section. It adjusts motors and servos while tracking the line count. Once done, it resets to step 1 for further operation.
   But if no specific step applies, the robot moving as usual. If a parking section is found and the line count exceeds 12, it transitions to step 5.
 
-- #### **Section 16 [Obstacle Challenge round]**
+- #### **Section 17 [Obstacle Challenge round]**
 
 ```c++
 uTurn();
