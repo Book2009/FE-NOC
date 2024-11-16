@@ -868,13 +868,13 @@ It shows you the connection of various components to the microcontroller.
 
 To help you better understand what I'm explaining, you can [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.
 
-## Open Challenge rounds
+## Open Challenge round
 
 In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
 
-- #### **The strategy**
+### **The strategy**
 
-In this Open Challenge rounds, the robot will use the ultrasonic to measure the distance of the robot from the outer wall. The robot will use the color sensor to check the line color. If the first color is red, the robot will turn right, and if it’s blue, the robot will turn left(because if the robot has to turn right, it will detect the red line first, and if it has to turn left, it will detect the blue line first, using different color sensors for detecting each line color). Every time, the robot will check how many times it has crossed the first line. It will count 12 lines(1 round = 4 lines), and after that, it will walk with the timer that we set until the time we set runs out.
+In this Open Challenge round, the robot will use the ultrasonic to measure the distance of the robot from the outer wall. The robot will use the color sensor to check the line color. If the first color is red, the robot will turn right, and if it’s blue, the robot will turn left(because if the robot has to turn right, it will detect the red line first, and if it has to turn left, it will detect the blue line first, using different color sensors for detecting each line color). Every time, the robot will check how many times it has crossed the first line. It will count 12 lines(1 round = 4 lines), and after that, it will walk with the timer that we set until the time we set runs out.
 
 <p align="center">
 If the first line is red
@@ -912,23 +912,181 @@ U(t) = k<sub>p</sub> e(t) + k<sub>i</sub_ [ e(t) dt + k<sub>d</sub> (de/dt)
 
 <br><hr>
 
-- #### **Flowchart**
+### **Flowchart**
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
 
 <br><hr>
 
-- #### **Source Code**
+### **Source Code**
+
+- #### **First Section[Open Challenge round]**
+
+```c++
+#include <Mapf.h>
+#include <PID_v2.h>
+#include <Wire.h>
+#include <Servo.h>
+
+Servo myservo;
+Servo myservo2;
+
+const int E1Pin = 10;
+const int M1Pin = 12;
+
+/**inner definition**/
+typedef struct {
+  byte enPin;
+  byte directionPin;
+} MotorContrl;
+
+const int M1 = 0;
+const int MotorNum = 1;
+
+const MotorContrl MotorPin[] = { { E1Pin, M1Pin } };
+
+const int Forward = LOW;
+const int Backward = HIGH;
+
+
+//Button
+int BUTTON = A8;
+
+//PID
+PID_v2 compassPID(0.7, 0.0001, 0.05, PID::Direct);
+
+//Ultra
+int const ULTRA_PIN = A9;
+int const ULTRA_PIN_II = A10;
+
+//INEX Gyro
+float pvYaw;
+uint8_t rxCnt = 0, rxBuf[8];
+
+//  Light Sensors
+int const RED_SEN = A6;
+int const BLUE_SEN = A7;
+
+// Servo
+int const STEER_SRV = 27;  //16
+int const ULTRA_SRV = 25;  //23
+
+//Others
+char TURN = 'U';
+long halt_detect_line_timer;
+int Line_Number = 0;
+int plus_degree = 0;
+int count;
+```
+This code sets up a robot with servos, motors, sensors (light, ultrasonic, and gyro), and a PID controller for compass-based movement. It configures motor pins, light sensor pins, and controls turn direction and line detection timing to guide the robot's navigation.
+
+
+- #### **Second Section[Open Challenge round]**
+
+```c++
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  Serial1.begin(9600);
+  compassPID.Start(0, 0, 0);
+  compassPID.SetOutputLimits(-180, 180);
+  compassPID.SetSampleTime(10);
+  pinMode(STEER_SRV, OUTPUT);
+  pinMode(ULTRA_SRV, OUTPUT);
+  pinMode(ULTRA_PIN, INPUT);
+  pinMode(RED_SEN, INPUT);
+  pinMode(BLUE_SEN, INPUT);
+  pinMode(BUTTON, INPUT);
+  initMotor();
+  while (!Serial)
+    ;
+  myservo.attach(ULTRA_SRV, 500, 2400);
+  myservo2.attach(STEER_SRV, 500, 2500);
+  steering_servo(0);
+  ultra_servo(0, 'L');
+  // check_leds();
+  while (analogRead(BUTTON) > 500)
+    ;
+  zeroYaw();
+}
+```
+The setup function initializes serial communication, PID control, motor, servo pins, and sensors. It calibrates the compass with zeroYaw(), waits for a button press, and prepares the system for operation by attaching servos and starting the PID control.
+
+- #### **Third Section[Open Challenge round]**
+
+```c++
+void loop() {
+  float baseDesiredDistance = 25;
+  while (analogRead(BUTTON) > 500) {
+    getIMU();
+    motor(50);
+    Color_detection();
+    float desiredDistance = baseDesiredDistance;  // Start with the base value
+    if (TURN == 'L') {
+      desiredDistance = 16;
+    } else if (TURN == 'R') {
+      desiredDistance = 17.5;
+    }
+    float distanceError = getDistance() - desiredDistance;
+    float deadband = 2.0;
+    if (abs(distanceError) < deadband) {
+      distanceError = 0.0;
+    }
+    float directionFactor = (TURN == 'R') ? -1.0 : 1.0;
+    float adjustedYaw = pvYaw - (distanceError * directionFactor);
+    float pidOutput = compassPID.Run(adjustedYaw);
+    steering_servo(pidOutput);
+    ultra_servo(pvYaw, TURN);
+    // Serial.println(getDistance());
+
+    if (count >= 12) {
+      long timer01 = millis();
+      while (millis() - timer01 < 800) {
+        motor(100);
+        getIMU();
+        Color_detection();
+        float desiredDistance = baseDesiredDistance;  // Start with the base value
+        if (TURN == 'L') {
+          desiredDistance = 12;
+        } else if (TURN == 'R') {
+          desiredDistance = 14.5;
+        }
+        float distanceError = getDistance() - desiredDistance;
+        float deadband = 2.0;
+        if (abs(distanceError) < deadband) {
+          distanceError = 0.0;
+        }
+        float directionFactor = (TURN == 'L') ? -1.0 : 1.0;
+        float adjustedYaw = pvYaw + (distanceError * directionFactor);
+        float pidOutput = compassPID.Run(adjustedYaw);
+        steering_servo(pidOutput);
+        ultra_servo(pvYaw, TURN);
+      }
+      motor(0);
+      while (true) {
+      }
+    }
+  }
+  motor(0);
+  while (analogRead(BUTTON) <= 500) {
+  }
+  while (analogRead(BUTTON) > 500)
+    ;
+  while (analogRead(BUTTON) <= 500)
+    ;
+}
+```
+The loop function controls the robot's movement by reading sensor values, adjusting motor speed, and steering using PID feedback. It checks the button status to start/stop, adjusts the robot's direction based on distance errors, and uses servos to steer. When a specific count is reached, it stops.
 
 <br><hr>
 
-## Obstacle Challenge rounds
+## Obstacle Challenge round
 
 In this round, our robot must complete three laps on a track marked with randomly placed green and red traffic signs.
 <br>
-● Red Pillar: Keep to the right side of the lane.
+● Red Obstacle: Keep to the right side of the lane.
 <br>
-● Green Pillar: Keep to the left side of the lane.
+● Green Obstacle: Keep to the left side of the lane.
 <br>
 The last traffic sign in the second round indicates the next move: a green sign means continue in the same direction for the third round, while a red sign requires turning around to complete the round in the opposite direction. The robot must not move any traffic signs. After finishing the three laps, the robot must find a parking lot and perform parallel parking.
 
@@ -1021,11 +1179,301 @@ The robot will drive to park in the purple parking area that was detected, using
 
 - #### **Source Code**
 
+- #### **Third Section[Obstacle Challenge round]**
+
+```c++
+#include <Mapf.h>
+#include <PID_v2.h>
+#include <Servo.h>
+#include "CameraHandler.h"
+```
+We declare essential libraries for robot control: Mapf.h for Mapping the constrained distance from one range to another, PID_v2.h for smooth movement control, Servo.h for servo motor positioning, and CameraHandler.h for processing camera data. These libraries enable the robot to navigate, adjust movement, and interpret visual information effectively.
+
+```c++
+CameraHandler camera;
+BlobData blob;
+BlobData purple_blob1;
+BlobData purple_blob2;
+```
+We initializes a CameraHandler object called camera to manage the camera’s functions. It also creates three BlobData instances: blob for storing red and green pillar information, and purple_blob1 and purple_blob2 specifically for tracking two separate purple blobs. These variables enable the robot to detect, distinguish, and interact with multiple objects in its environment, particularly purple-colored ones.
+
+```c++
+Servo myservo;
+Servo myservo2;
+```
+We declare two Servo objects, myservo and myservo2, allowing control of two individual servo motors.
+
+```c++
+const int E1Pin = 10;
+const int M1Pin = 12;
+
+typedef struct {
+  byte enPin;
+  byte directionPin;
+} MotorContrl;
+
+const int M1 = 0;
+const int MotorNum = 1;
+
+const MotorContrl MotorPin[] = { E1Pin, M1Pin };
+
+const int Forward = LOW;
+const int Backward = HIGH;
+```
+We sets up motor control using E1Pin and M1Pin for power and direction. The MotorContrl structure and MotorPin array organize these pins, while Forward and Backward constants control motor rotation, making direction easy to manage.
+
+```c++
+int const RED_SEN = 6;
+int const BLUE_SEN = 7;
+int const BUTTON = 8;
+int const ULTRA_PIN = 9;
+int const ULTRA_PIN_II = 10;
+int const STEER_SRV = 27;
+int const ULTRA_SRV = 25;
+```
+We connect Red sensor to port 6, Blue sensor to port 7, Button to port 8, Ultrasonic that measure distance between robot and the wall to port 9, Ultrasonic in front of the robot to port 8+10, Servo for steering port 27, and the last one, Servo for turning ultrasonic port 25.
+
+```c++
+float pvYaw;
+uint8_t rxCnt = 0, rxBuf[8];
+```
+We defines pvYaw as a float to store the robot's yaw (orientation) angle. rxCnt is an 8-bit integer to count received data, and rxBuf is an 8-byte array to hold incoming data.
+
+```c++
+long halt_detect_line_timer = 0;
+long halt_detect_parking = 0;
+long MV_timer = 0;
+
+float found_parkAngle = 0;
+float absYaw;
+float uturnYaw;
+float avoidance_degree;
+
+int last_found_signature;
+int plus_degree = 0;
+int count_line = 0;
+int parking_step = 0;
+int parkingsection = -1;
+int side = 1;
+int hi = 0;
+int angle = 115;
+
+bool startpark = false;
+bool parking = false;
+bool next = false;
+bool foundpark = false;
+bool uturn = false;
+
+char currentBlock = 'N';
+char previousBlock = 'N';
+char lastblock;
+char lastfound = 'U';
+char TURN = 'U';
+char ULTRA_DIR = 'R';
+```
+This code above, we defines several variables used for various control and tracking functions. 'long' is used for define time variable. 'float' for variable that has decimal. 'int' for variable that is integer. 'bool' for variable that its output is true and false. 'char' is for variable that is used to store data as a single character.
+
+```c++
+void setup() {
+  initialize_everything();
+  while (analogRead(BUTTON) > 500)
+    ;
+  zeroYaw();
+}
+```
+In 'void setup' we initialize every part of our robot (function mentioned in another page) and then wait until the button is pressed. After that, reset the compass.
+
+```c++
+void loop() {
+  // Calculate camera errors
+  camera.handleIncomingData();
+  BlobData tempBlob = camera.getBlobData();
+  if (tempBlob.signature == 1) {
+    // RED
+    last_found_signature = 1;
+    blob = tempBlob;
+
+  } else if (tempBlob.signature == 2) {
+    // GREEN
+    last_found_signature = 2;
+    blob = tempBlob;
+
+  } else if (tempBlob.signature == 3) {
+    purple_blob1 = tempBlob;
+  } else if (tempBlob.signature == 4) {
+    purple_blob2 = tempBlob;
+  }
+```
+This code processes data from the camera to identify and sort detected blobs by color. It first updates the camera data, then retrieves the current blob as tempBlob. The code checks the color of tempBlob based on its "signature": if it’s red (1), it sets last_found_signature to 1 and stores tempBlob as blob. If it’s green (2), it does the same but sets last_found_signature to 2. Purple blobs are handled separately, with purple_blob1 storing blobs marked as 3 and purple_blob2 storing blobs marked as 4.
+
+```c++
+ float avoidance_degree = 0;
+  if (tempBlob.signature == 3 && tempBlob.width / 3.9 > blob.width) {
+    avoidance_degree = calculate_avoidance(tempBlob.signature, tempBlob.width, tempBlob.x, tempBlob.y) * -2;
+  } else {
+    avoidance_degree = calculate_avoidance(blob.signature, blob.width, blob.x, blob.y);
+  }
+
+In this code, avoidance_degree is set to 0 at the start. The code then checks if tempBlob has a signature of 3 (meaning it’s a purple blob) and if it’s wider than the main blob divided by 3.9. If both are true, it calculates an avoidance angle using tempBlob’s data and multiplies it by -2 to create a stronger reaction in the opposite direction. If the conditions aren’t met, it calculates a normal avoidance angle using red and green  blob's data instead.
+
+  int desiredDistance = parking_step == 0 ? (camera.isBlockFound() ? 20 : 40) : 15;
+  float distanceError = getDistance() - desiredDistance;
+  float frontDistance = getDistanceII();
+
+  float deadband = 2.0;
+  if (abs(distanceError) < deadband) {
+    distanceError = 0.0;
+  }
+  float directionFactor = (ULTRA_DIR == 'R') ? -1.0 : 1.0;
+  float adjustedYaw = pvYaw - clamp(distanceError * directionFactor, -20, 20);
+  float pidOutput = compassPID.Run(adjustedYaw);
+```
+From code above, we declare variables called desireDistance to set the perfect distance between the robot and wall. If parking step is not equal to 0 (it exit the main loop and going to perform parking) and it sees a block, set the desireDistance to 20 if not set to 40, and if it is in the main loop set it to 15. distanceError is to make the robot know that is it too far from desireDistance. deadband is to neglect small error. If distanceError is less than 2 then ignore them. Because we make the ultrasonic move left and right due to the block nearest to the robot, we need to add directionFactor to let the robot keep distance from the wall normally. The adjustedYaw is calculated by adjusting pvYaw using the distanceError and directionFactor, clamped between -20 and 20. Finally, the pidOutput is calculated using the compassPID controller to adjust the robot's steering.
+
+```c++
+  // TEST PARKING
+
+  if (count_line >= 8 && count_line < 12 && tempBlob.signature == 3 && parkingsection == -1) {
+    parkingsection = count_line % 4;
+  } else if (count_line > 12) {
+    if (parkingsection == 0) {
+      parkingsection = 4;
+    }
+  }
+```
+We tell the robot to find the parking lot while it's in the third lap. After it found the parking lot, divide the variable 'count_line' by 4 then you get the remainder. That's the section of the field that the robot's in at the time. Store it in 'parkingsection'. If 'parkingsection' equal to 0, change that to 4 to ensure that the robot park smoothly.
+
+```c++
+if (parking_step == 1) {
+    ULTRA_DIR = TURN == 'R' ? 'L' : 'R';
+  }
+```
+While the robot searching for parking lot, change side that ultrasonic heads to. So, the ultrasonic scan outside wall.
+
+```c++
+int parking_degree = ((purple_blob1.x + purple_blob2.x) / 2 - 160) * -0.5;
+  int final_degree = camera.isBlockFound() ? mapf(min(max(getDistance(), 15), desiredDistance), 15, desiredDistance, pidOutput, avoidance_degree) : pidOutput;
+```
+'parking_degree' is the variable that calculate degree of steering wheel for the robot to go into parking lot safely. 'final_degree' is the variable that calculate the degree of steering wheel throughout the round. If it sees a block, avoid them. If it doesn't see anything, just continue using distance from the wall and compass.
+
+```c++
+ getIMU();
+  color_detection();
+```
+This is the beginning, first, get compass value. Then, start detecting the first color of the line on the field after the robot start.
+
+```c++
+ switch (parking_step) {
+    case 1:
+
+      if (!startpark) {
+        halt_detect_parking = millis();
+        startpark = true;
+      }
+      if (tempBlob.signature != 3 && purple_blob1.width < 70) {
+        steering_servo(pidOutput);
+        ultra_servo(pvYaw, ULTRA_DIR);
+        motor(40);
+      } else {
+        parking_step = 2;
+        startpark = false;
+      }
+      break;
+    case 2:
+      halt_detect_line_timer = millis();
+      if (!startpark) {
+        halt_detect_parking = millis();
+        startpark = true;
+      }
+      if (millis() - halt_detect_parking < 1400) {
+        steering_servo(final_degree);
+        ultra_servo(0, ULTRA_DIR);
+        motor(40);
+      } else {
+        parking_step = 3;
+        startpark = false;
+        if (TURN == 'L') {
+          plus_degree += 90;
+        } else {
+          plus_degree -= 90;
+        }
+      }
+
+      break;
+
+    case 3:
+
+      if (!startpark) {
+        halt_detect_parking = millis();
+        startpark = true;
+      }
+      if (millis() - halt_detect_parking < 2000) {
+        steering_servo(pvYaw);
+        ultra_servo(0, ULTRA_DIR);
+        motor(-40);
+      } else {
+        parking_step = 4;
+        startpark = false;
+      }
+
+      break;
+
+    case 4:
+      if (frontDistance > 10) {
+        steering_servo(mapf(clamp(frontDistance, 10, 20), 20, 10, parking_degree, 0));
+        motor(mapf(clamp(frontDistance, 10, 20), 20, 10, 35, 30));
+      } else {
+        motor(30);
+        delay(500);
+        motor(0);
+        while (true)
+          ;
+      }
+      break;
+
+    case 5:
+      if (count_line >= 13 && count_line < 12 + parkingsection) {
+        motor_and_steer(pidOutput);
+        ultra_servo(pvYaw, TURN);
+      } else {
+        parking_step = 1;
+      }
+      break;
+
+    default:
+      motor_and_steer(final_degree);
+      ultra_servo(pvYaw, ULTRA_DIR);
+      if (count_line > 12 && parkingsection != -1) {
+        parking_step = 5;
+      }
+      break;
+  }
+```
+This 'switch' statement controls the robot's parking process based on the value of 'parking_step', dividing it into multiple stages:
+  Case 1: The robot begins by detecting parking conditions. If the purple blob (signature 3) isn’t detected or is too small (purple_blob1.width < 70), it adjusts the servo and ultrasonic 
+  direction, moving forward. When the condition changes, it moves to step 2.
+  Case 2: The robot aligns itself. A timer (halt_detect_parking) tracks the duration, and the robot steers using final_degree while moving forward for 1400 milliseconds. Then, it advances 
+  to step 3, adjusting the turning angle (plus_degree) based on the direction that the robot turn.
+  Case 3: The robot starts reversing for 2000 milliseconds, centering the steering and ultrasonic servos. Afterward, it proceeds to step 4.
+  Case 4: The robot parks by steering based on frontDistance. If the distance is greater than 10, it adjusts steering and speed using a mapped value. Once close enough, it stops, waits 
+  briefly.
+  Case 5: The robot ensures it aligns properly in the parking section. It adjusts motors and servos while tracking the line count. Once done, it resets to step 1 for further operation.
+  But if no specific step applies, the robot moving as usual. If a parking section is found and the line count exceeds 12, it transitions to step 5.
+
+```c++
+uTurn();
+```
+If the block behind the robot is red, perform a U-Turn. (Explanation in another page)
+
 <br><hr>
 
 ### Function
 
 This is all the function of our program
+
+
+```c++
+```
 
 
 
