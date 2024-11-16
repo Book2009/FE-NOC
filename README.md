@@ -1196,7 +1196,7 @@ BlobData blob;
 BlobData purple_blob1;
 BlobData purple_blob2;
 ```
-We initializes a `CameraHandler` object called camera to manage the camera’s functions. It also creates three `BlobData instances`: blob for storing red and green pillar information, and `purple_blob1` and `purple_blob2` specifically for tracking two separate purple blobs. These variables enable the robot to detect, distinguish, and interact with multiple objects in its environment, particularly purple-colored ones.
+We initializes a `CameraHandler` object called camera to manage the camera’s functions. It also creates three `BlobData` instances: `blob` for storing red and green pillar information, and `purple_blob1` and `purple_blob2` specifically for tracking two separate purple blobs. These variables enable the robot to detect, distinguish, and interact with multiple objects in its environment, particularly purple-colored ones.
 
 - #### **Section 3 [Obstacle Challenge round]**
 
