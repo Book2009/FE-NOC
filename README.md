@@ -1934,9 +1934,10 @@ sensor.skip_frames(time=1000)
 
 #sensor.__write_reg(0x0E, 0b00000000)  # Disable night mode
 #sensor.__write_reg(0x3E, 0b00000000)  # Disable BLC
-
+```
 This code configures the sensor with fixed settings: RGB565 format, QVGA resolution (320x240), manual exposure, and disabled auto-gain and white balance. It also adjusts contrast, brightness, and saturation for stable imaging.
 
+```c++
 # Color thresholds
 GREEN_THRESHOLDS = [(22, 48, -52, -21, 17, 49)]
 RED_THRESHOLDS = [(0, 52, 13, 37, -3, 25)]
