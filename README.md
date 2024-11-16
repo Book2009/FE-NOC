@@ -916,7 +916,7 @@ U(t) = k<sub>p</sub> e(t) + k<sub>i</sub_ [ e(t) dt + k<sub>d</sub> (de/dt)
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
 
-<br><hr>
+<hr>
 
 ### **Source Code**
 
@@ -1174,7 +1174,7 @@ The robot will drive to park in the purple parking area that was detected, using
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
 
-<br><hr>
+<hr>
 
 ### **Source Code**
 
@@ -1495,7 +1495,7 @@ This 'switch' statement controls the robot's parking process based on the value 
 ```c++
 uTurn();
 ```
-If the block behind the robot is red, perform a U-Turn. (Explanation in another page)
+If the block behind the robot is red, perform a U-Turn. (Explanation in another page).
 
 <br><hr>
 
