@@ -1902,6 +1902,8 @@ The angleDiff function calculates the difference between two angles a and b, ens
 
 ### OpenMV
 
+- #### **Section 1 [OpenMV]**
+
 ```c++
 import time
 import sensor
@@ -1909,6 +1911,8 @@ import display
 from pyb import UART
 ```
 The code imports libraries for time delays, sensor handling, display management, and UART communication, typically used in microcontroller projects with cameras and displays.
+
+- #### **Section 2 [OpenMV]**
 
 ```c++
 # Initialize sensor
@@ -1937,6 +1941,8 @@ sensor.skip_frames(time=1000)
 ```
 This code configures the sensor with fixed settings: RGB565 format, QVGA resolution (320x240), manual exposure, and disabled auto-gain and white balance. It also adjusts contrast, brightness, and saturation for stable imaging.
 
+- #### **Section 3 [OpenMV]**
+
 ```c++
 # Color thresholds
 GREEN_THRESHOLDS = [(22, 48, -52, -21, 17, 49)]
@@ -1944,6 +1950,8 @@ RED_THRESHOLDS = [(0, 52, 13, 37, -3, 25)]
 PURPLE_THRESHOLDS = [(33, 70, -25, 14, 42, 76)]
 ```
 These threshold values define color ranges for detecting green, red, and purple objects based on the HSV color model
+
+- #### **Section 4 [OpenMV]**
 
 ```c++
 # Region of Interest (ROI)
@@ -1955,6 +1963,8 @@ clock = time.clock()
 ```
 This code initializes the Region of Interest (ROI) for image processing and sets up the UART communication at a baud rate of 19200 with a timeout of 2000 milliseconds. The clock is also initialized to manage timing for the processing loop.
 
+- #### **Section 5 [OpenMV]**
+
 ```c++
 def send_blob_data(blob, blob_type, color):
     img.draw_rectangle(blob.rect(), color=color)
@@ -1965,6 +1975,8 @@ def send_blob_data(blob, blob_type, color):
 ```
 This function send_blob_data processes and sends information about a detected blob over UART. It draws a rectangle and a cross on the image at the blob's coordinates, using the specified color. The blob's position (cx, cy), size (width, height), and type are formatted as a string and sent via UART.v
 
+- #### **Section 6 [OpenMV]**
+
 ```c++
 def send_no_blob_data():
     data = "0,0,0,0,0\n"
@@ -1972,6 +1984,8 @@ def send_no_blob_data():
     print(data)
 ```
 The send_no_blob_data function sends a default "no blob" data string over UART. It indicates that no blob was detected by setting all blob-related values (position, size, and type) to zero.
+
+- #### **Section 7 [OpenMV]**
 
 ```c++
 while True:
