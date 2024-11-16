@@ -1900,12 +1900,124 @@ float angleDiff(float a, float b) {
 ```
 The angleDiff function calculates the difference between two angles a and b, ensuring the result is within the range of -180° to 180°. If the difference exceeds these limits, it wraps around by adding or subtracting 360° to keep the result within the expected range.
 
-```c++
-
-```
+### OpenMV
 
 ```c++
+import time
+import sensor
+import display
+from pyb import UART
 ```
+The code imports libraries for time delays, sensor handling, display management, and UART communication, typically used in microcontroller projects with cameras and displays.
+
+```c++
+# Initialize sensor
+sensor.reset()
+sensor.set_pixformat(sensor.RGB565)
+sensor.set_framesize(sensor.QVGA)  # 320x240 resolution
+
+sensor.skip_frames(time=2000)  # Wait for settings to take effect.
+
+# Lock auto-exposure and auto-white-balance to prevent drift across reboots.
+sensor.set_auto_gain(False)  # Disable auto gain.
+sensor.set_auto_whitebal(False)  # Disable auto white balance.
+
+# Lock exposure to prevent fluctuations in lighting conditions.
+sensor.set_auto_exposure(False, exposure_us=7000)  # Adjust exposure manually.
+
+
+sensor.set_contrast(3)
+sensor.set_brightness(0)
+sensor.set_saturation(0)
+
+sensor.skip_frames(time=1000)
+
+#sensor.__write_reg(0x0E, 0b00000000)  # Disable night mode
+#sensor.__write_reg(0x3E, 0b00000000)  # Disable BLC
+
+This code configures the sensor with fixed settings: RGB565 format, QVGA resolution (320x240), manual exposure, and disabled auto-gain and white balance. It also adjusts contrast, brightness, and saturation for stable imaging.
+
+# Color thresholds
+GREEN_THRESHOLDS = [(22, 48, -52, -21, 17, 49)]
+RED_THRESHOLDS = [(0, 52, 13, 37, -3, 25)]
+PURPLE_THRESHOLDS = [(33, 70, -25, 14, 42, 76)]
+```
+These threshold values define color ranges for detecting green, red, and purple objects based on the HSV color model
+
+```c++
+# Region of Interest (ROI)
+ROI = (0, 160, 320, 240)
+
+# Initialize UART
+uart = UART(3, 19200, timeout_char = 2000)
+clock = time.clock()
+```
+This code initializes the Region of Interest (ROI) for image processing and sets up the UART communication at a baud rate of 19200 with a timeout of 2000 milliseconds. The clock is also initialized to manage timing for the processing loop.
+
+```c++
+def send_blob_data(blob, blob_type, color):
+    img.draw_rectangle(blob.rect(), color=color)
+    img.draw_cross(blob.cx(), blob.cy(), color=color)
+    data = f"{blob.cx()},{blob.cy()},{blob.w()},{blob.h()},{blob_type}\n"
+    uart.write(data)
+    print(data)
+```
+This function send_blob_data processes and sends information about a detected blob over UART. It draws a rectangle and a cross on the image at the blob's coordinates, using the specified color. The blob's position (cx, cy), size (width, height), and type are formatted as a string and sent via UART.v
+
+```c++
+def send_no_blob_data():
+    data = "0,0,0,0,0\n"
+    uart.write(data)
+    print(data)
+```
+The send_no_blob_data function sends a default "no blob" data string over UART. It indicates that no blob was detected by setting all blob-related values (position, size, and type) to zero.
+
+```c++
+while True:
+    clock.tick()
+    img = sensor.snapshot()
+
+    # Detect red and green blobs
+    green_blobs = img.find_blobs(GREEN_THRESHOLDS, roi=ROI, area_threshold=30, pixels_threshold=30, merge=True)
+    red_blobs = img.find_blobs(RED_THRESHOLDS, roi=ROI, area_threshold=30, pixels_threshold=30, merge=True)
+
+    # Find the largest blob between red and green blobs
+    largest_green = max(green_blobs, key=lambda b: b.area(), default=None)
+    largest_red = max(red_blobs, key=lambda b: b.area(), default=None)
+
+    # Determine the largest blob between red and green
+    largest_blob = None
+    if largest_green and largest_red:
+        largest_blob = largest_green if largest_green.area() > largest_red.area() else largest_red
+    elif largest_green:
+        largest_blob = largest_green
+    elif largest_red:
+        largest_blob = largest_red
+
+    # Send data for the largest red or green blob (if found), else send '0'
+    if largest_blob:
+        blob_type = 2 if largest_blob in green_blobs else 1  # Green = 2, Red = 1
+        color = (0, 255, 0) if blob_type == 2 else (200, 0, 0)
+        send_blob_data(largest_blob, blob_type, color)
+    else:
+        send_no_blob_data()  # Send 0 when no red or green blobs are found
+
+    # Detect and send data for all purple blobs
+    purple_blobs = img.find_blobs(PURPLE_THRESHOLDS, roi=ROI, area_threshold=30, pixels_threshold=30, merge=True)
+    purple_blobs = sorted(purple_blobs, key=lambda b: b.cx())
+
+    if purple_blobs:
+        for i, purple_blob in enumerate(purple_blobs):
+            color = (255, 0, 255) if i == 0 else (252, 244, 3)  # Alternate colors for blobs
+            send_blob_data(purple_blob, 3 + i, color)  # Different blob types for each purple blob
+    cropped_img = img.crop(roi=ROI)  # Crop to exclude the top 120 pixels
+    # Optional: Read and print incoming UART data
+    if uart.any():
+        data = uart.readline()
+        print("Received:", data)
+
+```
+This code captures images, detects red, green, and purple blobs, and sends their data via UART. It finds the largest green or red blob and sends its position and size, drawing a rectangle and cross on the image. If no blobs are found, a "no blob" signal is sent. Purple blobs are also detected and sent with alternating colors and types. The image is cropped to focus on the lower half, and incoming UART data is printed when received. This loop enables real-time object tracking.
 
 
 
