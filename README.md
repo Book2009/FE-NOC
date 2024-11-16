@@ -1547,7 +1547,7 @@ float radiansToDegree(double raidans) {
 ```
 These functions convert angles between degrees and radians.
 
-### `Avoidance Calculation(based on the object's size and position)`
+### `Avoidance Calculation(based on size and position)`
 
 ```c++
 float _cal_avoidance(char mode, int targetWidth, int objectWidth, int blockCenterX, int blockCenterY) {
@@ -1577,7 +1577,7 @@ float _cal_avoidance(char mode, int targetWidth, int objectWidth, int blockCente
 ```
 The _cal_avoidance function calculates the robot's avoidance angle based on the object's size and position. We use the camera's focal length and field of view to estimate the object's distance, then calculates the X and Y positions. Depending on whether the robot needs to turn left or right, we use trigonometry to compute the avoidance angle.
 
-### `Avoidance Calculation(based on the object's signature)`
+### `Avoidance Calculation(based on signature)`
 
 ```c++
 float calculate_avoidance(int signature, int objectWidth, int blockCenterX, int blockCenterY) {
