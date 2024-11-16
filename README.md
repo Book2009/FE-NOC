@@ -1335,7 +1335,6 @@ This code processes data from the camera to identify and sort detected blobs by 
 In this code, avoidance_degree is set to 0 at the start. The code then checks if tempBlob has a signature of 3 (meaning it’s a purple blob) and if it’s wider than the main blob divided by 3.9. If both are true, it calculates an avoidance angle using tempBlob’s data and multiplies it by -2 to create a stronger reaction in the opposite direction. If the conditions aren’t met, it calculates a normal avoidance angle using red and green  blob's data instead.
 
 - #### **Section 11 [Obstacle Challenge round]**
-- 
 ```c++
   int desiredDistance = parking_step == 0 ? (camera.isBlockFound() ? 20 : 40) : 15;
   float distanceError = getDistance() - desiredDistance;
