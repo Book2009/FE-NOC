@@ -1503,6 +1503,366 @@ If the block behind the robot is red, perform a U-Turn. (Explanation in another 
 
 This is all the function of our program
 
+```c++
+void initialize_everything() {
+  Serial.begin(19200);
+  Serial1.begin(19200);
+  Serial2.begin(19200);
+  Serial3.begin(19200);
+
+  compassPID.Start(0, 0, 0);
+  compassPID.SetOutputLimits(-180, 180);
+  compassPID.SetSampleTime(10);
+
+  pinMode(STEER_SRV, OUTPUT);
+  pinMode(ULTRA_SRV, OUTPUT);
+  pinMode(ULTRA_PIN, INPUT);
+  pinMode(RED_SEN, INPUT);
+  pinMode(BLUE_SEN, INPUT);
+  pinMode(BUTTON, INPUT);
+
+  initMotor();
+  while (!Serial)
+    ;
+  myservo.attach(ULTRA_SRV, 500, 2400);
+  myservo2.attach(STEER_SRV, 500, 2500);
+  steering_servo(0);
+  ultra_servo(0, 'U');
+}
+```
+The initialize_everything function sets up the robot by initializing serial ports, starting the compass PID controller with limits of -180° to 180°, and configuring pins for servos, sensors, and a button. It calls initMotor for motor setup, attaches servos with defined ranges, and resets them to default positions, ensuring the robot is ready to operate.
+
+```c++
+float degreesToRadians(double degrees) {
+  return degrees * PI / 180.0;
+}
+
+float radiansToDegree(double raidans) {
+  return raidans / PI * 180.0;
+}
+```
+These functions convert angles between degrees and radians.
+
+```c++
+float _cal_avoidance(char mode, int targetWidth, int objectWidth, int blockCenterX, int blockCenterY) {
+  float focalLength = 2.8;
+  float cameraFOV = 70;
+
+  float distance = (targetWidth * focalLength * 100) / objectWidth;
+
+  float deltaX = blockCenterX - (320 / 2);
+  float deltaY = blockCenterY - (240 / 2);
+
+  float detected_degree = -deltaX * cameraFOV / 320.0;
+
+  float blockPositionX = distance * sin(degreesToRadians(detected_degree));
+  float blockPositionY = distance * cos(degreesToRadians(detected_degree)) - 10;
+
+  ULTRA_DIR = mode;
+
+  if (mode == 'L') {
+    return max(radiansToDegree(atan2(blockPositionX + (targetWidth / 2 + 10), blockPositionY)), 5) * 1.1;
+  } else if (mode == 'R') {
+    return min(radiansToDegree(atan2(blockPositionX - (targetWidth / 2 + 10), blockPositionY)), -5) * 0.9;
+  } else {
+    return 0;
+  }
+}
+```
+The _cal_avoidance function calculates the robot's avoidance angle based on the object's size and position. We use the camera's focal length and field of view to estimate the object's distance, then calculates the X and Y positions. Depending on whether the robot needs to turn left or right, we use trigonometry to compute the avoidance angle.
+
+```c++
+float calculate_avoidance(int signature, int objectWidth, int blockCenterX, int blockCenterY) {
+  int avoidance_degree = 0;
+
+  if (signature == 2) {
+    avoidance_degree = _cal_avoidance('L', 5, objectWidth, blockCenterX, blockCenterY);
+  } else if (signature == 1) {
+    avoidance_degree = _cal_avoidance('R', 5, objectWidth, blockCenterX, blockCenterY);
+  } else if (signature == 3 || signature == 4) {
+    avoidance_degree = _cal_avoidance(TURN, 20, objectWidth, blockCenterX, blockCenterY);
+  }
+  return avoidance_degree;
+}
+```
+The calculate_avoidance function determines the robot's avoidance direction based on the object's signature. For green (signature 2), it calculates a left turn; for red (signature 1), a right turn. For purple (signatures 3 and 4), it uses the robot's turn direction, if it turn right it avoids to the right. If it turns left, it avoids to the left.
+
+```c++
+int wrapValue(int value, int minValue, int maxValue) {
+  int range = maxValue - minValue + 1;
+  if (value < minValue) {
+    value += range * ((minValue - value) / range + 1);
+  }
+  return minValue + (value - minValue) % range;
+}
+```
+The wrapValue function adjusts a value to keep it within a specified range. If the value is below the minimum, it wraps around to the top of the range. Similarly, if the value exceeds the maximum, it wraps back around to the bottom. This ensures the value always stays within the minValue and maxValue range.
+
+```c++
+void initMotor() {
+  int i;
+  for (i = 0; i < MotorNum; i++) {
+    digitalWrite(MotorPin[i].enPin, LOW);
+
+    pinMode(MotorPin[i].enPin, OUTPUT);
+    pinMode(MotorPin[i].directionPin, OUTPUT);
+  }
+}
+```
+The initMotor function initializes the motors by setting up their pins. It loops through all motors and configures their enable and direction pins as output, while also setting their enable pins to LOW.
+
+```c++
+void setMotorDirection(int motorNumber, int direction) {
+  digitalWrite(MotorPin[motorNumber].directionPin, direction);
+}
+```
+The setMotorDirection function sets the direction of a specific motor by adjusting its direction pin to either forward or backward.
+
+```c++
+inline void setMotorSpeed(int motorNumber, int speed) {
+  analogWrite(MotorPin[motorNumber].enPin, 255.0 * (speed / 100.0));
+}
+```
+The setMotorSpeed function adjusts the motor's speed by using analogWrite to control the enable pin's duty cycle. It converts the given speed (from 0 to 100) to a value between 0 and 255, with 255 representing full speed.
+
+```c++
+void motor(int speed) {
+  if (speed > 0) {
+    setMotorDirection(M1, Forward);
+    setMotorSpeed(M1, speed);
+  } else {
+    setMotorDirection(M1, Backward);
+    setMotorSpeed(M1, speed);
+  }
+}
+```
+The motor function controls the motor's movement. If the speed is positive, it sets the motor to move forward; if negative, it sets the motor to move backward.
+
+```c++
+void color_detection() {
+  int blue_value = analogRead(BLUE_SEN);
+  if (TURN == 'U') {
+    int red_value = analogRead(RED_SEN);
+    if (blue_value < 600 || red_value < 600) {
+      int lowest_red_sen = red_value;
+      long timer_line = millis();
+      while (millis() - timer_line < 100) {
+        int red_value = analogRead(RED_SEN);
+        if (red_value < lowest_red_sen) {
+          lowest_red_sen = red_value;
+        }
+      }
+      if (lowest_red_sen > 600) {
+        TURN = 'L';
+        plus_degree += 90;
+      } else {
+        TURN = 'R';
+        plus_degree -= 90;
+      }
+      halt_detect_line_timer = millis();
+      count_line++;
+    }
+  } else {
+    if (millis() - halt_detect_line_timer > 1800) {
+      if (blue_value < 600) {
+        if (TURN == 'R') {
+          plus_degree -= 90;
+        } else {
+          plus_degree += 90;
+        }
+        halt_detect_line_timer = millis();
+        count_line++;
+      }
+    }
+  }
+}
+```
+This function works on the direction that the robot goes during the round. First, if red sensor value is more than 600 and blue's is less than 600, it means that it found red line, so it has to turn right. If both of the sensors value is less than 600, it means that it found blue line and has to turn left. The robot stores this data and next time it sees a line after 1.8 seconds, it turns the same direction.
+
+```c++
+void steering_servo(int degree) {
+  myservo2.write((90 + max(min(degree, 50), -50)) / 2);
+}
+```
+The function controls the steering servo's position. It takes a degree value, clamps it within the range of -50 to 50, and then adjusts it to fit the servo's expected range by adding 90 and dividing by 2.
+
+```c++
+void ultra_servo(int degree, char mode_steer) {
+  int middle_degree = 0;
+  if (mode_steer == 'F') {
+    middle_degree = 150;
+  } else if (mode_steer == 'R') {
+    middle_degree = 225;
+  } else if (mode_steer == 'L' || mode_steer == 'U') {
+    middle_degree = 80;
+  } else {
+  }
+  myservo.write(mapf(max(min(middle_degree + degree, 225), 45), 0, 270, 0, 180));
+}
+```
+The ultra_servo function controls the ultra servo based on the given degree and steering mode. It first sets a middle degree based on the mode_steer parameter: 'F' sets it to 150, 'R' to 225, and 'L' or 'U' to 80. Then, it adjusts the servo position by adding the input degree to this middle degree.
+
+```c++
+float getDistance() {
+  float raw_distance = mapf(analogRead(ULTRA_PIN), 0, 1023, 0, 500);
+  if (TURN == 'L') {
+    raw_distance += 0;
+  } else if (TURN == 'R') {
+    raw_distance -= 0;
+  }
+  return min(raw_distance, 50);
+}
+
+float getDistanceII() {
+  float raw_distance = mapf(analogRead(ULTRA_PIN_II), 0, 1023, 0, 500);
+  if (TURN == 'L') {
+    raw_distance += 0;
+  } else if (TURN == 'R') {
+    raw_distance -= 0;
+  }
+  return min(raw_distance, 50);
+}
+```
+The getDistance and getDistanceII functions measure the distance using ultrasonic sensors. Both functions use analogRead to get a sensor value, then map it to a distance range (0 to 500). The final distance is capped at a maximum of 50 units using min.
+
+```c++
+bool getIMU() {
+  while (Serial1.available()) {
+    rxBuf[rxCnt] = Serial1.read();
+    if (rxCnt == 0 && rxBuf[0] != 0xAA) return;
+    rxCnt++;
+    if (rxCnt == 8) {
+      rxCnt = 0;
+      if (rxBuf[0] == 0xAA && rxBuf[7] == 0x55) {
+        pvYaw = (int16_t)(rxBuf[1] << 8 | rxBuf[2]) / 100.f;
+        pvYaw = wrapValue(pvYaw + plus_degree, -179, 180);
+        return true;
+      }
+    }
+  }
+  return false;
+}
+```
+The getIMU function reads data from the Serial1 interface, expecting a specific format for communication with the IMU. It stores incoming bytes in the rxBuf array. The yaw value is then adjusted by adding plus_degree and wrapped within the range of -179 to 180 degrees using the wrapValue function.
+
+```c++
+void zeroYaw() {
+  Serial1.begin(115200);
+  delay(100);
+  Serial1.write(0XA5);
+  delay(10);
+  Serial1.write(0X54);
+  delay(100);
+  Serial1.write(0XA5);
+  delay(10);
+  Serial1.write(0X55);
+  delay(100);
+  Serial1.write(0XA5);
+  delay(10);
+  Serial1.write(0X52);
+  delay(100);
+}
+```
+The zeroYaw function is used to reset or calibrate the yaw value of the IMU (Inertial Measurement Unit).
+
+```c++
+void motor_and_steer(int degree) {
+  degree = clamp(degree, -52, 52);
+  steering_servo(degree);
+  motor((map(abs(degree), 0, 30, 49, 49)));
+}
+```
+The motor_and_steer function adjusts the robot's steering by clamping the degree between -52 and 52, then sets the servo position. It also controls the motor speed, setting it to 49 based on the absolute value of the degree.
+
+```c++
+float clamp(float value, float minVal, float maxVal) {
+  if (value < minVal) return minVal;
+  if (value > maxVal) return maxVal;
+  return value;
+}
+```
+The clamp function limits a given value to stay within the range specified by minVal and maxVal. If the value is smaller than minVal, it returns minVal; if it's larger than maxVal, it returns maxVal; otherwise, it returns the original value.
+
+```c++
+void check_leds() {
+  while (true) {
+    Serial.print("Geen: ");
+    Serial.print(analogRead(BLUE_SEN));
+    Serial.print("   Red: ");
+    Serial.println(analogRead(RED_SEN));
+  }
+}
+```
+This function is for checking sensors value.
+
+```c++
+void uTurn() {
+  camera.handleIncomingData();
+  BlobData tempBlob = camera.getBlobData();
+  if ((count_line == 3 || (count_line == 4 && millis() - halt_detect_line_timer < 900))) {
+    if (tempBlob.signature == 1) {
+      currentBlock = 'R';
+    } else if (tempBlob.signature == 2) {
+      currentBlock = 'G';
+    } else {
+      currentBlock = 'N';
+    }
+
+    if (currentBlock != 'N' && currentBlock != lastblock) {
+      lastfound = previousBlock;
+      lastblock = currentBlock;
+      previousBlock = lastblock;
+    }
+  }
+
+  if (lastfound == 'G' && count_line == 8 && uturn == false) {
+    side = -1;
+    angle = 90;
+  } else if (lastfound == 'R' && count_line == 8 && uturn == false) {
+    side = 1;
+  }
+  absYaw = abs(pvYaw);
+  while (lastblock == 'R' && count_line == 8 && (millis() - halt_detect_line_timer > 1000)) {
+    getIMU();
+    uturn = true;
+    uturnYaw = pvYaw;  // Remove abs()
+    float diff = angleDiff(uturnYaw, absYaw);
+    while (diff >= -angle && diff <= angle) {
+      getIMU();
+      uturnYaw = pvYaw;  // Remove abs()
+      diff = angleDiff(uturnYaw, absYaw);
+      steering_servo(45 * side);
+      motor(50);
+      Serial.println(diff);
+    }
+
+    count_line++;
+    if (TURN == 'R') {
+      TURN = 'L';
+      plus_degree += 90;
+    } else if (TURN == 'L') {
+      TURN = 'R';
+      plus_degree -= 90;
+    }
+    break;
+  }
+}
+```
+The uTurn function controls the robot's U-turn based on blob detection. It checks if a red or green block is detected and updates the state. If the robot is at line 8 and a red block is detected, it performs a U-turn by adjusting the yaw, moving forward, and steering to complete the turn. The TURN direction is switched after the turn, and count_line is incremented.
+
+```c++
+float angleDiff(float a, float b) {
+  float diff = a - b;
+  while (diff > 180) diff -= 360;
+  while (diff <= -180) diff += 360;
+  return diff;
+}
+```
+The angleDiff function calculates the difference between two angles a and b, ensuring the result is within the range of -180° to 180°. If the difference exceeds these limits, it wraps around by adding or subtracting 360° to keep the result within the expected range.
+
+```c++
+
+```
 
 ```c++
 ```
