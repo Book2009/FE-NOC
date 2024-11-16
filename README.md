@@ -920,7 +920,7 @@ U(t) = k<sub>p</sub> e(t) + k<sub>i</sub_ [ e(t) dt + k<sub>d</sub> (de/dt)
 
 ### **Source Code**
 
-- #### **First Section[Open Challenge round]**
+- #### **Section 1 [Open Challenge round]**
 
 ```c++
 #include <Mapf.h>
@@ -981,7 +981,7 @@ int count;
 This code sets up a robot with servos, motors, sensors (light, ultrasonic, and gyro), and a PID controller for compass-based movement. It configures motor pins, light sensor pins, and controls turn direction and line detection timing to guide the robot's navigation.
 
 
-- #### **Second Section[Open Challenge round]**
+- #### **Section 2 [Open Challenge round]**
 
 ```c++
 void setup() {
@@ -1012,7 +1012,7 @@ void setup() {
 ```
 The setup function initializes serial communication, PID control, motor, servo pins, and sensors. It calibrates the compass with zeroYaw(), waits for a button press, and prepares the system for operation by attaching servos and starting the PID control.
 
-- #### **Third Section[Open Challenge round]**
+- #### **Section 3 [Open Challenge round]**
 
 ```c++
 void loop() {
@@ -1179,7 +1179,7 @@ The robot will drive to park in the purple parking area that was detected, using
 
 - #### **Source Code**
 
-- #### **Third Section[Obstacle Challenge round]**
+- #### **Section 1 [Obstacle Challenge round]**
 
 ```c++
 #include <Mapf.h>
@@ -1189,6 +1189,8 @@ The robot will drive to park in the purple parking area that was detected, using
 ```
 We declare essential libraries for robot control: Mapf.h for Mapping the constrained distance from one range to another, PID_v2.h for smooth movement control, Servo.h for servo motor positioning, and CameraHandler.h for processing camera data. These libraries enable the robot to navigate, adjust movement, and interpret visual information effectively.
 
+- #### **Section 2 [Obstacle Challenge round]**
+
 ```c++
 CameraHandler camera;
 BlobData blob;
@@ -1197,11 +1199,15 @@ BlobData purple_blob2;
 ```
 We initializes a CameraHandler object called camera to manage the camera’s functions. It also creates three BlobData instances: blob for storing red and green pillar information, and purple_blob1 and purple_blob2 specifically for tracking two separate purple blobs. These variables enable the robot to detect, distinguish, and interact with multiple objects in its environment, particularly purple-colored ones.
 
+- #### **Section 3 [Obstacle Challenge round]**
+
 ```c++
 Servo myservo;
 Servo myservo2;
 ```
 We declare two Servo objects, myservo and myservo2, allowing control of two individual servo motors.
+
+- #### **Section 4 [Obstacle Challenge round]**
 
 ```c++
 const int E1Pin = 10;
@@ -1222,6 +1228,8 @@ const int Backward = HIGH;
 ```
 We sets up motor control using E1Pin and M1Pin for power and direction. The MotorContrl structure and MotorPin array organize these pins, while Forward and Backward constants control motor rotation, making direction easy to manage.
 
+- #### **Section 5 [Obstacle Challenge round]**
+
 ```c++
 int const RED_SEN = 6;
 int const BLUE_SEN = 7;
@@ -1233,11 +1241,15 @@ int const ULTRA_SRV = 25;
 ```
 We connect Red sensor to port 6, Blue sensor to port 7, Button to port 8, Ultrasonic that measure distance between robot and the wall to port 9, Ultrasonic in front of the robot to port 8+10, Servo for steering port 27, and the last one, Servo for turning ultrasonic port 25.
 
+- #### **Section 6 [Obstacle Challenge round]**
+
 ```c++
 float pvYaw;
 uint8_t rxCnt = 0, rxBuf[8];
 ```
 We defines pvYaw as a float to store the robot's yaw (orientation) angle. rxCnt is an 8-bit integer to count received data, and rxBuf is an 8-byte array to hold incoming data.
+
+- #### **Section 7 [Obstacle Challenge round]**
 
 ```c++
 long halt_detect_line_timer = 0;
@@ -1273,6 +1285,8 @@ char ULTRA_DIR = 'R';
 ```
 This code above, we defines several variables used for various control and tracking functions. 'long' is used for define time variable. 'float' for variable that has decimal. 'int' for variable that is integer. 'bool' for variable that its output is true and false. 'char' is for variable that is used to store data as a single character.
 
+- #### **Section 8 [Obstacle Challenge round]**
+
 ```c++
 void setup() {
   initialize_everything();
@@ -1282,6 +1296,8 @@ void setup() {
 }
 ```
 In 'void setup' we initialize every part of our robot (function mentioned in another page) and then wait until the button is pressed. After that, reset the compass.
+
+- #### **Section 9 [Obstacle Challenge round]**
 
 ```c++
 void loop() {
@@ -1305,6 +1321,8 @@ void loop() {
   }
 ```
 This code processes data from the camera to identify and sort detected blobs by color. It first updates the camera data, then retrieves the current blob as tempBlob. The code checks the color of tempBlob based on its "signature": if it’s red (1), it sets last_found_signature to 1 and stores tempBlob as blob. If it’s green (2), it does the same but sets last_found_signature to 2. Purple blobs are handled separately, with purple_blob1 storing blobs marked as 3 and purple_blob2 storing blobs marked as 4.
+
+- #### **Section 10 [Obstacle Challenge round]**
 
 ```c++
  float avoidance_degree = 0;
@@ -1330,6 +1348,8 @@ In this code, avoidance_degree is set to 0 at the start. The code then checks if
 ```
 From code above, we declare variables called desireDistance to set the perfect distance between the robot and wall. If parking step is not equal to 0 (it exit the main loop and going to perform parking) and it sees a block, set the desireDistance to 20 if not set to 40, and if it is in the main loop set it to 15. distanceError is to make the robot know that is it too far from desireDistance. deadband is to neglect small error. If distanceError is less than 2 then ignore them. Because we make the ultrasonic move left and right due to the block nearest to the robot, we need to add directionFactor to let the robot keep distance from the wall normally. The adjustedYaw is calculated by adjusting pvYaw using the distanceError and directionFactor, clamped between -20 and 20. Finally, the pidOutput is calculated using the compassPID controller to adjust the robot's steering.
 
+- #### **Section 11 [Obstacle Challenge round]**
+
 ```c++
   // TEST PARKING
 
@@ -1343,6 +1363,8 @@ From code above, we declare variables called desireDistance to set the perfect d
 ```
 We tell the robot to find the parking lot while it's in the third lap. After it found the parking lot, divide the variable 'count_line' by 4 then you get the remainder. That's the section of the field that the robot's in at the time. Store it in 'parkingsection'. If 'parkingsection' equal to 0, change that to 4 to ensure that the robot park smoothly.
 
+- #### **Section 12 [Obstacle Challenge round]**
+
 ```c++
 if (parking_step == 1) {
     ULTRA_DIR = TURN == 'R' ? 'L' : 'R';
@@ -1350,17 +1372,23 @@ if (parking_step == 1) {
 ```
 While the robot searching for parking lot, change side that ultrasonic heads to. So, the ultrasonic scan outside wall.
 
+- #### **Section 13 [Obstacle Challenge round]**
+
 ```c++
 int parking_degree = ((purple_blob1.x + purple_blob2.x) / 2 - 160) * -0.5;
   int final_degree = camera.isBlockFound() ? mapf(min(max(getDistance(), 15), desiredDistance), 15, desiredDistance, pidOutput, avoidance_degree) : pidOutput;
 ```
 'parking_degree' is the variable that calculate degree of steering wheel for the robot to go into parking lot safely. 'final_degree' is the variable that calculate the degree of steering wheel throughout the round. If it sees a block, avoid them. If it doesn't see anything, just continue using distance from the wall and compass.
 
+- #### **Section 14 [Obstacle Challenge round]**
+
 ```c++
  getIMU();
   color_detection();
 ```
 This is the beginning, first, get compass value. Then, start detecting the first color of the line on the field after the robot start.
+
+- #### **Section 15 [Obstacle Challenge round]**
 
 ```c++
  switch (parking_step) {
@@ -1459,6 +1487,8 @@ This 'switch' statement controls the robot's parking process based on the value 
   briefly.
   Case 5: The robot ensures it aligns properly in the parking section. It adjusts motors and servos while tracking the line count. Once done, it resets to step 1 for further operation.
   But if no specific step applies, the robot moving as usual. If a parking section is found and the line count exceeds 12, it transitions to step 5.
+
+- #### **Section 16 [Obstacle Challenge round]**
 
 ```c++
 uTurn();
