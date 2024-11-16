@@ -1186,7 +1186,7 @@ The robot will drive to park in the purple parking area that was detected, using
 #include <Servo.h>
 #include "CameraHandler.h"
 ```
-We declare essential libraries for robot control: Mapf.h for Mapping the constrained distance from one range to another, PID_v2.h for smooth movement control, Servo.h for servo motor positioning, and CameraHandler.h for processing camera data. These libraries enable the robot to navigate, adjust movement, and interpret visual information effectively.
+We declare essential libraries for robot control: `Mapf.h` for Mapping the constrained distance from one range to another, `PID_v2.h` for smooth movement control, `Servo.h` for servo motor positioning, and `CameraHandler.h` for processing camera data. These libraries enable the robot to navigate, adjust movement, and interpret visual information effectively.
 
 - #### **Section 2 [Obstacle Challenge round]**
 
@@ -1196,7 +1196,7 @@ BlobData blob;
 BlobData purple_blob1;
 BlobData purple_blob2;
 ```
-We initializes a CameraHandler object called camera to manage the camera’s functions. It also creates three BlobData instances: blob for storing red and green pillar information, and purple_blob1 and purple_blob2 specifically for tracking two separate purple blobs. These variables enable the robot to detect, distinguish, and interact with multiple objects in its environment, particularly purple-colored ones.
+We initializes a `CameraHandler` object called camera to manage the camera’s functions. It also creates three `BlobData instances`: blob for storing red and green pillar information, and `purple_blob1` and `purple_blob2` specifically for tracking two separate purple blobs. These variables enable the robot to detect, distinguish, and interact with multiple objects in its environment, particularly purple-colored ones.
 
 - #### **Section 3 [Obstacle Challenge round]**
 
@@ -1204,7 +1204,7 @@ We initializes a CameraHandler object called camera to manage the camera’s fun
 Servo myservo;
 Servo myservo2;
 ```
-We declare two Servo objects, myservo and myservo2, allowing control of two individual servo motors.
+We declare two Servo objects, `myservo` and `myservo2`, allowing control of two individual servo motors.
 
 - #### **Section 4 [Obstacle Challenge round]**
 
@@ -1225,7 +1225,7 @@ const MotorContrl MotorPin[] = { E1Pin, M1Pin };
 const int Forward = LOW;
 const int Backward = HIGH;
 ```
-We sets up motor control using E1Pin and M1Pin for power and direction. The MotorContrl structure and MotorPin array organize these pins, while Forward and Backward constants control motor rotation, making direction easy to manage.
+We sets up motor control using `E1Pin` and `M1Pin` for power and direction. The `MotorContrl` structure and `MotorPin` array organize these pins, while Forward and Backward constants control motor rotation, making direction easy to manage.
 
 - #### **Section 5 [Obstacle Challenge round]**
 
@@ -1246,7 +1246,7 @@ We connect Red sensor to port 6, Blue sensor to port 7, Button to port 8, Ultras
 float pvYaw;
 uint8_t rxCnt = 0, rxBuf[8];
 ```
-We defines pvYaw as a float to store the robot's yaw (orientation) angle. rxCnt is an 8-bit integer to count received data, and rxBuf is an 8-byte array to hold incoming data.
+We defines `pvYaw` as a float to store the robot's yaw (orientation) angle. `rxCnt` is an 8-bit integer to count received data, and `rxBuf` is an 8-byte array to hold incoming data.
 
 - #### **Section 7 [Obstacle Challenge round]**
 
@@ -1282,7 +1282,7 @@ char lastfound = 'U';
 char TURN = 'U';
 char ULTRA_DIR = 'R';
 ```
-This code above, we defines several variables used for various control and tracking functions. 'long' is used for define time variable. 'float' for variable that has decimal. 'int' for variable that is integer. 'bool' for variable that its output is true and false. 'char' is for variable that is used to store data as a single character.
+This code above, we defines several variables used for various control and tracking functions. `long` is used for define time variable. `float` for variable that has decimal. `int` for variable that is integer. `bool` for variable that its output is true and false. `char` is for variable that is used to store data as a single character.
 
 - #### **Section 8 [Obstacle Challenge round]**
 
@@ -1294,7 +1294,7 @@ void setup() {
   zeroYaw();
 }
 ```
-In 'void setup' we initialize every part of our robot (function mentioned in another page) and then wait until the button is pressed. After that, reset the compass.
+In `void setup` we initialize every part of our robot (function mentioned in another page) and then wait until the button is pressed. After that, reset the compass.
 
 - #### **Section 9 [Obstacle Challenge round]**
 
@@ -1319,7 +1319,7 @@ void loop() {
     purple_blob2 = tempBlob;
   }
 ```
-This code processes data from the camera to identify and sort detected blobs by color. It first updates the camera data, then retrieves the current blob as tempBlob. The code checks the color of tempBlob based on its "signature": if it’s red (1), it sets last_found_signature to 1 and stores tempBlob as blob. If it’s green (2), it does the same but sets last_found_signature to 2. Purple blobs are handled separately, with purple_blob1 storing blobs marked as 3 and purple_blob2 storing blobs marked as 4.
+This code processes data from the camera to identify and sort detected blobs by color. It first updates the camera data, then retrieves the current blob as `tempBlob`. The code checks the color of `tempBlob` based on its "signature": if it’s red (1), it sets `last_found_signature` to 1 and stores `tempBlob` as blob. If it’s green (2), it does the same but sets `last_found_signature` to 2. Purple blobs are handled separately, with `purple_blob1` storing blobs marked as 3 and `purple_blob2` storing blobs marked as 4.
 
 - #### **Section 10 [Obstacle Challenge round]**
 
@@ -1332,7 +1332,7 @@ This code processes data from the camera to identify and sort detected blobs by 
   }
 ```
 
-In this code, avoidance_degree is set to 0 at the start. The code then checks if tempBlob has a signature of 3 (meaning it’s a purple blob) and if it’s wider than the main blob divided by 3.9. If both are true, it calculates an avoidance angle using tempBlob’s data and multiplies it by -2 to create a stronger reaction in the opposite direction. If the conditions aren’t met, it calculates a normal avoidance angle using red and green  blob's data instead.
+In this code, `avoidance_degree` is set to 0 at the start. The code then checks if `tempBlob` has a signature of 3 (meaning it’s a purple blob) and if it’s wider than the main blob divided by 3.9. If both are true, it calculates an avoidance angle using `tempBlob`’s data and multiplies it by -2 to create a stronger reaction in the opposite direction. If the conditions aren’t met, it calculates a normal avoidance angle using red and green  blob's data instead.
 
 - #### **Section 11 [Obstacle Challenge round]**
 ```c++
