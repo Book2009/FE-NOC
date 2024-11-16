@@ -516,6 +516,8 @@ This part ensure that both wheels have the power from the motor, which makes the
 
 <hr>
 
+- #### **Driving Motor with Differential Gear**
+<image src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot_2024-11-16_223901-removebg-preview.png" width = "400">
 <h2>Step 1: Calculate the gear ratio</h2>
 <p>The gear ratio is determined by the ratio of the number of teeth on the input and output gears:</p>
 <div class="equation">
