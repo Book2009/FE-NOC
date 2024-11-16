@@ -1503,6 +1503,8 @@ If the block behind the robot is red, perform a U-Turn. (Explanation in another 
 
 This is all the function of our program
 
+###'Initialize Everything'
+
 ```c++
 void initialize_everything() {
   Serial.begin(19200);
