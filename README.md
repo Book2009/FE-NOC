@@ -1497,7 +1497,7 @@ uTurn();
 ```
 If the block behind the robot is red, perform a U-Turn. (Explanation in another page).
 
-<br><hr>
+<hr><br>
 
 ### Function
 
@@ -1899,6 +1899,8 @@ float angleDiff(float a, float b) {
 }
 ```
 The angleDiff function calculates the difference between two angles a and b, ensuring the result is within the range of -180° to 180°. If the difference exceeds these limits, it wraps around by adding or subtracting 360° to keep the result within the expected range.
+
+<hr><br>
 
 ### OpenMV
 
