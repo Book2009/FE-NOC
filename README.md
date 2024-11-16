@@ -883,10 +883,18 @@ In this Open Challenge round, the robot will use the ultrasonic to measure the d
 If the first line is red
 </p>
 
-<p align="center">
-  <img src="https://github.com/ThanyawutII/Test-2/blob/main/right.jpg" alt="left" width="450">
-  <img src="https://github.com/ThanyawutII/Test-2/blob/main/rightright.jpg" alt="right" width="450">
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/right.jpg" width="500" alt="Left">
+      <p>Start</p>
+    </td>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/rightright.jpg" width="500" alt="Right">
+      <p>When detect the first line</p>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   Start  When detect the first line 
@@ -896,14 +904,18 @@ If the first line is red
 If the first line is blue
 </p>
 
-<p align="center">
-  <img src="https://github.com/ThanyawutII/Test-2/blob/main/left.jpg" alt="left" width="450"> 
-  <img src="https://github.com/ThanyawutII/Test-2/blob/main/leftleft.jpg" alt="right" width="450"> 
-</p> 
-
-<p align="center"> 
-  Start  When detect the first line 
-</p> 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/left.jpg" width="500" alt="Left">
+      <p>Start</p>
+    </td>
+    <td align="center">
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/leftleft.jpg" width="500" alt="Right">
+      <p>When detect the first line</p>
+    </td>
+  </tr>
+</table>
 
 The robot will use the distance of robot rom the wall and gyro sensor degree са culate into steering degree (turning degree) to maintain the distance between the w ll with PID (Proportional Integral Derivaive) 
 
