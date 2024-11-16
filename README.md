@@ -1010,7 +1010,7 @@ void setup() {
   zeroYaw();
 }
 ```
-The setup function initializes serial communication, PID control, motor, servo pins, and sensors. It calibrates the compass with zeroYaw(), waits for a button press, and prepares the system for operation by attaching servos and starting the PID control.
+The setup function initializes serial communication, PID control, motor, servo pins, and sensors. It calibrates the compass with `zeroYaw()`, waits for a button press, and prepares the system for operation by attaching servos and starting the PID control.
 
 - #### **Section 3 [Open Challenge round]**
 
