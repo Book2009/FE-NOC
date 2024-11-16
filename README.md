@@ -1090,8 +1090,7 @@ In this round, our robot must complete three laps on a track marked with randoml
 <br>
 The last traffic sign in the second round indicates the next move: a green sign means continue in the same direction for the third round, while a red sign requires turning around to complete the round in the opposite direction. The robot must not move any traffic signs. After finishing the three laps, the robot must find a parking lot and perform parallel parking.
 
-
-- #### **The strategy**
+### **The strategy**
 
 In the WRO 2024 Obstacle Challenge round, the robot uses a combination of ultrasonic sensors, a color sensor, a gyro, and an OpenMV Camera to navigate the course, detect and avoid obstacles, and maintain a safe distance from walls. The OpenMV Camera identifies obstacles and their colors, turning right for red obstacles and left for green ones, while the gyro ensures smooth and precise turns.
 
@@ -1171,13 +1170,13 @@ The robot will drive to park in the purple parking area that was detected, using
 
 <br><hr>
 
-- #### **Flowchart**
+### **Flowchart**
 
 <image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
 
 <br><hr>
 
-- #### **Source Code**
+### **Source Code**
 
 - #### **Section 1 [Obstacle Challenge round]**
 
