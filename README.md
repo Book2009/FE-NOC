@@ -490,7 +490,7 @@ ABS (acrylonitrile butadiene styrene) is probably the most common filament used 
 
 ### Movement Parts
 
-#### **Driving motor** : Power Functions Large-Motor made by LEGO™.
+- #### **Driving motor** : Power Functions Large-Motor made by LEGO™.
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/Motor.png" width = "400">
 It's a simple motor, and we chose this motor because of its easy connection to our robot and its cost-effectiveness. This motor is small yet powerful and small power consumption. It is the perfect size for our robot compairing to other motor in the market which typically round on all side and need specific mounting bracket for example ZGA32RI. The motor comes with a dedicated port for Lego. So, we modified it to make it able to connect to the board. 
 
@@ -518,27 +518,28 @@ This part ensure that both wheels have the power from the motor, which makes the
 
 - #### **Driving Motor with Differential Gear**
 <image src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot_2024-11-16_223901-removebg-preview.png" width = "500">
-<h2>Step 1: Calculate the gear ratio</h2>
+
+After presenting the information and the reasons for selecting the motor and the differential gear, the next crucial step is to understand the outcomes resulting from the connection of these two components. This analysis aims to determine the speed and torque that the system can deliver, which are key factors in optimizing and enhancing the system's performance. Below are the calculation methods and the results derived from our analysis
+
+#### **Step 1: Calculate the gear ratio**
 <p>The gear ratio is determined by the ratio of the number of teeth on the input and output gears:</p>
 <div class="equation">
     Gear Ratio = <sup>Number of teeth on input gear</sup> / <sub>Number of teeth on output gear</sub> = <sup>36</sup> / <sub>28</sub> = 1.2857
 </div>
 
-<h2>Step 2: Calculate output RPM</h2>
+#### **Step 2: Calculate output RPM**
 <p>The output RPM increases due to the gear ratio. To find the output RPM:</p>
 <div class="equation">
     Output RPM = Input RPM × Gear Ratio = 390 × 1.2857 = 501.4 RPM
 </div>
 
-<h2>Step 3: Calculate output torque</h2>
+#### **Step 3: Calculate output torque**
 <p>The torque decreases inversely proportional to the gear ratio. To find the output torque:</p>
 <div class="equation">
     Output Torque = <sup>Input Torque</sup> / <sub>Gear Ratio</sub> = <sup>40</sup> / <sub>1.2857</sub> = 31.1 N·cm
 </div>
 
-<hr>
-
-<h2>Final Results:</h2>
+#### **Final Results:**
 <ul>
     <li><strong>Output RPM</strong>: ~501.4 RPM</li>
     <li><strong>Output Torque</strong>: ~31.1 N·cm</li>
