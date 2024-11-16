@@ -1348,7 +1348,7 @@ In this code, `avoidance_degree` is set to 0 at the start. The code then checks 
   float adjustedYaw = pvYaw - clamp(distanceError * directionFactor, -20, 20);
   float pidOutput = compassPID.Run(adjustedYaw);
 ```
-From code above, we declare variables called desireDistance to set the perfect distance between the robot and wall. If parking step is not equal to 0 (it exit the main loop and going to perform parking) and it sees a block, set the desireDistance to 20 if not set to 40, and if it is in the main loop set it to 15. distanceError is to make the robot know that is it too far from desireDistance. deadband is to neglect small error. If distanceError is less than 2 then ignore them. Because we make the ultrasonic move left and right due to the block nearest to the robot, we need to add directionFactor to let the robot keep distance from the wall normally. The adjustedYaw is calculated by adjusting pvYaw using the distanceError and directionFactor, clamped between -20 and 20. Finally, the pidOutput is calculated using the compassPID controller to adjust the robot's steering.
+From code above, we declare variables called `desireDistance` to set the perfect distance between the robot and wall. If parking step is not equal to 0 (it exit the main loop and going to perform parking) and it sees a block, set the `desireDistance` to 20 if not set to 40, and if it is in the main loop set it to 15. `distanceError` is to make the robot know that is it too far from `desireDistance`. deadband is to neglect small error. If `distanceError` is less than 2 then ignore them. Because we make the ultrasonic move left and right due to the block nearest to the robot, we need to add `directionFactor` to let the robot keep distance from the wall normally. The `adjustedYaw` is calculated by adjusting `pvYaw` using the `distanceError` and `directionFactor`, clamped between -20 and 20. Finally, the `pidOutput` is calculated using the `compassPID` controller to adjust the robot's steering.
 
 - #### **Section 12 [Obstacle Challenge round]**
 
@@ -1363,7 +1363,7 @@ From code above, we declare variables called desireDistance to set the perfect d
     }
   }
 ```
-We tell the robot to find the parking lot while it's in the third lap. After it found the parking lot, divide the variable 'count_line' by 4 then you get the remainder. That's the section of the field that the robot's in at the time. Store it in 'parkingsection'. If 'parkingsection' equal to 0, change that to 4 to ensure that the robot park smoothly.
+We tell the robot to find the parking lot while it's in the third lap. After it found the parking lot, divide the variable `count_line` by 4 then you get the remainder. That's the section of the field that the robot's in at the time. Store it in `parkingsection`. If `parkingsection` equal to 0, change that to 4 to ensure that the robot park smoothly.
 
 - #### **Section 13 [Obstacle Challenge round]**
 
@@ -1380,7 +1380,7 @@ While the robot searching for parking lot, change side that ultrasonic heads to.
 int parking_degree = ((purple_blob1.x + purple_blob2.x) / 2 - 160) * -0.5;
   int final_degree = camera.isBlockFound() ? mapf(min(max(getDistance(), 15), desiredDistance), 15, desiredDistance, pidOutput, avoidance_degree) : pidOutput;
 ```
-'parking_degree' is the variable that calculate degree of steering wheel for the robot to go into parking lot safely. 'final_degree' is the variable that calculate the degree of steering wheel throughout the round. If it sees a block, avoid them. If it doesn't see anything, just continue using distance from the wall and compass.
+`parking_degree` is the variable that calculate degree of steering wheel for the robot to go into parking lot safely. `final_degree` is the variable that calculate the degree of steering wheel throughout the round. If it sees a block, avoid them. If it doesn't see anything, just continue using distance from the wall and compass.
 
 - #### **Section 15 [Obstacle Challenge round]**
 
@@ -1479,13 +1479,11 @@ This is the beginning, first, get compass value. Then, start detecting the first
       break;
   }
 ```
-This 'switch' statement controls the robot's parking process based on the value of 'parking_step', dividing it into multiple stages:
-  Case 1: The robot begins by detecting parking conditions. If the purple blob (signature 3) isn’t detected or is too small (purple_blob1.width < 70), it adjusts the servo and ultrasonic 
-  direction, moving forward. When the condition changes, it moves to step 2.
-  Case 2: The robot aligns itself. A timer (halt_detect_parking) tracks the duration, and the robot steers using final_degree while moving forward for 1400 milliseconds. Then, it advances 
-  to step 3, adjusting the turning angle (plus_degree) based on the direction that the robot turn.
+This `switch` statement controls the robot's parking process based on the value of `parking_step`, dividing it into multiple stages:
+  Case 1: The robot begins by detecting parking conditions. If the purple blob (signature 3) isn’t detected or is too small (`purple_blob1.width` < 70), it adjusts the servo and ultrasonic direction, moving forward. When the condition changes, it moves to step 2.
+  Case 2: The robot aligns itself. A timer (`halt_detect_parking`) tracks the duration, and the robot steers using `final_degree` while moving forward for 1400 milliseconds. Then, it advances to step 3, adjusting the turning angle (`plus_degree`) based on the direction that the robot turn.
   Case 3: The robot starts reversing for 2000 milliseconds, centering the steering and ultrasonic servos. Afterward, it proceeds to step 4.
-  Case 4: The robot parks by steering based on frontDistance. If the distance is greater than 10, it adjusts steering and speed using a mapped value. Once close enough, it stops, waits 
+  Case 4: The robot parks by steering based on `frontDistance`. If the distance is greater than 10, it adjusts steering and speed using a mapped value. Once close enough, it stops, waits 
   briefly.
   Case 5: The robot ensures it aligns properly in the parking section. It adjusts motors and servos while tracking the line count. Once done, it resets to step 1 for further operation.
   But if no specific step applies, the robot moving as usual. If a parking section is found and the line count exceeds 12, it transitions to step 5.
@@ -1532,7 +1530,7 @@ void initialize_everything() {
   ultra_servo(0, 'U');
 }
 ```
-The initialize_everything function sets up the robot by initializing serial ports, starting the compass PID controller with limits of -180° to 180°, and configuring pins for servos, sensors, and a button. It calls initMotor for motor setup, attaches servos with defined ranges, and resets them to default positions, ensuring the robot is ready to operate.
+The `initialize_everything` function sets up the robot by initializing serial ports, starting the compass PID controller with limits of -180° to 180°, and configuring pins for servos, sensors, and a button. It calls initMotor for motor setup, attaches servos with defined ranges, and resets them to default positions, ensuring the robot is ready to operate.
 
 ### `Degrees to radians`
 
@@ -1575,7 +1573,7 @@ float _cal_avoidance(char mode, int targetWidth, int objectWidth, int blockCente
   }
 }
 ```
-The _cal_avoidance function calculates the robot's avoidance angle based on the object's size and position. We use the camera's focal length and field of view to estimate the object's distance, then calculates the X and Y positions. Depending on whether the robot needs to turn left or right, we use trigonometry to compute the avoidance angle.
+The `_cal_avoidance` function calculates the robot's avoidance angle based on the object's size and position. We use the camera's focal length and field of view to estimate the object's distance, then calculates the X and Y positions. Depending on whether the robot needs to turn left or right, we use trigonometry to compute the avoidance angle.
 
 ### `Avoidance Calculation(based on signature)`
 
@@ -1593,7 +1591,7 @@ float calculate_avoidance(int signature, int objectWidth, int blockCenterX, int 
   return avoidance_degree;
 }
 ```
-The calculate_avoidance function determines the robot's avoidance direction based on the object's signature. For green (signature 2), it calculates a left turn; for red (signature 1), a right turn. For purple (signatures 3 and 4), it uses the robot's turn direction, if it turn right it avoids to the right. If it turns left, it avoids to the left.
+The `calculate_avoidance` function determines the robot's avoidance direction based on the object's signature. For green (signature 2), it calculates a left turn; for red (signature 1), a right turn. For purple (signatures 3 and 4), it uses the robot's turn direction, if it turn right it avoids to the right. If it turns left, it avoids to the left.
 
 ### `Wrap value`
 
@@ -1606,7 +1604,7 @@ int wrapValue(int value, int minValue, int maxValue) {
   return minValue + (value - minValue) % range;
 }
 ```
-The wrapValue function adjusts a value to keep it within a specified range. If the value is below the minimum, it wraps around to the top of the range. Similarly, if the value exceeds the maximum, it wraps back around to the bottom. This ensures the value always stays within the minValue and maxValue range.
+The `wrapValue` function adjusts a value to keep it within a specified range. If the value is below the minimum, it wraps around to the top of the range. Similarly, if the value exceeds the `maximum`, it wraps back around to the bottom. This ensures the value always stays within the `minValue` and `maxValue` range.
 
 ### `Initiate motor`
 
@@ -1621,7 +1619,7 @@ void initMotor() {
   }
 }
 ```
-The initMotor function initializes the motors by setting up their pins. It loops through all motors and configures their enable and direction pins as output, while also setting their enable pins to LOW.
+The `initMotor` function initializes the motors by setting up their pins. It loops through all motors and configures their enable and direction pins as output, while also setting their enable pins to LOW.
 
 ### `Set motor direction`
 
@@ -1630,7 +1628,7 @@ void setMotorDirection(int motorNumber, int direction) {
   digitalWrite(MotorPin[motorNumber].directionPin, direction);
 }
 ```
-The setMotorDirection function sets the direction of a specific motor by adjusting its direction pin to either forward or backward.
+The `setMotorDirection` function sets the direction of a specific motor by adjusting its direction pin to either forward or backward.
 
 ### `Set motor speed`
 
@@ -1639,7 +1637,7 @@ inline void setMotorSpeed(int motorNumber, int speed) {
   analogWrite(MotorPin[motorNumber].enPin, 255.0 * (speed / 100.0));
 }
 ```
-The setMotorSpeed function adjusts the motor's speed by using analogWrite to control the enable pin's duty cycle. It converts the given speed (from 0 to 100) to a value between 0 and 255, with 255 representing full speed.
+The `setMotorSpeed` function adjusts the motor's speed by using analogWrite to control the enable pin's duty cycle. It converts the given speed (from 0 to 100) to a value between 0 and 255, with 255 representing full speed.
 
 ### `Motor`
 
@@ -1724,7 +1722,7 @@ void ultra_servo(int degree, char mode_steer) {
   myservo.write(mapf(max(min(middle_degree + degree, 225), 45), 0, 270, 0, 180));
 }
 ```
-The ultra_servo function controls the ultra servo based on the given degree and steering mode. It first sets a middle degree based on the mode_steer parameter: 'F' sets it to 150, 'R' to 225, and 'L' or 'U' to 80. Then, it adjusts the servo position by adding the input degree to this middle degree.
+The `ultra_servo` function controls the ultra servo based on the given degree and steering mode. It first sets a middle degree based on the `mode_steer` parameter: 'F' sets it to 150, 'R' to 225, and 'L' or 'U' to 80. Then, it adjusts the servo position by adding the input degree to this middle degree.
 
 ### `Get distance`
 
@@ -1749,7 +1747,7 @@ float getDistanceII() {
   return min(raw_distance, 50);
 }
 ```
-The getDistance and getDistanceII functions measure the distance using ultrasonic sensors. Both functions use analogRead to get a sensor value, then map it to a distance range (0 to 500). The final distance is capped at a maximum of 50 units using min.
+The `getDistance` and getDistanceII functions measure the distance using ultrasonic sensors. Both functions use analogRead to get a sensor value, then map it to a distance range (0 to 500). The final distance is capped at a maximum of 50 units using min.
 
 ### `Get IMU`
 
@@ -1771,7 +1769,7 @@ bool getIMU() {
   return false;
 }
 ```
-The getIMU function reads data from the Serial1 interface, expecting a specific format for communication with the IMU. It stores incoming bytes in the rxBuf array. The yaw value is then adjusted by adding plus_degree and wrapped within the range of -179 to 180 degrees using the wrapValue function.
+The `getIMU` function reads data from the Serial1 interface, expecting a specific format for communication with the IMU. It stores incoming bytes in the `rxBuf` array. The yaw value is then adjusted by adding `plus_degree` and wrapped within the range of -179 to 180 degrees using the wrapValue function.
 
 ### `Zero Yaw`
 
@@ -1793,7 +1791,7 @@ void zeroYaw() {
   delay(100);
 }
 ```
-The zeroYaw function is used to reset or calibrate the yaw value of the IMU (Inertial Measurement Unit).
+The `zeroYaw` function is used to reset or calibrate the yaw value of the IMU (Inertial Measurement Unit).
 
 ### `Motor and Steering`
 
@@ -1804,7 +1802,7 @@ void motor_and_steer(int degree) {
   motor((map(abs(degree), 0, 30, 49, 49)));
 }
 ```
-The motor_and_steer function adjusts the robot's steering by clamping the degree between -52 and 52, then sets the servo position. It also controls the motor speed, setting it to 49 based on the absolute value of the degree.
+The `motor_and_steer` function adjusts the robot's steering by clamping the degree between -52 and 52, then sets the servo position. It also controls the motor speed, setting it to 49 based on the absolute value of the degree.
 
 ### `Clamp`
 
@@ -1815,7 +1813,7 @@ float clamp(float value, float minVal, float maxVal) {
   return value;
 }
 ```
-The clamp function limits a given value to stay within the range specified by minVal and maxVal. If the value is smaller than minVal, it returns minVal; if it's larger than maxVal, it returns maxVal; otherwise, it returns the original value.
+The `clamp` function limits a given value to stay within the range specified by `minVal` and `maxVal`. If the value is smaller than `minVal`, it returns `minVal`; if it's larger than `maxVal`, it returns `maxVal`; otherwise, it returns the original value.
 
 ### `Check LEDs`
 
@@ -1886,7 +1884,7 @@ void uTurn() {
   }
 }
 ```
-The uTurn function controls the robot's U-turn based on blob detection. It checks if a red or green block is detected and updates the state. If the robot is at line 8 and a red block is detected, it performs a U-turn by adjusting the yaw, moving forward, and steering to complete the turn. The TURN direction is switched after the turn, and count_line is incremented.
+The `uTurn` function controls the robot's U-turn based on blob detection. It checks if a red or green block is detected and updates the state. If the robot is at line 8 and a red block is detected, it performs a U-turn by adjusting the yaw, moving forward, and steering to complete the turn. The `TURN` direction is switched after the turn, and `count_line` is incremented.
 
 ### `Angle Difference`
 
@@ -1898,7 +1896,7 @@ float angleDiff(float a, float b) {
   return diff;
 }
 ```
-The angleDiff function calculates the difference between two angles a and b, ensuring the result is within the range of -180° to 180°. If the difference exceeds these limits, it wraps around by adding or subtracting 360° to keep the result within the expected range.
+The `angleDiff` function calculates the difference between two angles a and b, ensuring the result is within the range of -180° to 180°. If the difference exceeds these limits, it wraps around by adding or subtracting 360° to keep the result within the expected range.
 
 <hr><br>
 
@@ -1975,7 +1973,7 @@ def send_blob_data(blob, blob_type, color):
     uart.write(data)
     print(data)
 ```
-This function send_blob_data processes and sends information about a detected blob over UART. It draws a rectangle and a cross on the image at the blob's coordinates, using the specified color. The blob's position (cx, cy), size (width, height), and type are formatted as a string and sent via UART.v
+This function `send_blob_data` processes and sends information about a detected blob over UART. It draws a rectangle and a cross on the image at the blob's coordinates, using the specified color. The blob's position (cx, cy), size (width, height), and type are formatted as a string and sent via UART.v
 
 - #### **Section 6 [OpenMV]**
 
@@ -1985,7 +1983,7 @@ def send_no_blob_data():
     uart.write(data)
     print(data)
 ```
-The send_no_blob_data function sends a default "no blob" data string over UART. It indicates that no blob was detected by setting all blob-related values (position, size, and type) to zero.
+The `send_no_blob_data` function sends a default "no blob" data string over UART. It indicates that no blob was detected by setting all blob-related values (position, size, and type) to zero.
 
 - #### **Section 7 [OpenMV]**
 
