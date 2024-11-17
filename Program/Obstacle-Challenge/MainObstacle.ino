@@ -4,19 +4,16 @@
 #include <Servo.h>
 #include "CameraHandler.h"
 
-// SETUP OPENMV CAMERA
 CameraHandler camera;
 BlobData blob;
 BlobData purple_blob1;
 BlobData purple_blob2;
 
-// SETUP SERVO
 Servo myservo;
 Servo myservo2;
-int const STEER_SRV = 27;  //16
-int const ULTRA_SRV = 25;  //23
+int const STEER_SRV = 27;
+int const ULTRA_SRV = 25;
 
-// SETUP MOTORS
 const int E1Pin = 10;
 const int M1Pin = 12;
 const int E2Pin = 11;
@@ -36,52 +33,46 @@ const MotorContrl MotorPin[] = { { E1Pin, M1Pin }, { E2Pin, M2Pin } };
 const int Forward = LOW;
 const int Backward = HIGH;
 
-//Button
-int BUTTON = A8;
-
-//PID
 PID_v2 compassPID(0.69, 0, 0, PID::Direct);
 
-//Ultra
+int const RED_SEN = A6;
+int const BLUE_SEN = A7;
+int const BUTTON = A8;
 int const ULTRA_PIN = A9;
 int const ULTRA_PIN_II = A10;
 
-
-//INEX Gyro
 float pvYaw;
 uint8_t rxCnt = 0, rxBuf[8];
 
-//  Light Sensors
-int const RED_SEN = A6;
-int const BLUE_SEN = A7;
-
-//Others
-char TURN = 'U';  // L = left, R = Right, U = undefined
+char TURN = 'U';
 char ULTRA_DIR = 'R';
+char lastblock;
+char lastfound = 'U';
+char currentBlock = 'N';
+char previousBlock = 'N';
+
 int last_found_signature;
 int plus_degree = 0;
-double halt_detect_line_timer = 0;
-double halt_detect_mok = 0;
-double MV_timer = 0;
 int count_line = 0;
 int parking_step = 0;
 int parkingsection = -1;
-bool fame = false;
+int side = 1;
+
+long halt_detect_line_timer = 0;
+long halt_detect_parking = 0;
+long MV_timer = 0;
+
+bool startpark = false;
 bool parking = false;
 bool next = false;
 bool foundpark = false;
+bool uturn = false;
+
 float found_parkAngle = 0;
-char lastblock;
-char MOK = 'U';
-int side = 1;
-float Kaopun;
-float Sin;
-float Gain;
-bool neab = false;
+float absYaw;
+float uturnYaw;
 float avoidance_degree;
-int hi = 0;
-char currentBlock = 'N';
-char previousBlock = 'N';
+
 int angle = 80;
 int ignore_line = -1;
 int INT;
@@ -94,7 +85,6 @@ void setup() {
 }
 
 void loop() {
-  // Calculate camera errors
   camera.handleIncomingData();
   BlobData tempBlob = camera.getBlobData();
   int desiredDistance = parking_step == 0 ? (camera.isBlockFound() ? 20 : 40) : 15;
@@ -123,8 +113,6 @@ void loop() {
     avoidance_degree = calculate_avoidance(blob.signature, blob.width, blob.x, blob.y);
   }
 
-
-  // Calculate distance errors
   float deadband = 2.0;
   if (abs(distanceError) < deadband) {
     distanceError = 0.0;
@@ -136,11 +124,8 @@ void loop() {
   float adjustedYaw = pvYaw - clamp(distanceError * directionFactor, -20, 20);
   float pidOutput = compassPID.Run(adjustedYaw);
 
-  // Calculate Compass errors
   getIMU();
   color_detection();
-
-  // TEST PARKING
 
   if (count_line >= 8 && count_line < 12 && tempBlob.signature == 3 && parkingsection == -1) {
     parkingsection = count_line % 4;
@@ -155,9 +140,9 @@ void loop() {
   switch (parking_step) {
     case 1:
 
-      if (!fame) {
-        halt_detect_mok = millis();
-        fame = true;
+      if (!startpark) {
+        halt_detect_parking = millis();
+        startpark = true;
       }
       if (tempBlob.signature != 3 || tempBlob.width < 70) {
         steering_servo(pidOutput * 1.3);
@@ -165,23 +150,22 @@ void loop() {
         motor(40);
       } else {
         parking_step = 2;
-        fame = false;
+        startpark = false;
       }
       break;
     case 2:
       halt_detect_line_timer = millis();
-      if (!fame) {
-        halt_detect_mok = millis();
-        fame = true;
+      if (!startpark) {
+        halt_detect_parking = millis();
+        startpark = true;
       }
-      if (millis() - halt_detect_mok < 1400) {
+      if (millis() - halt_detect_parking < 1400) {
         steering_servo(final_degree);
         ultra_servo(0, ULTRA_DIR);
         motor(40);
-        // Serial.println("1");
       } else {
         parking_step = 3;
-        fame = false;
+        startpark = false;
         if (TURN == 'L') {
           plus_degree += 90;
         } else {
@@ -193,17 +177,17 @@ void loop() {
 
     case 3:
 
-      if (!fame) {
-        halt_detect_mok = millis();
-        fame = true;
+      if (!startpark) {
+        halt_detect_parking = millis();
+        startpark = true;
       }
-      if (millis() - halt_detect_mok < 2000) {
+      if (millis() - halt_detect_parking < 2000) {
         steering_servo(pvYaw);
         ultra_servo(0, ULTRA_DIR);
         motor(-40);
       } else {
         parking_step = 4;
-        fame = false;
+        startpark = false;
       }
 
       break;
