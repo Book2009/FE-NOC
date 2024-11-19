@@ -131,16 +131,15 @@ We created a thorough work plan demonstrating our devotion and cooperation and s
 </p>
 <hr>
 
-<img align="right" width="300" src="https://github.com/ThanyawutII/Test-2/blob/main/f64fd934-e47b-4309-8232-b5b18add3711.png">
-
 # **Part 2: MECHANICAL DESIGN**
-
 
 ### **Overview of design and build(Youtube Link)**
 
 To help you better understand what I'm explaining, you can [click here](https://youtu.be/SQbjwI3JNeM) to view the video we created.
 
 ## Robot's Chassis
+
+<img align="right" width="450" src="https://github.com/ThanyawutII/Test/blob/main/render%20to%20board%201-min.gif">
 
 The robot chassis design consists mainly of the 3D printed parts, which provide a strong support for all the hardware and electronics devices. Each element is custom-designed to meet our specific requirements and interlocks seamlessly to create a lightweight yet resilient structure. Modification and extension of the orthotics and bambulab 3D-printed chassis is made easily due to its modular construction. It is designed to house the motors, electronic circuitry, and battery while enhancing thermal management and balanced weight distribution for efficient operation. This strategy not only allows for fast modeling and changes in design, but it also makes it easy if an operational change requires that some parts should be removed or replaced with better ones as the robot matures. [All the 3D printable models can be found here](https://github.com/Book2009/Nocturnalist-Future-Engineers/tree/main/3D_Models).
 
@@ -424,11 +423,6 @@ Its main function is to keep the bottom and top steering mounts aligned with the
 - #### **Steering Arm Supports**
 
 Its primary function is to provide additional support for the PCB mounting posts, which are made of metal and are insufficiently long.
-
-<hr>
-
-<p align="center">
-<img width="600" src="https://github.com/ThanyawutII/Test/blob/main/render%20to%20board%201-min.gif">
 
 <hr>
 
@@ -856,6 +850,7 @@ To ensure compatibility with our motor's maximum voltage rating of 9V, we incorp
 
 ### Robot
 
+- #### **This is the appearance of our robot in real life to show what our robot looks like with the components.**
 <p align="center">
 <img width="750" src="https://github.com/ThanyawutII/Test-2/blob/main/20241118_165519.jpg">
 </p>
