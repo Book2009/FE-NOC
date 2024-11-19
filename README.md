@@ -150,7 +150,7 @@ The robot chassis design consists mainly of the 3D printed parts, which provide 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20172356.png" width="400" >
+      <img src="https://github.com/ThanyawutII/Test-2/blob/main/Screenshot%202024-10-28%20172356.png" width="300" >
 
   <p><a href="https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Main%20Base.stl" target="_blank">Click here to view 3D model.</a></p>
   </tr>
