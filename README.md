@@ -426,6 +426,10 @@ Its primary function is to provide additional support for the PCB mounting posts
 
 <hr>
 
+### Chassis
+
+- #### **This is the appearance of chassis to show what our robot looks like without the components.**
+
 <p align="center">
 <img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/f64fd934-e47b-4309-8232-b5b18add3711.png">
 
@@ -875,7 +879,7 @@ It shows you the connection of various components to the microcontroller.
 
 ### **How the robot works(Youtube Link)**
 
-To help you better understand what I'm explaining, you can [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.
+- #### **To help you better understand what I'm explaining, you can [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.**
 
 ## Open Challenge round
 
@@ -1189,7 +1193,7 @@ The robot will drive to park in the purple parking area that was detected, using
 
 ### **Flowchart**
 
-<image src="https://github.com/ThanyawutII/Test-2/blob/main/Obstecle%20round.jpg" height = "600">
+<image src="https://github.com/ThanyawutII/Test-2/blob/main/Obstecle%20round.jpg" height = "650">
 
 <hr>
 
