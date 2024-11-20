@@ -903,10 +903,6 @@ If the first line is red
 </table>
 
 <p align="center">
-  Start  When detect the first line 
-</p>
-
-<p align="center">
 If the first line is blue
 </p>
 
@@ -935,7 +931,7 @@ U(t) = k<sub>p</sub> e(t) + k<sub>i</sub_ [ e(t) dt + k<sub>d</sub> (de/dt)
 
 ### **Flowchart**
 
-<image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" width = "400">
+<image src="https://github.com/ThanyawutII/Test/blob/main/OpenChallengeMain%20(1).jpg" height = "600">
 
 <hr>
 
@@ -1193,7 +1189,7 @@ The robot will drive to park in the purple parking area that was detected, using
 
 ### **Flowchart**
 
-<image src="https://github.com/ThanyawutII/Test-2/blob/main/Obstecle%20round.jpg" width = "400">
+<image src="https://github.com/ThanyawutII/Test-2/blob/main/Obstecle%20round.jpg" height = "600">
 
 <hr>
 
