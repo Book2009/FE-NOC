@@ -137,6 +137,12 @@ We created a thorough work plan demonstrating our devotion and cooperation and s
 
 To help you better understand what I'm explaining, you can [click here](https://youtu.be/SQbjwI3JNeM) to view the video we created.
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=SQbjwI3JNeM">
+    <img src="https://github.com/ThanyawutII/Test-2/blob/main/f361b903-af0c-462e-af4d-0fd25667c293.png" width="600">
+  </a>
+</div>
+
 ## Robot's Chassis
 
 <img align="right" width="450" src="https://github.com/ThanyawutII/Test/blob/main/render%20to%20board%201-min.gif">
