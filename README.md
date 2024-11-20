@@ -889,7 +889,7 @@ It shows you the connection of various components to the microcontroller.
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=qQTfzTyW7DM">
-    <img src="https://github.com/ThanyawutII/Test-2/blob/main/f361b903-af0c-462e-af4d-0fd25667c293.png" width="600">
+    <img src="https://github.com/ThanyawutII/Test-2/blob/main/dgddv.png" width="600">
   </a>
 </div>
 
