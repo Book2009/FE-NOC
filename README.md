@@ -426,6 +426,9 @@ Its primary function is to provide additional support for the PCB mounting posts
 
 <hr>
 
+<p align="center">
+<img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/f64fd934-e47b-4309-8232-b5b18add3711.png">
+
 ## Components
 
 - #### **3D Printer** : Bambu Lab X1 Carbon by Bambu Lab
