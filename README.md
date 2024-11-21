@@ -875,7 +875,7 @@ To ensure compatibility with our motor's maximum voltage rating of 9V, we incorp
 <br><hr>
 
 ### Wiring diagram
-It shows you the connection of various components to the microcontroller.
+- #### **It shows you the connection of various components to the microcontroller.**
 <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Schemes/Wiring_diagram.png" width="700"/>
 
