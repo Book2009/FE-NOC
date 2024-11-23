@@ -1136,7 +1136,7 @@ After completing the second round, the robot uses the OpenMV Camera to search fo
 <br>
 
 <p align="center">
-If the robot sees red obstacle.
+If the robot sees red obstacle
 </p>
 
 </p>
