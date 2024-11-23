@@ -1784,7 +1784,7 @@ float getDistanceII() {
   return min(raw_distance, 50);
 }
 ```
-The `getDistance` and getDistanceII functions measure the distance using ultrasonic sensors. Both functions use analogRead to get a sensor value, then map it to a distance range (0 to 500). The final distance is capped at a maximum of 50 units using min.
+The `getDistance` and `getDistanceII` functions measure the distance using ultrasonic sensors. Both functions use `analogRead` to get a sensor value, then map it to a distance range (0 to 500). The final distance is capped at a maximum of 50 units using `min`.
 
 ### `Get IMU`
 
@@ -1806,7 +1806,7 @@ bool getIMU() {
   return false;
 }
 ```
-The `getIMU` function reads data from the Serial1 interface, expecting a specific format for communication with the IMU. It stores incoming bytes in the `rxBuf` array. The yaw value is then adjusted by adding `plus_degree` and wrapped within the range of -179 to 180 degrees using the wrapValue function.
+The `getIMU` function reads data from the Serial1 interface, expecting a specific format for communication with the IMU. It stores incoming bytes in the `rxBuf` array. The yaw value is then adjusted by adding `plus_degree` and wrapped within the range of -179 to 180 degrees using the `wrapValue` function.
 
 ### `Zero Yaw`
 
@@ -2010,7 +2010,7 @@ def send_blob_data(blob, blob_type, color):
     uart.write(data)
     print(data)
 ```
-This function `send_blob_data` processes and sends information about a detected blob over UART. It draws a rectangle and a cross on the image at the blob's coordinates, using the specified color. The blob's position (cx, cy), size (width, height), and type are formatted as a string and sent via UART.v
+This function `send_blob_data` processes and sends information about a detected blob over UART. It draws a rectangle and a cross on the image at the blob's coordinates, using the specified color. The blob's position (cx, cy), size (width, height), and type are formatted as a string and sent via `UART.v`.
 
 - #### **Section 6 [OpenMV]**
 
