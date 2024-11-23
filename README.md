@@ -1689,7 +1689,7 @@ void motor(int speed) {
   }
 }
 ```
-The motor function controls the motor's movement. If the speed is positive, it sets the motor to move forward; if negative, it sets the motor to move backward.
+The `motor` function controls the motor's movement. If the speed is positive, it sets the motor to move forward; if negative, it sets the motor to move backward.
 
 ### `Color detection`
 
