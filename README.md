@@ -939,7 +939,7 @@ If the first line is blue
   </tr>
 </table>
 
-The robot will use the distance of robot from the wall and gyro sensor degree to саlculate into steering degree (turning degree) to maintain the distance between the wall with PID (Proportional Integral Derivaive) 
+The robot will use the distance of robot from the wall and gyro sensor degree to саlculate into steering degree (turning degree) to maintain the distance between the wall with PID (Proportional Integral Derivative) 
 
 <p> 
 U(t) = k<sub>p</sub> e(t) + k<sub>i</sub_ [ e(t) dt + k<sub>d</sub> (de/dt) 
