@@ -1674,7 +1674,7 @@ inline void setMotorSpeed(int motorNumber, int speed) {
   analogWrite(MotorPin[motorNumber].enPin, 255.0 * (speed / 100.0));
 }
 ```
-The `setMotorSpeed` function adjusts the motor's speed by using analogWrite to control the enable pin's duty cycle. It converts the given speed (from 0 to 100) to a value between 0 and 255, with 255 representing full speed.
+The `setMotorSpeed` function adjusts the motor's speed by using `analogWrite` to control the enable pin's duty cycle. It converts the given speed (from 0 to 100) to a value between 0 and 255, with 255 representing full speed.
 
 ### `Motor`
 
