@@ -765,7 +765,7 @@ The color sensors play an important role in both rounds, as we use them for line
 
 <hr>
 
-- #### **GyroCompass** :GY-25
+- #### **Gyro/Compass** :GY-25
 A gyro is a component that enables a robot to determine its orientation and turn in the appropriate direction. We chose this gyro sensor specifically because of how effective it is. It also comes in a very small
 size to attach to our robot.
 
