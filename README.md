@@ -1641,7 +1641,7 @@ int wrapValue(int value, int minValue, int maxValue) {
   return minValue + (value - minValue) % range;
 }
 ```
-The `wrapValue` function adjusts a value to keep it within a specified range. If the value is below the minimum, it wraps around to the top of the range. Similarly, if the value exceeds the `maximum`, it wraps back around to the bottom. This ensures the value always stays within the `minValue` and `maxValue` range.
+The `wrapValue` function adjusts a value to keep it within a specified range. If the value is below the minimum, it wraps around to the top of the range. Similarly, if the value exceeds the maximum, it wraps back around to the bottom. This ensures the value always stays within the `minValue` and `maxValue` range.
 
 ### `Initiate motor`
 
