@@ -740,7 +740,19 @@ This component is very important for avoiding obstacle. It can detect red and gr
 
 - #### **Ultrasonic sensor** : Gravity URM 09 ultrasonic distance sensor.
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Ultrasonic.png" width = "400">
-The ultrasonic sensor plays a vital role in guiding the robot's navigation by accurately detecting distances between the robot and potential obstacles. Its precision in measuring distances ensures that the robot can maneuver and make informed decisions to navigate its path safely and effectively, avoiding collisions and maintaining its course.
+An Ultrasonic sensor is a device that can measure the distance to an object by using sound waves. It measures distance by sending out a sound wave at a specific frequency and listening for that sound wave to bounce back.
+
+Since it is known that sound travels through air at about 344 m/s (1129 ft/s), you can take the time for the sound wave to return and multiply it by 344 meters (or 1129 feet) to find the total round-trip distance of the sound wave. Round-trip means that the sound wave traveled 2 times the distance to the object before it was detected by the sensor; it includes the 'trip' from the sonar sensor to the object AND the 'trip' from the object to the Ultrasonic sensor (after the sound wave bounced off the object). To find the distance to the object, simply divide the round-trip distance in half.
+
+DFRobot URM09 is an ultrasonic sensor specially designed for fast ranging and obstacle avoidance applications. Its measuring frequency can reach up to 30Hz. The sensor adopts built-in temperature compensation and analog output. Meanwhile, it can provide accurate distance measurement within 500 cm. The sensor is compatible with Arduino, Raspberry Pi, or other main controllers.
+
+<p align="center">
+<img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/56827-removebg-preview.png">
+
+<p align="center">
+<img width="400" src="https://github.com/ThanyawutII/Test-2/blob/main/56827-removebg-preview.png">
+
+We use the Ultrasonic Sensor (SEN0307) to measure the distance between the robot and the walls. This sensor utilizes an analog voltage output and provides accurate distance measurements within the range of 2-500 cm, with a precision of 1 cm and an accuracy of ±1%. It is highly suitable for this competition and is compatible with boards that have 3.3V or 5V logic levels.
 
 ##### Electrical Specifications
 
