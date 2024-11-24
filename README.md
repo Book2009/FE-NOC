@@ -895,7 +895,7 @@ To ensure compatibility with our motor's maximum voltage rating of 9V, we incorp
 
 - #### **It shows the inside of the robot, detailing where and how to place everything.**
 <p align="center">
-    <img src="https://github.com/ThanyawutII/Test-2/blob/main/render%20with%20board-min.gif" width="750"/>
+    <img src="https://github.com/Book2009/FE-NOC/blob/main/Others/Robot%20Assemble.gif" width="750"/>
 
 <br><hr>
 
