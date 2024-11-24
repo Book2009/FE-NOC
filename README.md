@@ -37,6 +37,16 @@
 
 </p>
 
+### **Documentation Video(Youtube Link)**
+
+This video is made with great care and dedication. It compiles all the information we included in the document and presents it in words, using animations to help you understand it the best way possible, you can [click here](https://www.youtube.com/watch?v=RbXo_x8DMwE) to view the video we created.
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=RbXo_x8DMwE">
+    <img src="https://github.com/ThanyawutII/Test-2/blob/main/f361b903-af0c-462e-af4d-0fd25667c293.png" width="600">
+  </a>
+</div>
+
 # **Part 1: About Us.**
 
 ## **This is our team.**
