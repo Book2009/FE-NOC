@@ -748,10 +748,10 @@ Since it is known that sound travels through air at about 344 m/s (1129 ft/s), y
 DFRobot URM09 is an ultrasonic sensor specially designed for fast ranging and obstacle avoidance applications. Its measuring frequency can reach up to 30Hz. The sensor adopts built-in temperature compensation and analog output. Meanwhile, it can provide accurate distance measurement within 500 cm. The sensor is compatible with Arduino, Raspberry Pi, or other main controllers.
 
 <p align="center">
-<img width="250" src="https://github.com/Book2009/FE-NOC/blob/main/Others/Sensor%20Test.png">
+<img width="400" src="https://github.com/Book2009/FE-NOC/blob/main/Others/Sensor%20Test.png">
 
 <p align="center">
-<img width="250" src="https://github.com/ThanyawutII/Test-2/blob/main/56827-removebg-preview.png">
+<img width="400" src="https://github.com/Book2009/FE-NOC/blob/main/Others/Attenuation.jpg">
 
 We use the Ultrasonic Sensor (SEN0307) to measure the distance between the robot and the walls. This sensor utilizes an analog voltage output and provides accurate distance measurements within the range of 2-500 cm, with a precision of 1 cm and an accuracy of ±1%. It is highly suitable for this competition and is compatible with boards that have 3.3V or 5V logic levels.
 
