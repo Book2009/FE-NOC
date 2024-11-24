@@ -18,6 +18,8 @@
 
 `FlowChart` This folder includes diagrams showing the logic and sequence of the robot's control program, highlighting how it processes inputs and controls movements during missions.
 
+`Others` Other essential photos.
+
 `Program` This folder includes all programming used to participate in the WRO 2024 Future Engineers Category and all the programming flowcharts.
 
 `Robot-Photos` This folder contains photos of the vehicle from all perspectives, including side and bottom views.
