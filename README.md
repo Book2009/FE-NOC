@@ -67,7 +67,7 @@ The name The Nocturnalist starts from our senior since the year 2015 in FLL Asia
 </p>
   </p>
   </p>
-This is the second generation that use this name. They compete in FLL competion national stage 2021. Due to the well known disease "COVID-19" making the competition online. They perform well and place first. The project used a lot of resource which take numerous people from our club. </p>
+This is the second generation that use this name. They compete in FLL competition national stage 2021. Due to the well known disease "COVID-19" making the competition online. They perform well and place first. The project used a lot of resource which take numerous people from our club. </p>
 This is the second generation.
  <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Nocturnalists%20gen2.jpg" width="500"/>
