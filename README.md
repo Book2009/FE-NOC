@@ -910,7 +910,7 @@ In this round, our robot must complete three(3) laps on the track with random pl
 
 ### **Open Challenge round(Youtube Link)**
 
-- #### **This vidio shows our robot completing the first round(Open Challenge), you can [click here](https://youtu.be/8S626QcRaPA) to view the video we created.**
+- #### **This video shows our robot completing the first round(Open Challenge), you can [click here](https://youtu.be/8S626QcRaPA) to view the video we created.**
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=8S626QcRaPA">
@@ -1146,7 +1146,7 @@ The last traffic sign in the second round indicates the next move: a green sign 
 
 ### **Obstacle Challenge round(Youtube Link)**
 
-- #### **This vidio shows our robot completing the Second round(Obstacle Challenge), you can [click here](https://youtu.be/9oGPSgff0DQ) to view the video we created.**
+- #### **This video shows our robot completing the Second round(Obstacle Challenge), you can [click here](https://youtu.be/9oGPSgff0DQ) to view the video we created.**
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=9oGPSgff0DQ">
