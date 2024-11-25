@@ -904,7 +904,7 @@ To ensure compatibility with our motor's maximum voltage rating of 9V, we incorp
 
 ### **How the robot works(Youtube Link)**
 
-- #### **This [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.**
+To help you better understand what I'm explaining, you can [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=qQTfzTyW7DM">
