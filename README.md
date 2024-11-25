@@ -16,6 +16,8 @@
 # Content
 `3DModels` This folder includes the 3D design of the vehicle and the rendered model of the vehicle.
 
+`Document (PDF form)` In this folder, we have included a Word document that reorganizes the information from GitHub. It has been converted into a PDF for printing on A4 paper.
+
 `FlowChart` This folder includes diagrams showing the logic and sequence of the robot's control program, highlighting how it processes inputs and controls movements during missions.
 
 `Others` Other essential photos.
