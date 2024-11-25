@@ -910,10 +910,10 @@ In this round, our robot must complete three(3) laps on the track with random pl
 
 ### **Open Challenge round(Youtube Link)**
 
-- #### **This vidio shows our robot completing the first round(Open Challenge), you can [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.**
+- #### **This vidio shows our robot completing the first round(Open Challenge), you can [click here](https://youtu.be/8S626QcRaPA) to view the video we created.**
 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=qQTfzTyW7DM">
+  <a href="https://www.youtube.com/watch?v=8S626QcRaPA">
     <img src="https://github.com/ThanyawutII/Test-2/blob/main/dgddv.png" width="600">
   </a>
 </div>
@@ -975,13 +975,6 @@ U(t) = k<sub>p</sub> e(t) + k<sub>i</sub_ [ e(t) dt + k<sub>d</sub> (de/dt)
 ### **Source Code**
 
 - #### **Section 1 [Open Challenge round]**
-This video is made with great care and dedication. It compiles all the information we included in the document and presents it in words, using animations to help you understand it the best way possible, you can [click here](https://www.youtube.com/watch?v=RbXo_x8DMwE) to view the video we created.
-
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=RbXo_x8DMwE">
-    <img src="https://github.com/ThanyawutII/Test-2/blob/main/f361b903-af0c-462e-af4d-0fd25667c293.png" width="600">
-  </a>
-</div>
 
 ```c++
 #include <Mapf.h>
@@ -1150,6 +1143,16 @@ In this round, our robot must complete three laps on a track marked with randoml
 ● Green Obstacle: Keep to the left side of the lane.
 <br>
 The last traffic sign in the second round indicates the next move: a green sign means continue in the same direction for the third round, while a red sign requires turning around to complete the round in the opposite direction. The robot must not move any traffic signs. After finishing the three laps, the robot must find a parking lot and perform parallel parking.
+
+### **Obstacle Challenge round(Youtube Link)**
+
+- #### **This vidio shows our robot completing the Second round(Obstacle Challenge), you can [click here](https://youtu.be/9oGPSgff0DQ) to view the video we created.**
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=9oGPSgff0DQ">
+    <img src="https://github.com/ThanyawutII/Test-2/blob/main/dgddv.png" width="600">
+  </a>
+</div>
 
 ### **The strategy**
 
