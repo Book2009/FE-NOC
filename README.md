@@ -145,8 +145,6 @@ We created a thorough work plan demonstrating our devotion and cooperation and s
 
 # **Part 2: MECHANICAL DESIGN**
 
-### **Overview of design and build(Youtube Link)**
-
 ## Robot's Chassis
 
 <img align="right" width="450" src="https://github.com/Book2009/FE-NOC/blob/main/Others/Chassis%20Assemble.gif">
