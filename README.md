@@ -147,14 +147,6 @@ We created a thorough work plan demonstrating our devotion and cooperation and s
 
 ### **Overview of design and build(Youtube Link)**
 
-To help you better understand what I'm explaining, you can [click here](https://youtu.be/SQbjwI3JNeM) to view the video we created.
-
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=SQbjwI3JNeM">
-    <img src="https://github.com/ThanyawutII/Test-2/blob/main/f361b903-af0c-462e-af4d-0fd25667c293.png" width="600">
-  </a>
-</div>
-
 ## Robot's Chassis
 
 <img align="right" width="450" src="https://github.com/Book2009/FE-NOC/blob/main/Others/Chassis%20Assemble.gif">
@@ -912,19 +904,19 @@ To ensure compatibility with our motor's maximum voltage rating of 9V, we incorp
 
 # **Part 3: Obstacle Management**
 
-### **How the robot works(Youtube Link)**
+## Open Challenge round
 
-- #### **To help you better understand what I'm explaining, you can [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.**
+In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
+
+### **Open Challenge round(Youtube Link)**
+
+- #### **This vidio shows our robot completing the first round(Open Challenge), you can [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.**
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=qQTfzTyW7DM">
     <img src="https://github.com/ThanyawutII/Test-2/blob/main/dgddv.png" width="600">
   </a>
 </div>
-
-## Open Challenge round
-
-In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
 
 ### **The strategy**
 
@@ -983,6 +975,13 @@ U(t) = k<sub>p</sub> e(t) + k<sub>i</sub_ [ e(t) dt + k<sub>d</sub> (de/dt)
 ### **Source Code**
 
 - #### **Section 1 [Open Challenge round]**
+This video is made with great care and dedication. It compiles all the information we included in the document and presents it in words, using animations to help you understand it the best way possible, you can [click here](https://www.youtube.com/watch?v=RbXo_x8DMwE) to view the video we created.
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=RbXo_x8DMwE">
+    <img src="https://github.com/ThanyawutII/Test-2/blob/main/f361b903-af0c-462e-af4d-0fd25667c293.png" width="600">
+  </a>
+</div>
 
 ```c++
 #include <Mapf.h>
