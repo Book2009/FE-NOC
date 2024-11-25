@@ -904,6 +904,16 @@ To ensure compatibility with our motor's maximum voltage rating of 9V, we incorp
 
 # **Part 3: Obstacle Management**
 
+### **How the robot works(Youtube Link)**
+
+- #### **This [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.**
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=qQTfzTyW7DM">
+    <img src="https://github.com/ThanyawutII/Test-2/blob/main/dgddv.png" width="600">
+  </a>
+</div>
+
 ## Open Challenge round
 
 In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
