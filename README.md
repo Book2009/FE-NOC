@@ -41,7 +41,7 @@
 
 </p>
 
-### **Documentation Video(Youtube Link)**
+### **Documentation Video (Youtube Link)**
 
 This video is made with great care and dedication. It compiles all the information we included in the document and presents it in words, using animations to help you understand it the best way possible, you can [click here](https://www.youtube.com/watch?v=RbXo_x8DMwE) to view the video we created.
 
@@ -51,7 +51,7 @@ This video is made with great care and dedication. It compiles all the informati
   </a>
 </div>
 
-# **Part 1: About Us.**
+# **Part 1: About Us**
 
 ## **This is our team.**
 
@@ -60,7 +60,7 @@ This video is made with great care and dedication. It compiles all the informati
 
 ### **Team History** 
  
- Our team name "The Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl, is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime.
+ Our team name "The Nocturnalists" are what is called “night owls”. We tend to work mostly at night because we find ourselves more focused and active once it gets dark. An owl is also a symbol of wisdom and knowledge. It consists of the word "Nocturnal", which means animals well known for being active during nighttime, with the suffix "-ist" indicating someone who practices or specializes in something. Like us, we love to work during nighttime.
 
 The name The Nocturnalist starts from our senior since the year 2015 in FLL Asia Pacific competition that took place in Australia. They won first place in national and got the Innovation Solution Award in international stage.</p>
  This is the first generation.
@@ -69,7 +69,7 @@ The name The Nocturnalist starts from our senior since the year 2015 in FLL Asia
 </p>
   </p>
   </p>
-This is the second generation that use this name. They compete in FLL competition national stage 2021. Due to the well known disease "COVID-19" making the competition online. They perform well and place first. The project used a lot of resource which take numerous people from our club. </p>
+This is the second generation that use this name. They compete in FLL competition national stage 2021. Due to the well-known disease "COVID-19" making the competition online. They perform well and place first. The project used a lot of resource which take numerous people from our club. </p>
 This is the second generation.
  <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Nocturnalists%20gen2.jpg" width="500"/>
@@ -100,7 +100,7 @@ This is the third generation
 <hr>
 There are three members in our team, all extremely focused and dedicated to their positions, performing functions as follows: 
  
-#### 1. Thanyawut Krittikanon – Team Coordinator And Document Designer
+#### 1. Thanyawut Krittikanon – Team Coordinator and Document Designer
 <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Members/Thanyawut%20Krittikanon.png" width="400"/>
 </p>
@@ -110,9 +110,9 @@ Thanyawut is in charge of documentation. He possesses both robotics and programm
 <p align="center">
     <img src="https://github.com/Book2009/FE-NOC/blob/main/Team-Photos/Members/Pawit%20Nateenantasawasd.png" width="400"/>
 </p>
-This is Pawit, our talented coder. He specialize in multiple coding language such as C++, C, Python, Micropython, HTML, etc. He may seem quiet at first, but his personality contributes to his work on coding “puzzles” in a very accurate and neat manner. It is his ability to focus which allows him to take up the challenge of programming very complicated systems like ours. It is this concentration that in the end enables us to have robots that work perfectly well. Pawit is always busy, it seems, and his engagement is what makes this group effective. 
+This is Pawit, our talented coder. He specializes in multiple coding language such as C++, C, Python, Micropython, HTML, etc. He may seem quiet at first, but his personality contributes to his work on coding “puzzles” in a very accurate and neat manner. It is his ability to focus which allows him to take up the challenge of programming very complicated systems like ours. It is this concentration that in the end enables us to have robots that work perfectly well. Pawit is always busy, it seems, and his engagement is what makes this group effective. 
 
-#### 3. Pongpapat Putongkam – The Mechanic And Constructor
+#### 3. Pongpapat Putongkam – The Mechanic and Constructor
 <p align="center">
     <img src="https://github.com/ThanyawutII/Test/blob/main/Pongpapat_Putongkam.png" width="400"/>
 </p>
@@ -121,7 +121,7 @@ We have Pongpapat, our resident robotic designer who is stereotypically imaginat
 </p>
 <hr>
 
-### **Our Vision And Goal**
+### **Our Vision and Goal**
 
 We want to create a robot that can operate similarly to a self-driving car, with the hope of integrating it with an actual automobile. This competition is the first step toward our future goal of helping our country and inventing new things. Additionally, via participating in this competition, we have developed and learned numerous skills like collaboration, imagination, and foresight. We also desired to meet new friends from other nations in order to exchange cultures. Furthermore, we intend to utilize the experience we have obtained from this tournament to better ourselves and mentor our junior at school.
 <hr>
@@ -445,7 +445,7 @@ Its primary function is to provide additional support for the PCB mounting posts
 
 ## Components
 
-- #### **3D Printer** : Bambu Lab X1 Carbon by Bambu Lab
+- #### **3D Printer**: Bambu Lab X1 Carbon by Bambu Lab
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/3D/3D%20Printer.png" width = "400">
 The reasons that we use Bambu Lab X1-Carbon 3D printer because this printer is a high-performance 3D printer designed for precision and efficiency. It is equipped with advanced technology and features, making it suitable for professional use as well as hobbyist projects that require high-quality prints.
 
@@ -523,7 +523,7 @@ It's a simple motor, and we chose this motor because of its easy connection to o
 
 <hr>
 
-- #### **Differential** : Technic, Gear Differential With Inner Tabs and Closed Center, 28 Bevel Teeth
+- #### **Differential** : Technic, Gear Differential with Inner Tabs and Closed Center, 28 Bevel Teeth
 <image src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/differential%20gear.png" width = "300"> <image src = "https://github.com/ThanyawutII/Test-2/blob/main/different.jpg" width = "400">
 
 This part ensure that both wheels have the power from the motor, which makes the robot drive forward. This part has gear teeth on the side, which are connected to the gear we put on the motor earlier, and then we put 3 small gears inside the differential. The differential is attached to the main body using an axle from the wheel.
@@ -566,7 +566,7 @@ After presenting the information and the reasons for selecting the motor and the
 
 - #### **Servo** : GEEKSERVO 2kg 360 Degrees Servo.
 <image src="https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Movement/servo.png" width = "400">
-We use this servo for steering the robot and employ an ultrasonic sensor for rotation. This servo is compatible with LEGO, making it easy and convenient to build the robot by just putting studs in the hole on the side. We like how you can connect two axles to the dual outputs on this servo so you can power two wheels or gears, or mount the servo securely inside articulated limbs and other contraptions. Additionally, the gears inside these servos will 'slip' when the blocking load is too high instead of jamming, helping avoid damage to your servos and boards.
+We use this servo for steering the robot and employ an ultrasonic sensor for rotation. This servo is compatible with LEGO, making it easy and convenient to build the robot by just putting studs in the hole on the side. We like how you can connect two axles to the dual outputs on this servo so you can power two wheels or gears or mount the servo securely inside articulated limbs and other contraptions. Additionally, the gears inside these servos will 'slip' when the blocking load is too high instead of jamming, helping avoid damage to your servos and boards.
 
 The wires are a standard servo pinout - 
 -	Red - positive
@@ -600,7 +600,7 @@ There are a lot of wheels to select. We chose this one because of it's size. If 
 
 - #### **Microcontroller Board** : Arduino Mega 2560 R3
 <img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Controller/Arduino%20Mega.png" width = "400">
-This part is like a brain of our body. It's job is to store all the program of our robot from the computer, every components in the robot comes through here. We chose this board because of it's connection port, it contains tons of ports that we want such as 3 UART port. We used Arduino Uno last year, but the problem is there's not enough port for OpenMV and GY-25. But there's some disadvantage in this board. Because this board has a lot of connection port, it comes with weight and size. It's almost 2 times longer than the UNO. And that makes the robot long and heavy.
+This part is like a brain of our body. Its job is to store all the program of our robot from the computer, every component in the robot comes through here. We chose this board because of its connection port, it contains tons of ports that we want such as 3 UART port. We used Arduino Uno last year, but the problem is there's not enough port for OpenMV and GY-25. But there's some disadvantage in this board. Because this board has a lot of connection port, it comes with weight and size. It's almost 2 times longer than the UNO. And that makes the robot long and heavy.
 
 | Specification           | Value                                  |
 |-------------------------|----------------------------------------|
@@ -630,9 +630,9 @@ Our robot has serial1 and serial3, serial1 is connected to compass while serial3
 
 <hr>
 
-- #### **Sensor Shield** : Gravity IO Sensor Shield For Arduino Mega Due
+- #### **Sensor Shield** : Gravity IO Sensor Shield for Arduino Mega Due
 <img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Controller/Sensor%20shield.png" width = "400">
-This part is an extension of the board. It is where ultrasonic, light sensors, button sensors, camera, compass, and servos go. It has alot of connection pin which can be used for each components. But with that it also come with a very long design. Make it hard to design where to place it on robot.
+This part is an extension of the board. It is where ultrasonic, light sensors, button sensors, camera, compass, and servos go. It has a lot of connection pin which can be used for each component. But with that it also come with a very long design. Make it hard to design where to place it on robot.
 
 | Specification                               | Value                                         |
 |---------------------------------------------|-----------------------------------------------|
@@ -811,14 +811,14 @@ size to attach to our robot.
 <hr>
 
 - #### **Touch Sensor** : ZX-Switch01 by INEX
-This button gives us an easier way to start the robot. Since the controller board doesn't come with switches. So we found this button that could be attached to the frame outside the board using bolt. 
+This button gives us an easier way to start the robot. Since the controller board doesn't come with switches. So, we found this button that could be attached to the frame outside the board using bolt. 
 
 <img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/Touch%20Sensor.png" width = "400">
 
 <hr>
 
 - #### **On/Off Switch** : SPST ON/OFF Switch 2 Pin Rocker Switch DC 125/250V
-This switch is for cutting the power from the battery to the robot. The regulation states that before starting the robot, the power must be cut off. That's when this switch came in. To use this switch we solder red wire(Positive pole) to the switch on 1 side for input. Then another solder red wire for output on the opposite side. You can put the black wire(Negative pole) straight into the step down. When the switch is turned on, the power from the battery will direct into the stepdown and then the robot. Additionally, we have designed a protective case for this switch to ensure safety and durability. [You can view the 3D model here](https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Switch%20Box.stl).
+This switch is for cutting the power from the battery to the robot. The regulation states that before starting the robot, the power must be cut off. That's when this switch came in. To use this switch, we solder red wire (Positive pole) to the switch on 1 side for input. Then another solder red wire for output on the opposite side. You can put the black wire (Negative pole) straight into the step-down. When the switch is turned on, the power from the battery will direct into the stepdown and then the robot. Additionally, we have designed a protective case for this switch to ensure safety and durability. [You can view the 3D model here](https://github.com/Book2009/FE-NOC/blob/main/3D_Models/Switch%20Box.stl).
 
 <img src = "https://github.com/Book2009/FE-NOC/blob/main/Robot-Photos/Robot%20Parts/Power%20Management%20And%20Inspection/OnOff%20Switch.png" width = "400">
 
@@ -904,7 +904,7 @@ To ensure compatibility with our motor's maximum voltage rating of 9V, we incorp
 
 # **Part 3: Obstacle Management**
 
-### **How the robot works(Youtube Link)**
+### **How the robot works (Youtube Link)**
 
 To help you better understand what I'm explaining, you can [click here](https://youtu.be/qQTfzTyW7DM) to view the video we created.
 
@@ -918,7 +918,7 @@ To help you better understand what I'm explaining, you can [click here](https://
 
 In this round, our robot must complete three(3) laps on the track with random placements of the inside track walls within 3 minutes.
 
-### **Open Challenge round(Youtube Link)**
+### **Open Challenge round (Youtube Link)**
 
 This video shows our robot completing the first round(Open Challenge), you can [click here](https://youtu.be/8S626QcRaPA) to view the video we created.
 
@@ -1192,7 +1192,7 @@ If the robot sees green obstacle
   <img src="https://github.com/ThanyawutII/Test-2/blob/main/obg.jpg" width="700"/>
 </p>
 
-The robot still use the PID to walk, but we added the avoidance degree to avoid the obstacles.
+The robot still uses the PID to walk, but we added the avoidance degree to avoid the obstacles.
 
 <br>
 
@@ -1210,7 +1210,7 @@ The robot uses the OpenMV Camera to search for the purple parking area, detectin
 <br>
 
 <p align="center">
-If the color of the last pillar is green(continuing straight)
+If the color of the last pillar is green (continuing straight)
 </p>
 
 </p>
@@ -1221,7 +1221,7 @@ If the color of the last pillar is green(continuing straight)
 <br>
 
 <p align="center">
-If the color of the last pillar is red(U- turn)
+If the color of the last pillar is red (U- turn)
 </p>
 
 </p>
@@ -1270,7 +1270,7 @@ BlobData blob;
 BlobData purple_blob1;
 BlobData purple_blob2;
 ```
-We initializes a `CameraHandler` object called camera to manage the camera’s functions. It also creates three `BlobData` instances: `blob` for storing red and green pillar information, and `purple_blob1` and `purple_blob2` specifically for tracking two separate purple blobs. These variables enable the robot to detect, distinguish, and interact with multiple objects in its environment, particularly purple-colored ones.
+We initialize a `CameraHandler` object called camera to manage the camera’s functions. It also creates three `BlobData` instances: `blob` for storing red and green pillar information, and `purple_blob1` and `purple_blob2` specifically for tracking two separate purple blobs. These variables enable the robot to detect, distinguish, and interact with multiple objects in its environment, particularly purple-colored ones.
 
 - #### **Section 3 [Obstacle Challenge round]**
 
@@ -1299,7 +1299,7 @@ const MotorContrl MotorPin[] = { E1Pin, M1Pin };
 const int Forward = LOW;
 const int Backward = HIGH;
 ```
-We sets up motor control using `E1Pin` and `M1Pin` for power and direction. The `MotorContrl` structure and `MotorPin` array organize these pins, while Forward and Backward constants control motor rotation, making direction easy to manage.
+We set up motor control using `E1Pin` and `M1Pin` for power and direction. The `MotorContrl` structure and `MotorPin` array organize these pins, while Forward and Backward constants control motor rotation, making direction easy to manage.
 
 - #### **Section 5 [Obstacle Challenge round]**
 
@@ -1320,7 +1320,7 @@ We connect Red sensor to port 6, Blue sensor to port 7, Button to port 8, Ultras
 float pvYaw;
 uint8_t rxCnt = 0, rxBuf[8];
 ```
-We defines `pvYaw` as a float to store the robot's yaw (orientation) angle. `rxCnt` is an 8-bit integer to count received data, and `rxBuf` is an 8-byte array to hold incoming data.
+We define `pvYaw` as a float to store the robot's yaw (orientation) angle. `rxCnt` is an 8-bit integer to count received data, and `rxBuf` is an 8-byte array to hold incoming data.
 
 - #### **Section 7 [Obstacle Challenge round]**
 
@@ -1356,7 +1356,7 @@ char lastfound = 'U';
 char TURN = 'U';
 char ULTRA_DIR = 'R';
 ```
-This code above, we defines several variables used for various control and tracking functions. `long` is used for define time variable. `float` for variable that has decimal. `int` for variable that is integer. `bool` for variable that its output is true and false. `char` is for variable that is used to store data as a single character.
+This code above, we define several variables used for various control and tracking functions. `long` is used for defining time variable. `float` for variable that has decimal. `int` for variable that is integer. `bool` for variable that its output is true and false. `char` is for variable that is used to store data as a single character.
 
 - #### **Section 8 [Obstacle Challenge round]**
 
@@ -1406,7 +1406,7 @@ This code processes data from the camera to identify and sort detected blobs by 
   }
 ```
 
-In this code, `avoidance_degree` is set to 0 at the start. The code then checks if `tempBlob` has a signature of 3 (meaning it’s a purple blob) and if it’s wider than the main blob divided by 3.9. If both are true, it calculates an avoidance angle using `tempBlob`’s data and multiplies it by -2 to create a stronger reaction in the opposite direction. If the conditions aren’t met, it calculates a normal avoidance angle using red and green  blob's data instead.
+In this code, `avoidance_degree` is set to 0 at the start. The code then checks if `tempBlob` has a signature of 3 (meaning it’s a purple blob) and if it’s wider than the main blob divided by 3.9. If both are true, it calculates an avoidance angle using `tempBlob`’s data and multiplies it by -2 to create a stronger reaction in the opposite direction. If the conditions aren’t met, it calculates a normal avoidance angle using red and green blob's data instead.
 
 - #### **Section 11 [Obstacle Challenge round]**
 ```c++
@@ -1422,7 +1422,7 @@ In this code, `avoidance_degree` is set to 0 at the start. The code then checks 
   float adjustedYaw = pvYaw - clamp(distanceError * directionFactor, -20, 20);
   float pidOutput = compassPID.Run(adjustedYaw);
 ```
-From code above, we declare variables called `desireDistance` to set the perfect distance between the robot and wall. If parking step is not equal to 0 (it exit the main loop and going to perform parking) and it sees a block, set the `desireDistance` to 20 if not set to 40, and if it is in the main loop set it to 15. `distanceError` is to make the robot know that is it too far from `desireDistance`. deadband is to neglect small error. If `distanceError` is less than 2 then ignore them. Because we make the ultrasonic move left and right due to the block nearest to the robot, we need to add `directionFactor` to let the robot keep distance from the wall normally. The `adjustedYaw` is calculated by adjusting `pvYaw` using the `distanceError` and `directionFactor`, clamped between -20 and 20. Finally, the `pidOutput` is calculated using the `compassPID` controller to adjust the robot's steering.
+From code above, we declare variables called `desireDistance` to set the perfect distance between the robot and wall. If parking step is not equal to 0 (it exits the main loop and going to perform parking) and it sees a block, set the `desireDistance` to 20 if not set to 40, and if it is in the main loop set it to 15. `distanceError` is to make the robot know that is it too far from `desireDistance`. deadband is to neglect small error. If `distanceError` is less than 2 then ignore them. Because we make the ultrasonic move left and right due to the block nearest to the robot, we need to add `directionFactor` to let the robot keep distance from the wall normally. The `adjustedYaw` is calculated by adjusting `pvYaw` using the `distanceError` and `directionFactor`, clamped between -20 and 20. Finally, the `pidOutput` is calculated using the `compassPID` controller to adjust the robot's steering.
 
 - #### **Section 12 [Obstacle Challenge round]**
 
@@ -1555,7 +1555,7 @@ This is the beginning, first, get compass value. Then, start detecting the first
 ```
 This `switch` statement controls the robot's parking process based on the value of `parking_step`, dividing it into multiple stages:
   Case 1: The robot begins by detecting parking conditions. If the purple blob (signature 3) isn’t detected or is too small (`purple_blob1.width` < 70), it adjusts the servo and ultrasonic direction, moving forward. When the condition changes, it moves to step 2.
-  Case 2: The robot aligns itself. A timer (`halt_detect_parking`) tracks the duration, and the robot steers using `final_degree` while moving forward for 1400 milliseconds. Then, it advances to step 3, adjusting the turning angle (`plus_degree`) based on the direction that the robot turn.
+  Case 2: The robot aligns itself. A timer (`halt_detect_parking`) tracks the duration, and the robot steers using `final_degree` while moving forward for 1400 milliseconds. Then, it advances to step 3, adjusting the turning angle (`plus_degree`) based on the direction that the robot turns.
   Case 3: The robot starts reversing for 2000 milliseconds, centering the steering and ultrasonic servos. Afterward, it proceeds to step 4.
   Case 4: The robot parks by steering based on `frontDistance`. If the distance is greater than 10, it adjusts steering and speed using a mapped value. Once close enough, it stops, waits 
   briefly.
@@ -1665,7 +1665,7 @@ float calculate_avoidance(int signature, int objectWidth, int blockCenterX, int 
   return avoidance_degree;
 }
 ```
-The `calculate_avoidance` function determines the robot's avoidance direction based on the object's signature. For green (signature 2), it calculates a left turn; for red (signature 1), a right turn. For purple (signatures 3 and 4), it uses the robot's turn direction, if it turn right it avoids to the right. If it turns left, it avoids to the left.
+The `calculate_avoidance` function determines the robot's avoidance direction based on the object's signature. For green (signature 2), it calculates a left turn; for red (signature 1), a right turn. For purple (signatures 3 and 4), it uses the robot's turn direction, if it turns right it avoids to the right. If it turns left, it avoids to the left.
 
 ### `Wrap value`
 
@@ -1769,7 +1769,7 @@ void color_detection() {
   }
 }
 ```
-This function works on the direction that the robot goes during the round. First, if red sensor value is more than 600 and blue's is less than 600, it means that it found red line, so it has to turn right. If both of the sensors value is less than 600, it means that it found blue line and has to turn left. The robot stores this data and next time it sees a line after 1.8 seconds, it turns the same direction.
+This function works on the direction that the robot goes during the round. First, if red sensor value is more than 600 and blue's is less than 600, it means that it found red line, so it has to turn right. If both of the sensor's value is less than 600, it means that it found blue line and has to turn left. The robot stores this data and next time it sees a line after 1.8 seconds, it turns the same direction.
 
 ### `Steering servo`
 
